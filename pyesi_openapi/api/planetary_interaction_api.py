@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -45,7 +46,7 @@ class PlanetaryInteractionApi:
 
 
     @validate_call
-    def get_characters_character_id_planets(
+    def get_characters_character_id_planets_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -101,6 +102,9 @@ class PlanetaryInteractionApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_planets_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -128,7 +132,7 @@ class PlanetaryInteractionApi:
 
 
     @validate_call
-    def get_characters_character_id_planets_with_http_info(
+    def get_characters_character_id_planets(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -183,6 +187,9 @@ class PlanetaryInteractionApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_planets_serialize(
             character_id=character_id,
@@ -266,6 +273,9 @@ class PlanetaryInteractionApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_planets_serialize(
             character_id=character_id,
@@ -366,7 +376,7 @@ class PlanetaryInteractionApi:
 
 
     @validate_call
-    def get_characters_character_id_planets_planet_id(
+    def get_characters_character_id_planets_planet_id_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         planet_id: StrictInt,
@@ -425,6 +435,9 @@ class PlanetaryInteractionApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_planets_planet_id_serialize(
             character_id=character_id,
             planet_id=planet_id,
@@ -453,7 +466,7 @@ class PlanetaryInteractionApi:
 
 
     @validate_call
-    def get_characters_character_id_planets_planet_id_with_http_info(
+    def get_characters_character_id_planets_planet_id(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         planet_id: StrictInt,
@@ -511,6 +524,9 @@ class PlanetaryInteractionApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_planets_planet_id_serialize(
             character_id=character_id,
@@ -598,6 +614,9 @@ class PlanetaryInteractionApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_planets_planet_id_serialize(
             character_id=character_id,
@@ -702,7 +721,7 @@ class PlanetaryInteractionApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_customs_offices(
+    def get_corporations_corporation_id_customs_offices_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -761,6 +780,9 @@ class PlanetaryInteractionApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_customs_offices_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -789,7 +811,7 @@ class PlanetaryInteractionApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_customs_offices_with_http_info(
+    def get_corporations_corporation_id_customs_offices(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -847,6 +869,9 @@ class PlanetaryInteractionApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_customs_offices_serialize(
             corporation_id=corporation_id,
@@ -934,6 +959,9 @@ class PlanetaryInteractionApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_customs_offices_serialize(
             corporation_id=corporation_id,
@@ -1040,7 +1068,7 @@ class PlanetaryInteractionApi:
 
 
     @validate_call
-    def get_universe_schematics_schematic_id(
+    def get_universe_schematics_schematic_id_data(
         self,
         schematic_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1096,6 +1124,9 @@ class PlanetaryInteractionApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_schematics_schematic_id_serialize(
             schematic_id=schematic_id,
             accept_language=accept_language,
@@ -1123,7 +1154,7 @@ class PlanetaryInteractionApi:
 
 
     @validate_call
-    def get_universe_schematics_schematic_id_with_http_info(
+    def get_universe_schematics_schematic_id(
         self,
         schematic_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1178,6 +1209,9 @@ class PlanetaryInteractionApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_schematics_schematic_id_serialize(
             schematic_id=schematic_id,
@@ -1261,6 +1295,9 @@ class PlanetaryInteractionApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_schematics_schematic_id_serialize(
             schematic_id=schematic_id,

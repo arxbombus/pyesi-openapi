@@ -53,8 +53,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Search on a string
         api_response = api_instance.get_characters_character_id_search(categories, character_id, search, strict=strict, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of SearchApi->get_characters_character_id_search:\n")
+        print(api_response.status_code)
         print("The response of SearchApi->get_characters_character_id_search:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of SearchApi->get_characters_character_id_search\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling SearchApi->get_characters_character_id_search: %s\n" % e)
 ```

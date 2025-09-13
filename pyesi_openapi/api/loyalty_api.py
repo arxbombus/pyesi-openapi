@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -43,7 +44,7 @@ class LoyaltyApi:
 
 
     @validate_call
-    def get_characters_character_id_loyalty_points(
+    def get_characters_character_id_loyalty_points_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -99,6 +100,9 @@ class LoyaltyApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_loyalty_points_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -126,7 +130,7 @@ class LoyaltyApi:
 
 
     @validate_call
-    def get_characters_character_id_loyalty_points_with_http_info(
+    def get_characters_character_id_loyalty_points(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -181,6 +185,9 @@ class LoyaltyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_loyalty_points_serialize(
             character_id=character_id,
@@ -264,6 +271,9 @@ class LoyaltyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_loyalty_points_serialize(
             character_id=character_id,
@@ -364,7 +374,7 @@ class LoyaltyApi:
 
 
     @validate_call
-    def get_loyalty_stores_corporation_id_offers(
+    def get_loyalty_stores_corporation_id_offers_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -420,6 +430,9 @@ class LoyaltyApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_loyalty_stores_corporation_id_offers_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -447,7 +460,7 @@ class LoyaltyApi:
 
 
     @validate_call
-    def get_loyalty_stores_corporation_id_offers_with_http_info(
+    def get_loyalty_stores_corporation_id_offers(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -502,6 +515,9 @@ class LoyaltyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_loyalty_stores_corporation_id_offers_serialize(
             corporation_id=corporation_id,
@@ -585,6 +601,9 @@ class LoyaltyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_loyalty_stores_corporation_id_offers_serialize(
             corporation_id=corporation_id,

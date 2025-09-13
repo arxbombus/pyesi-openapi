@@ -64,8 +64,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation information
         api_response = api_instance.get_corporations_corporation_id(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id: %s\n" % e)
 ```
@@ -141,8 +145,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get alliance history
         api_response = api_instance.get_corporations_corporation_id_alliancehistory(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_alliancehistory:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_alliancehistory:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_alliancehistory\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_alliancehistory: %s\n" % e)
 ```
@@ -226,8 +234,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation blueprints
         api_response = api_instance.get_corporations_corporation_id_blueprints(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_blueprints:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_blueprints:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_blueprints\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_blueprints: %s\n" % e)
 ```
@@ -312,8 +324,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get all corporation ALSC logs
         api_response = api_instance.get_corporations_corporation_id_containers_logs(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_containers_logs:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_containers_logs:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_containers_logs\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_containers_logs: %s\n" % e)
 ```
@@ -397,8 +413,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation divisions
         api_response = api_instance.get_corporations_corporation_id_divisions(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_divisions:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_divisions:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_divisions\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_divisions: %s\n" % e)
 ```
@@ -481,8 +501,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation facilities
         api_response = api_instance.get_corporations_corporation_id_facilities(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_facilities:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_facilities:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_facilities\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_facilities: %s\n" % e)
 ```
@@ -558,8 +582,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation icon
         api_response = api_instance.get_corporations_corporation_id_icons(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_icons:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_icons:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_icons\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_icons: %s\n" % e)
 ```
@@ -643,8 +671,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation medals
         api_response = api_instance.get_corporations_corporation_id_medals(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_medals:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_medals:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_medals\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_medals: %s\n" % e)
 ```
@@ -729,8 +761,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation issued medals
         api_response = api_instance.get_corporations_corporation_id_medals_issued(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_medals_issued:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_medals_issued:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_medals_issued\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_medals_issued: %s\n" % e)
 ```
@@ -813,8 +849,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation members
         api_response = api_instance.get_corporations_corporation_id_members(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_members:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_members:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_members\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_members: %s\n" % e)
 ```
@@ -896,8 +936,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation member limit
         api_response = api_instance.get_corporations_corporation_id_members_limit(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_members_limit:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_members_limit:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_members_limit\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_members_limit: %s\n" % e)
 ```
@@ -980,8 +1024,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation's members' titles
         api_response = api_instance.get_corporations_corporation_id_members_titles(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_members_titles:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_members_titles:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_members_titles\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_members_titles: %s\n" % e)
 ```
@@ -1064,8 +1112,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Track corporation members
         api_response = api_instance.get_corporations_corporation_id_membertracking(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_membertracking:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_membertracking:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_membertracking\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_membertracking: %s\n" % e)
 ```
@@ -1148,8 +1200,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation member roles
         api_response = api_instance.get_corporations_corporation_id_roles(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_roles:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_roles:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_roles\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_roles: %s\n" % e)
 ```
@@ -1233,8 +1289,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation member roles history
         api_response = api_instance.get_corporations_corporation_id_roles_history(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_roles_history:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_roles_history:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_roles_history\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_roles_history: %s\n" % e)
 ```
@@ -1319,8 +1379,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation shareholders
         api_response = api_instance.get_corporations_corporation_id_shareholders(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_shareholders:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_shareholders:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_shareholders\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_shareholders: %s\n" % e)
 ```
@@ -1405,8 +1469,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation standings
         api_response = api_instance.get_corporations_corporation_id_standings(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_standings:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_standings:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_standings\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_standings: %s\n" % e)
 ```
@@ -1491,8 +1559,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation starbases (POSes)
         api_response = api_instance.get_corporations_corporation_id_starbases(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_starbases:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_starbases:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_starbases\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_starbases: %s\n" % e)
 ```
@@ -1578,8 +1650,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get starbase (POS) detail
         api_response = api_instance.get_corporations_corporation_id_starbases_starbase_id(corporation_id, starbase_id, system_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_starbases_starbase_id:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_starbases_starbase_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_starbases_starbase_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_starbases_starbase_id: %s\n" % e)
 ```
@@ -1665,8 +1741,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation structures
         api_response = api_instance.get_corporations_corporation_id_structures(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_structures:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_structures:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_structures\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_structures: %s\n" % e)
 ```
@@ -1750,8 +1830,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation titles
         api_response = api_instance.get_corporations_corporation_id_titles(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_corporation_id_titles:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_corporation_id_titles:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_corporation_id_titles\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_corporation_id_titles: %s\n" % e)
 ```
@@ -1827,8 +1911,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get npc corporations
         api_response = api_instance.get_corporations_npccorps(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CorporationApi->get_corporations_npccorps:\n")
+        print(api_response.status_code)
         print("The response of CorporationApi->get_corporations_npccorps:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CorporationApi->get_corporations_npccorps\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CorporationApi->get_corporations_npccorps: %s\n" % e)
 ```

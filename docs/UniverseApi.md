@@ -73,8 +73,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get ancestries
         api_response = api_instance.get_universe_ancestries(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_ancestries:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_ancestries:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_ancestries\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_ancestries: %s\n" % e)
 ```
@@ -151,8 +155,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get asteroid belt information
         api_response = api_instance.get_universe_asteroid_belts_asteroid_belt_id(asteroid_belt_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_asteroid_belts_asteroid_belt_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_asteroid_belts_asteroid_belt_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_asteroid_belts_asteroid_belt_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_asteroid_belts_asteroid_belt_id: %s\n" % e)
 ```
@@ -229,8 +237,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get bloodlines
         api_response = api_instance.get_universe_bloodlines(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_bloodlines:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_bloodlines:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_bloodlines\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_bloodlines: %s\n" % e)
 ```
@@ -305,8 +317,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get item categories
         api_response = api_instance.get_universe_categories(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_categories:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_categories:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_categories\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_categories: %s\n" % e)
 ```
@@ -383,8 +399,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get item category information
         api_response = api_instance.get_universe_categories_category_id(category_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_categories_category_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_categories_category_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_categories_category_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_categories_category_id: %s\n" % e)
 ```
@@ -460,8 +480,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get constellations
         api_response = api_instance.get_universe_constellations(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_constellations:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_constellations:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_constellations\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_constellations: %s\n" % e)
 ```
@@ -538,8 +562,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get constellation information
         api_response = api_instance.get_universe_constellations_constellation_id(constellation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_constellations_constellation_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_constellations_constellation_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_constellations_constellation_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_constellations_constellation_id: %s\n" % e)
 ```
@@ -616,8 +644,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get factions
         api_response = api_instance.get_universe_factions(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_factions:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_factions:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_factions\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_factions: %s\n" % e)
 ```
@@ -692,8 +724,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get graphics
         api_response = api_instance.get_universe_graphics(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_graphics:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_graphics:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_graphics\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_graphics: %s\n" % e)
 ```
@@ -770,8 +806,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get graphic information
         api_response = api_instance.get_universe_graphics_graphic_id(graphic_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_graphics_graphic_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_graphics_graphic_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_graphics_graphic_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_graphics_graphic_id: %s\n" % e)
 ```
@@ -848,8 +888,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get item groups
         api_response = api_instance.get_universe_groups(page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_groups:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_groups:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_groups\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_groups: %s\n" % e)
 ```
@@ -927,8 +971,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get item group information
         api_response = api_instance.get_universe_groups_group_id(group_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_groups_group_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_groups_group_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_groups_group_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_groups_group_id: %s\n" % e)
 ```
@@ -1006,8 +1054,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get moon information
         api_response = api_instance.get_universe_moons_moon_id(moon_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_moons_moon_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_moons_moon_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_moons_moon_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_moons_moon_id: %s\n" % e)
 ```
@@ -1085,8 +1137,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get planet information
         api_response = api_instance.get_universe_planets_planet_id(planet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_planets_planet_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_planets_planet_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_planets_planet_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_planets_planet_id: %s\n" % e)
 ```
@@ -1163,8 +1219,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character races
         api_response = api_instance.get_universe_races(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_races:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_races:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_races\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_races: %s\n" % e)
 ```
@@ -1239,8 +1299,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get regions
         api_response = api_instance.get_universe_regions(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_regions:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_regions:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_regions\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_regions: %s\n" % e)
 ```
@@ -1317,8 +1381,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get region information
         api_response = api_instance.get_universe_regions_region_id(region_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_regions_region_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_regions_region_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_regions_region_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_regions_region_id: %s\n" % e)
 ```
@@ -1396,8 +1464,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get stargate information
         api_response = api_instance.get_universe_stargates_stargate_id(stargate_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_stargates_stargate_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_stargates_stargate_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_stargates_stargate_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_stargates_stargate_id: %s\n" % e)
 ```
@@ -1475,8 +1547,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get star information
         api_response = api_instance.get_universe_stars_star_id(star_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_stars_star_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_stars_star_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_stars_star_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_stars_star_id: %s\n" % e)
 ```
@@ -1554,8 +1630,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get station information
         api_response = api_instance.get_universe_stations_station_id(station_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_stations_station_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_stations_station_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_stations_station_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_stations_station_id: %s\n" % e)
 ```
@@ -1630,8 +1710,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List all public structures
         api_response = api_instance.get_universe_structures(filter=filter, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_structures:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_structures:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_structures\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_structures: %s\n" % e)
 ```
@@ -1714,8 +1798,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get structure information
         api_response = api_instance.get_universe_structures_structure_id(structure_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_structures_structure_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_structures_structure_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_structures_structure_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_structures_structure_id: %s\n" % e)
 ```
@@ -1790,8 +1878,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get system jumps
         api_response = api_instance.get_universe_system_jumps(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_system_jumps:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_system_jumps:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_system_jumps\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_system_jumps: %s\n" % e)
 ```
@@ -1865,8 +1957,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get system kills
         api_response = api_instance.get_universe_system_kills(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_system_kills:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_system_kills:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_system_kills\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_system_kills: %s\n" % e)
 ```
@@ -1941,8 +2037,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get solar systems
         api_response = api_instance.get_universe_systems(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_systems:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_systems:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_systems\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_systems: %s\n" % e)
 ```
@@ -2019,8 +2119,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get solar system information
         api_response = api_instance.get_universe_systems_system_id(system_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_systems_system_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_systems_system_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_systems_system_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_systems_system_id: %s\n" % e)
 ```
@@ -2097,8 +2201,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get types
         api_response = api_instance.get_universe_types(page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_types:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_types:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_types\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_types: %s\n" % e)
 ```
@@ -2176,8 +2284,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get type information
         api_response = api_instance.get_universe_types_type_id(type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->get_universe_types_type_id:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->get_universe_types_type_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->get_universe_types_type_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->get_universe_types_type_id: %s\n" % e)
 ```
@@ -2253,8 +2365,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Bulk names to IDs
         api_response = api_instance.post_universe_ids(request_body, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->post_universe_ids:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->post_universe_ids:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->post_universe_ids\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->post_universe_ids: %s\n" % e)
 ```
@@ -2330,8 +2446,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get names and categories for a set of IDs
         api_response = api_instance.post_universe_names(request_body, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of UniverseApi->post_universe_names:\n")
+        print(api_response.status_code)
         print("The response of UniverseApi->post_universe_names:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of UniverseApi->post_universe_names\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling UniverseApi->post_universe_names: %s\n" % e)
 ```

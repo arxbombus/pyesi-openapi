@@ -53,8 +53,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get a character's recent kills and losses
         api_response = api_instance.get_characters_character_id_killmails_recent(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of KillmailsApi->get_characters_character_id_killmails_recent:\n")
+        print(api_response.status_code)
         print("The response of KillmailsApi->get_characters_character_id_killmails_recent:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of KillmailsApi->get_characters_character_id_killmails_recent\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling KillmailsApi->get_characters_character_id_killmails_recent: %s\n" % e)
 ```
@@ -139,8 +143,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get a corporation's recent kills and losses
         api_response = api_instance.get_corporations_corporation_id_killmails_recent(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of KillmailsApi->get_corporations_corporation_id_killmails_recent:\n")
+        print(api_response.status_code)
         print("The response of KillmailsApi->get_corporations_corporation_id_killmails_recent:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of KillmailsApi->get_corporations_corporation_id_killmails_recent\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling KillmailsApi->get_corporations_corporation_id_killmails_recent: %s\n" % e)
 ```
@@ -218,8 +226,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get a single killmail
         api_response = api_instance.get_killmails_killmail_id_killmail_hash(killmail_hash, killmail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of KillmailsApi->get_killmails_killmail_id_killmail_hash:\n")
+        print(api_response.status_code)
         print("The response of KillmailsApi->get_killmails_killmail_id_killmail_hash:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of KillmailsApi->get_killmails_killmail_id_killmail_hash\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling KillmailsApi->get_killmails_killmail_id_killmail_hash: %s\n" % e)
 ```

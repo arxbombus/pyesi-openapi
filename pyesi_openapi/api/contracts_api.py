@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -48,7 +49,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_characters_character_id_contracts(
+    def get_characters_character_id_contracts_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -107,6 +108,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_contracts_serialize(
             character_id=character_id,
             page=page,
@@ -135,7 +139,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_characters_character_id_contracts_with_http_info(
+    def get_characters_character_id_contracts(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -193,6 +197,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contracts_serialize(
             character_id=character_id,
@@ -280,6 +287,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contracts_serialize(
             character_id=character_id,
@@ -386,7 +396,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_characters_character_id_contracts_contract_id_bids(
+    def get_characters_character_id_contracts_contract_id_bids_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         contract_id: StrictInt,
@@ -445,6 +455,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_contracts_contract_id_bids_serialize(
             character_id=character_id,
             contract_id=contract_id,
@@ -473,7 +486,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_characters_character_id_contracts_contract_id_bids_with_http_info(
+    def get_characters_character_id_contracts_contract_id_bids(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         contract_id: StrictInt,
@@ -531,6 +544,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contracts_contract_id_bids_serialize(
             character_id=character_id,
@@ -618,6 +634,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contracts_contract_id_bids_serialize(
             character_id=character_id,
@@ -722,7 +741,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_characters_character_id_contracts_contract_id_items(
+    def get_characters_character_id_contracts_contract_id_items_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         contract_id: StrictInt,
@@ -781,6 +800,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_contracts_contract_id_items_serialize(
             character_id=character_id,
             contract_id=contract_id,
@@ -809,7 +831,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_characters_character_id_contracts_contract_id_items_with_http_info(
+    def get_characters_character_id_contracts_contract_id_items(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         contract_id: StrictInt,
@@ -867,6 +889,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contracts_contract_id_items_serialize(
             character_id=character_id,
@@ -954,6 +979,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contracts_contract_id_items_serialize(
             character_id=character_id,
@@ -1058,7 +1086,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_contracts_public_bids_contract_id(
+    def get_contracts_public_bids_contract_id_data(
         self,
         contract_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1117,6 +1145,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_contracts_public_bids_contract_id_serialize(
             contract_id=contract_id,
             page=page,
@@ -1146,7 +1177,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_contracts_public_bids_contract_id_with_http_info(
+    def get_contracts_public_bids_contract_id(
         self,
         contract_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1204,6 +1235,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_contracts_public_bids_contract_id_serialize(
             contract_id=contract_id,
@@ -1292,6 +1326,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_contracts_public_bids_contract_id_serialize(
             contract_id=contract_id,
@@ -1398,7 +1435,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_contracts_public_items_contract_id(
+    def get_contracts_public_items_contract_id_data(
         self,
         contract_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1457,6 +1494,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_contracts_public_items_contract_id_serialize(
             contract_id=contract_id,
             page=page,
@@ -1486,7 +1526,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_contracts_public_items_contract_id_with_http_info(
+    def get_contracts_public_items_contract_id(
         self,
         contract_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1544,6 +1584,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_contracts_public_items_contract_id_serialize(
             contract_id=contract_id,
@@ -1632,6 +1675,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_contracts_public_items_contract_id_serialize(
             contract_id=contract_id,
@@ -1738,7 +1784,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_contracts_public_region_id(
+    def get_contracts_public_region_id_data(
         self,
         region_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1797,6 +1843,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_contracts_public_region_id_serialize(
             region_id=region_id,
             page=page,
@@ -1825,7 +1874,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_contracts_public_region_id_with_http_info(
+    def get_contracts_public_region_id(
         self,
         region_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1883,6 +1932,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_contracts_public_region_id_serialize(
             region_id=region_id,
@@ -1970,6 +2022,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_contracts_public_region_id_serialize(
             region_id=region_id,
@@ -2075,7 +2130,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contracts(
+    def get_corporations_corporation_id_contracts_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -2134,6 +2189,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_contracts_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -2162,7 +2220,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contracts_with_http_info(
+    def get_corporations_corporation_id_contracts(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -2220,6 +2278,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contracts_serialize(
             corporation_id=corporation_id,
@@ -2307,6 +2368,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contracts_serialize(
             corporation_id=corporation_id,
@@ -2413,7 +2477,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contracts_contract_id_bids(
+    def get_corporations_corporation_id_contracts_contract_id_bids_data(
         self,
         contract_id: StrictInt,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
@@ -2475,6 +2539,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_contracts_contract_id_bids_serialize(
             contract_id=contract_id,
             corporation_id=corporation_id,
@@ -2504,7 +2571,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contracts_contract_id_bids_with_http_info(
+    def get_corporations_corporation_id_contracts_contract_id_bids(
         self,
         contract_id: StrictInt,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
@@ -2565,6 +2632,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contracts_contract_id_bids_serialize(
             contract_id=contract_id,
@@ -2656,6 +2726,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contracts_contract_id_bids_serialize(
             contract_id=contract_id,
@@ -2766,7 +2839,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contracts_contract_id_items(
+    def get_corporations_corporation_id_contracts_contract_id_items_data(
         self,
         contract_id: StrictInt,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
@@ -2825,6 +2898,9 @@ class ContractsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_contracts_contract_id_items_serialize(
             contract_id=contract_id,
             corporation_id=corporation_id,
@@ -2853,7 +2929,7 @@ class ContractsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contracts_contract_id_items_with_http_info(
+    def get_corporations_corporation_id_contracts_contract_id_items(
         self,
         contract_id: StrictInt,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
@@ -2911,6 +2987,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contracts_contract_id_items_serialize(
             contract_id=contract_id,
@@ -2998,6 +3077,9 @@ class ContractsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contracts_contract_id_items_serialize(
             contract_id=contract_id,

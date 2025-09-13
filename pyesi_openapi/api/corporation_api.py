@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -60,7 +61,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id(
+    def get_corporations_corporation_id_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -116,6 +117,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -143,7 +147,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_with_http_info(
+    def get_corporations_corporation_id(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -198,6 +202,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_serialize(
             corporation_id=corporation_id,
@@ -281,6 +288,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_serialize(
             corporation_id=corporation_id,
@@ -380,7 +390,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_alliancehistory(
+    def get_corporations_corporation_id_alliancehistory_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -436,6 +446,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_alliancehistory_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -463,7 +476,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_alliancehistory_with_http_info(
+    def get_corporations_corporation_id_alliancehistory(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -518,6 +531,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_alliancehistory_serialize(
             corporation_id=corporation_id,
@@ -601,6 +617,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_alliancehistory_serialize(
             corporation_id=corporation_id,
@@ -700,7 +719,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_blueprints(
+    def get_corporations_corporation_id_blueprints_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -759,6 +778,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_blueprints_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -787,7 +809,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_blueprints_with_http_info(
+    def get_corporations_corporation_id_blueprints(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -845,6 +867,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_blueprints_serialize(
             corporation_id=corporation_id,
@@ -932,6 +957,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_blueprints_serialize(
             corporation_id=corporation_id,
@@ -1038,7 +1066,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_containers_logs(
+    def get_corporations_corporation_id_containers_logs_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1097,6 +1125,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_containers_logs_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -1125,7 +1156,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_containers_logs_with_http_info(
+    def get_corporations_corporation_id_containers_logs(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1183,6 +1214,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_containers_logs_serialize(
             corporation_id=corporation_id,
@@ -1270,6 +1304,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_containers_logs_serialize(
             corporation_id=corporation_id,
@@ -1376,7 +1413,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_divisions(
+    def get_corporations_corporation_id_divisions_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1432,6 +1469,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_divisions_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -1459,7 +1499,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_divisions_with_http_info(
+    def get_corporations_corporation_id_divisions(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1514,6 +1554,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_divisions_serialize(
             corporation_id=corporation_id,
@@ -1597,6 +1640,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_divisions_serialize(
             corporation_id=corporation_id,
@@ -1697,7 +1743,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_facilities(
+    def get_corporations_corporation_id_facilities_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1753,6 +1799,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_facilities_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -1780,7 +1829,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_facilities_with_http_info(
+    def get_corporations_corporation_id_facilities(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1835,6 +1884,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_facilities_serialize(
             corporation_id=corporation_id,
@@ -1918,6 +1970,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_facilities_serialize(
             corporation_id=corporation_id,
@@ -2018,7 +2073,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_icons(
+    def get_corporations_corporation_id_icons_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2074,6 +2129,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_icons_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -2101,7 +2159,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_icons_with_http_info(
+    def get_corporations_corporation_id_icons(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2156,6 +2214,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_icons_serialize(
             corporation_id=corporation_id,
@@ -2239,6 +2300,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_icons_serialize(
             corporation_id=corporation_id,
@@ -2338,7 +2402,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_medals(
+    def get_corporations_corporation_id_medals_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -2397,6 +2461,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_medals_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -2425,7 +2492,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_medals_with_http_info(
+    def get_corporations_corporation_id_medals(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -2483,6 +2550,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_medals_serialize(
             corporation_id=corporation_id,
@@ -2570,6 +2640,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_medals_serialize(
             corporation_id=corporation_id,
@@ -2676,7 +2749,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_medals_issued(
+    def get_corporations_corporation_id_medals_issued_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -2735,6 +2808,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_medals_issued_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -2763,7 +2839,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_medals_issued_with_http_info(
+    def get_corporations_corporation_id_medals_issued(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -2821,6 +2897,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_medals_issued_serialize(
             corporation_id=corporation_id,
@@ -2908,6 +2987,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_medals_issued_serialize(
             corporation_id=corporation_id,
@@ -3014,7 +3096,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_members(
+    def get_corporations_corporation_id_members_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3070,6 +3152,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_members_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -3097,7 +3182,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_members_with_http_info(
+    def get_corporations_corporation_id_members(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3152,6 +3237,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_members_serialize(
             corporation_id=corporation_id,
@@ -3235,6 +3323,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_members_serialize(
             corporation_id=corporation_id,
@@ -3335,7 +3426,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_members_limit(
+    def get_corporations_corporation_id_members_limit_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3391,6 +3482,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_members_limit_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -3418,7 +3512,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_members_limit_with_http_info(
+    def get_corporations_corporation_id_members_limit(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3473,6 +3567,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_members_limit_serialize(
             corporation_id=corporation_id,
@@ -3556,6 +3653,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_members_limit_serialize(
             corporation_id=corporation_id,
@@ -3656,7 +3756,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_members_titles(
+    def get_corporations_corporation_id_members_titles_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3712,6 +3812,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_members_titles_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -3739,7 +3842,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_members_titles_with_http_info(
+    def get_corporations_corporation_id_members_titles(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3794,6 +3897,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_members_titles_serialize(
             corporation_id=corporation_id,
@@ -3877,6 +3983,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_members_titles_serialize(
             corporation_id=corporation_id,
@@ -3977,7 +4086,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_membertracking(
+    def get_corporations_corporation_id_membertracking_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -4033,6 +4142,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_membertracking_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -4060,7 +4172,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_membertracking_with_http_info(
+    def get_corporations_corporation_id_membertracking(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -4115,6 +4227,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_membertracking_serialize(
             corporation_id=corporation_id,
@@ -4198,6 +4313,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_membertracking_serialize(
             corporation_id=corporation_id,
@@ -4298,7 +4416,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_roles(
+    def get_corporations_corporation_id_roles_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -4354,6 +4472,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_roles_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -4381,7 +4502,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_roles_with_http_info(
+    def get_corporations_corporation_id_roles(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -4436,6 +4557,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_roles_serialize(
             corporation_id=corporation_id,
@@ -4519,6 +4643,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_roles_serialize(
             corporation_id=corporation_id,
@@ -4619,7 +4746,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_roles_history(
+    def get_corporations_corporation_id_roles_history_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -4678,6 +4805,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_roles_history_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -4706,7 +4836,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_roles_history_with_http_info(
+    def get_corporations_corporation_id_roles_history(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -4764,6 +4894,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_roles_history_serialize(
             corporation_id=corporation_id,
@@ -4851,6 +4984,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_roles_history_serialize(
             corporation_id=corporation_id,
@@ -4957,7 +5093,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_shareholders(
+    def get_corporations_corporation_id_shareholders_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -5016,6 +5152,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_shareholders_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -5044,7 +5183,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_shareholders_with_http_info(
+    def get_corporations_corporation_id_shareholders(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -5102,6 +5241,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_shareholders_serialize(
             corporation_id=corporation_id,
@@ -5189,6 +5331,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_shareholders_serialize(
             corporation_id=corporation_id,
@@ -5295,7 +5440,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_standings(
+    def get_corporations_corporation_id_standings_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -5354,6 +5499,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_standings_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -5382,7 +5530,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_standings_with_http_info(
+    def get_corporations_corporation_id_standings(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -5440,6 +5588,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_standings_serialize(
             corporation_id=corporation_id,
@@ -5527,6 +5678,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_standings_serialize(
             corporation_id=corporation_id,
@@ -5633,7 +5787,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_starbases(
+    def get_corporations_corporation_id_starbases_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -5692,6 +5846,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_starbases_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -5720,7 +5877,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_starbases_with_http_info(
+    def get_corporations_corporation_id_starbases(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -5778,6 +5935,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_starbases_serialize(
             corporation_id=corporation_id,
@@ -5865,6 +6025,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_starbases_serialize(
             corporation_id=corporation_id,
@@ -5971,7 +6134,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_starbases_starbase_id(
+    def get_corporations_corporation_id_starbases_starbase_id_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         starbase_id: StrictInt,
@@ -6033,6 +6196,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_starbases_starbase_id_serialize(
             corporation_id=corporation_id,
             starbase_id=starbase_id,
@@ -6062,7 +6228,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_starbases_starbase_id_with_http_info(
+    def get_corporations_corporation_id_starbases_starbase_id(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         starbase_id: StrictInt,
@@ -6123,6 +6289,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_starbases_starbase_id_serialize(
             corporation_id=corporation_id,
@@ -6214,6 +6383,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_starbases_starbase_id_serialize(
             corporation_id=corporation_id,
@@ -6324,7 +6496,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_structures(
+    def get_corporations_corporation_id_structures_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -6383,6 +6555,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_structures_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -6411,7 +6586,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_structures_with_http_info(
+    def get_corporations_corporation_id_structures(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -6469,6 +6644,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_structures_serialize(
             corporation_id=corporation_id,
@@ -6556,6 +6734,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_structures_serialize(
             corporation_id=corporation_id,
@@ -6662,7 +6843,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_titles(
+    def get_corporations_corporation_id_titles_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -6718,6 +6899,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_titles_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -6745,7 +6929,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_titles_with_http_info(
+    def get_corporations_corporation_id_titles(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -6800,6 +6984,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_titles_serialize(
             corporation_id=corporation_id,
@@ -6883,6 +7070,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_titles_serialize(
             corporation_id=corporation_id,
@@ -6983,7 +7173,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_npccorps(
+    def get_corporations_npccorps_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -7036,6 +7226,9 @@ class CorporationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_npccorps_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -7062,7 +7255,7 @@ class CorporationApi:
 
 
     @validate_call
-    def get_corporations_npccorps_with_http_info(
+    def get_corporations_npccorps(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -7114,6 +7307,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_npccorps_serialize(
             accept_language=accept_language,
@@ -7193,6 +7389,9 @@ class CorporationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_npccorps_serialize(
             accept_language=accept_language,

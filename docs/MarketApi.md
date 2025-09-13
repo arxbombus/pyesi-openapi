@@ -60,8 +60,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List open orders from a character
         api_response = api_instance.get_characters_character_id_orders(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_characters_character_id_orders:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_characters_character_id_orders:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_characters_character_id_orders\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_characters_character_id_orders: %s\n" % e)
 ```
@@ -145,8 +149,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List historical orders by a character
         api_response = api_instance.get_characters_character_id_orders_history(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_characters_character_id_orders_history:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_characters_character_id_orders_history:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_characters_character_id_orders_history\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_characters_character_id_orders_history: %s\n" % e)
 ```
@@ -231,8 +239,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List open orders from a corporation
         api_response = api_instance.get_corporations_corporation_id_orders(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_corporations_corporation_id_orders:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_corporations_corporation_id_orders:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_corporations_corporation_id_orders\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_corporations_corporation_id_orders: %s\n" % e)
 ```
@@ -317,8 +329,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List historical orders from a corporation
         api_response = api_instance.get_corporations_corporation_id_orders_history(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_corporations_corporation_id_orders_history:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_corporations_corporation_id_orders_history:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_corporations_corporation_id_orders_history\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_corporations_corporation_id_orders_history: %s\n" % e)
 ```
@@ -395,8 +411,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get item groups
         api_response = api_instance.get_markets_groups(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_markets_groups:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_markets_groups:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_markets_groups\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_markets_groups: %s\n" % e)
 ```
@@ -473,8 +493,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get item group information
         api_response = api_instance.get_markets_groups_market_group_id(market_group_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_markets_groups_market_group_id:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_markets_groups_market_group_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_markets_groups_market_group_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_markets_groups_market_group_id: %s\n" % e)
 ```
@@ -549,8 +573,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List market prices
         api_response = api_instance.get_markets_prices(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_markets_prices:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_markets_prices:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_markets_prices\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_markets_prices: %s\n" % e)
 ```
@@ -628,8 +656,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List historical market statistics in a region
         api_response = api_instance.get_markets_region_id_history(region_id, type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_markets_region_id_history:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_markets_region_id_history:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_markets_region_id_history\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_markets_region_id_history: %s\n" % e)
 ```
@@ -709,8 +741,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List orders in a region
         api_response = api_instance.get_markets_region_id_orders(order_type, region_id, page=page, type_id=type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_markets_region_id_orders:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_markets_region_id_orders:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_markets_region_id_orders\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_markets_region_id_orders: %s\n" % e)
 ```
@@ -789,8 +825,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List type IDs relevant to a market
         api_response = api_instance.get_markets_region_id_types(region_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_markets_region_id_types:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_markets_region_id_types:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_markets_region_id_types\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_markets_region_id_types: %s\n" % e)
 ```
@@ -875,8 +915,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List orders in a structure
         api_response = api_instance.get_markets_structures_structure_id(structure_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MarketApi->get_markets_structures_structure_id:\n")
+        print(api_response.status_code)
         print("The response of MarketApi->get_markets_structures_structure_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MarketApi->get_markets_structures_structure_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MarketApi->get_markets_structures_structure_id: %s\n" % e)
 ```

@@ -59,8 +59,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get contracts
         api_response = api_instance.get_characters_character_id_contracts(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_characters_character_id_contracts:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_characters_character_id_contracts:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_characters_character_id_contracts\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_characters_character_id_contracts: %s\n" % e)
 ```
@@ -145,8 +149,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get contract bids
         api_response = api_instance.get_characters_character_id_contracts_contract_id_bids(character_id, contract_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_characters_character_id_contracts_contract_id_bids:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_characters_character_id_contracts_contract_id_bids:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_characters_character_id_contracts_contract_id_bids\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_characters_character_id_contracts_contract_id_bids: %s\n" % e)
 ```
@@ -231,8 +239,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get contract items
         api_response = api_instance.get_characters_character_id_contracts_contract_id_items(character_id, contract_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_characters_character_id_contracts_contract_id_items:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_characters_character_id_contracts_contract_id_items:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_characters_character_id_contracts_contract_id_items\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_characters_character_id_contracts_contract_id_items: %s\n" % e)
 ```
@@ -310,8 +322,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get public contract bids
         api_response = api_instance.get_contracts_public_bids_contract_id(contract_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_contracts_public_bids_contract_id:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_contracts_public_bids_contract_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_contracts_public_bids_contract_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_contracts_public_bids_contract_id: %s\n" % e)
 ```
@@ -389,8 +405,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get public contract items
         api_response = api_instance.get_contracts_public_items_contract_id(contract_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_contracts_public_items_contract_id:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_contracts_public_items_contract_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_contracts_public_items_contract_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_contracts_public_items_contract_id: %s\n" % e)
 ```
@@ -468,8 +488,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get public contracts
         api_response = api_instance.get_contracts_public_region_id(region_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_contracts_public_region_id:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_contracts_public_region_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_contracts_public_region_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_contracts_public_region_id: %s\n" % e)
 ```
@@ -554,8 +578,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation contracts
         api_response = api_instance.get_corporations_corporation_id_contracts(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_corporations_corporation_id_contracts:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_corporations_corporation_id_contracts:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_corporations_corporation_id_contracts\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_corporations_corporation_id_contracts: %s\n" % e)
 ```
@@ -641,8 +669,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation contract bids
         api_response = api_instance.get_corporations_corporation_id_contracts_contract_id_bids(contract_id, corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_corporations_corporation_id_contracts_contract_id_bids:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_corporations_corporation_id_contracts_contract_id_bids:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_corporations_corporation_id_contracts_contract_id_bids\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_corporations_corporation_id_contracts_contract_id_bids: %s\n" % e)
 ```
@@ -728,8 +760,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation contract items
         api_response = api_instance.get_corporations_corporation_id_contracts_contract_id_items(contract_id, corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContractsApi->get_corporations_corporation_id_contracts_contract_id_items:\n")
+        print(api_response.status_code)
         print("The response of ContractsApi->get_corporations_corporation_id_contracts_contract_id_items:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContractsApi->get_corporations_corporation_id_contracts_contract_id_items\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContractsApi->get_corporations_corporation_id_contracts_contract_id_items: %s\n" % e)
 ```

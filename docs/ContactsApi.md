@@ -142,8 +142,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get alliance contacts
         api_response = api_instance.get_alliances_alliance_id_contacts(alliance_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContactsApi->get_alliances_alliance_id_contacts:\n")
+        print(api_response.status_code)
         print("The response of ContactsApi->get_alliances_alliance_id_contacts:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContactsApi->get_alliances_alliance_id_contacts\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContactsApi->get_alliances_alliance_id_contacts: %s\n" % e)
 ```
@@ -227,8 +231,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get alliance contact labels
         api_response = api_instance.get_alliances_alliance_id_contacts_labels(alliance_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContactsApi->get_alliances_alliance_id_contacts_labels:\n")
+        print(api_response.status_code)
         print("The response of ContactsApi->get_alliances_alliance_id_contacts_labels:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContactsApi->get_alliances_alliance_id_contacts_labels\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContactsApi->get_alliances_alliance_id_contacts_labels: %s\n" % e)
 ```
@@ -312,8 +320,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get contacts
         api_response = api_instance.get_characters_character_id_contacts(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContactsApi->get_characters_character_id_contacts:\n")
+        print(api_response.status_code)
         print("The response of ContactsApi->get_characters_character_id_contacts:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContactsApi->get_characters_character_id_contacts\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContactsApi->get_characters_character_id_contacts: %s\n" % e)
 ```
@@ -397,8 +409,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get contact labels
         api_response = api_instance.get_characters_character_id_contacts_labels(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContactsApi->get_characters_character_id_contacts_labels:\n")
+        print(api_response.status_code)
         print("The response of ContactsApi->get_characters_character_id_contacts_labels:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContactsApi->get_characters_character_id_contacts_labels\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContactsApi->get_characters_character_id_contacts_labels: %s\n" % e)
 ```
@@ -482,8 +498,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation contacts
         api_response = api_instance.get_corporations_corporation_id_contacts(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContactsApi->get_corporations_corporation_id_contacts:\n")
+        print(api_response.status_code)
         print("The response of ContactsApi->get_corporations_corporation_id_contacts:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContactsApi->get_corporations_corporation_id_contacts\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContactsApi->get_corporations_corporation_id_contacts: %s\n" % e)
 ```
@@ -567,8 +587,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation contact labels
         api_response = api_instance.get_corporations_corporation_id_contacts_labels(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContactsApi->get_corporations_corporation_id_contacts_labels:\n")
+        print(api_response.status_code)
         print("The response of ContactsApi->get_corporations_corporation_id_contacts_labels:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContactsApi->get_corporations_corporation_id_contacts_labels\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContactsApi->get_corporations_corporation_id_contacts_labels: %s\n" % e)
 ```
@@ -654,8 +678,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Add contacts
         api_response = api_instance.post_characters_character_id_contacts(character_id, standing, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ContactsApi->post_characters_character_id_contacts:\n")
+        print(api_response.status_code)
         print("The response of ContactsApi->post_characters_character_id_contacts:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ContactsApi->post_characters_character_id_contacts\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ContactsApi->post_characters_character_id_contacts: %s\n" % e)
 ```

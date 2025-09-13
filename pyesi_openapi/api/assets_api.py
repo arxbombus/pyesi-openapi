@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -45,7 +46,7 @@ class AssetsApi:
 
 
     @validate_call
-    def get_characters_character_id_assets(
+    def get_characters_character_id_assets_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -104,6 +105,9 @@ class AssetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_assets_serialize(
             character_id=character_id,
             page=page,
@@ -132,7 +136,7 @@ class AssetsApi:
 
 
     @validate_call
-    def get_characters_character_id_assets_with_http_info(
+    def get_characters_character_id_assets(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -190,6 +194,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_assets_serialize(
             character_id=character_id,
@@ -277,6 +284,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_assets_serialize(
             character_id=character_id,
@@ -383,7 +393,7 @@ class AssetsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_assets(
+    def get_corporations_corporation_id_assets_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -442,6 +452,9 @@ class AssetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_assets_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -470,7 +483,7 @@ class AssetsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_assets_with_http_info(
+    def get_corporations_corporation_id_assets(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -528,6 +541,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_assets_serialize(
             corporation_id=corporation_id,
@@ -615,6 +631,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_assets_serialize(
             corporation_id=corporation_id,
@@ -721,7 +740,7 @@ class AssetsApi:
 
 
     @validate_call
-    def post_characters_character_id_assets_locations(
+    def post_characters_character_id_assets_locations_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
@@ -780,6 +799,9 @@ class AssetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_characters_character_id_assets_locations_serialize(
             character_id=character_id,
             request_body=request_body,
@@ -808,7 +830,7 @@ class AssetsApi:
 
 
     @validate_call
-    def post_characters_character_id_assets_locations_with_http_info(
+    def post_characters_character_id_assets_locations(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
@@ -866,6 +888,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_assets_locations_serialize(
             character_id=character_id,
@@ -953,6 +978,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_assets_locations_serialize(
             character_id=character_id,
@@ -1071,7 +1099,7 @@ class AssetsApi:
 
 
     @validate_call
-    def post_characters_character_id_assets_names(
+    def post_characters_character_id_assets_names_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
@@ -1130,6 +1158,9 @@ class AssetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_characters_character_id_assets_names_serialize(
             character_id=character_id,
             request_body=request_body,
@@ -1158,7 +1189,7 @@ class AssetsApi:
 
 
     @validate_call
-    def post_characters_character_id_assets_names_with_http_info(
+    def post_characters_character_id_assets_names(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
@@ -1216,6 +1247,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_assets_names_serialize(
             character_id=character_id,
@@ -1303,6 +1337,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_assets_names_serialize(
             character_id=character_id,
@@ -1421,7 +1458,7 @@ class AssetsApi:
 
 
     @validate_call
-    def post_corporations_corporation_id_assets_locations(
+    def post_corporations_corporation_id_assets_locations_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
@@ -1480,6 +1517,9 @@ class AssetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_corporations_corporation_id_assets_locations_serialize(
             corporation_id=corporation_id,
             request_body=request_body,
@@ -1508,7 +1548,7 @@ class AssetsApi:
 
 
     @validate_call
-    def post_corporations_corporation_id_assets_locations_with_http_info(
+    def post_corporations_corporation_id_assets_locations(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
@@ -1566,6 +1606,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_corporations_corporation_id_assets_locations_serialize(
             corporation_id=corporation_id,
@@ -1653,6 +1696,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_corporations_corporation_id_assets_locations_serialize(
             corporation_id=corporation_id,
@@ -1771,7 +1817,7 @@ class AssetsApi:
 
 
     @validate_call
-    def post_corporations_corporation_id_assets_names(
+    def post_corporations_corporation_id_assets_names_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
@@ -1830,6 +1876,9 @@ class AssetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_corporations_corporation_id_assets_names_serialize(
             corporation_id=corporation_id,
             request_body=request_body,
@@ -1858,7 +1907,7 @@ class AssetsApi:
 
 
     @validate_call
-    def post_corporations_corporation_id_assets_names_with_http_info(
+    def post_corporations_corporation_id_assets_names(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
@@ -1916,6 +1965,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_corporations_corporation_id_assets_names_serialize(
             corporation_id=corporation_id,
@@ -2003,6 +2055,9 @@ class AssetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_corporations_corporation_id_assets_names_serialize(
             corporation_id=corporation_id,

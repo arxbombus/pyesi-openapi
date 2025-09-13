@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -44,7 +45,7 @@ class FittingsApi:
 
 
     @validate_call
-    def delete_characters_character_id_fittings_fitting_id(
+    def delete_characters_character_id_fittings_fitting_id_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         fitting_id: StrictInt,
@@ -103,6 +104,9 @@ class FittingsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._delete_characters_character_id_fittings_fitting_id_serialize(
             character_id=character_id,
             fitting_id=fitting_id,
@@ -131,7 +135,7 @@ class FittingsApi:
 
 
     @validate_call
-    def delete_characters_character_id_fittings_fitting_id_with_http_info(
+    def delete_characters_character_id_fittings_fitting_id(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         fitting_id: StrictInt,
@@ -189,6 +193,9 @@ class FittingsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_characters_character_id_fittings_fitting_id_serialize(
             character_id=character_id,
@@ -276,6 +283,9 @@ class FittingsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_characters_character_id_fittings_fitting_id_serialize(
             character_id=character_id,
@@ -380,7 +390,7 @@ class FittingsApi:
 
 
     @validate_call
-    def get_characters_character_id_fittings(
+    def get_characters_character_id_fittings_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -436,6 +446,9 @@ class FittingsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_fittings_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -463,7 +476,7 @@ class FittingsApi:
 
 
     @validate_call
-    def get_characters_character_id_fittings_with_http_info(
+    def get_characters_character_id_fittings(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -518,6 +531,9 @@ class FittingsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_fittings_serialize(
             character_id=character_id,
@@ -601,6 +617,9 @@ class FittingsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_fittings_serialize(
             character_id=character_id,
@@ -701,7 +720,7 @@ class FittingsApi:
 
 
     @validate_call
-    def post_characters_character_id_fittings(
+    def post_characters_character_id_fittings_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         post_characters_character_id_fittings_request: PostCharactersCharacterIdFittingsRequest,
@@ -760,6 +779,9 @@ class FittingsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_characters_character_id_fittings_serialize(
             character_id=character_id,
             post_characters_character_id_fittings_request=post_characters_character_id_fittings_request,
@@ -788,7 +810,7 @@ class FittingsApi:
 
 
     @validate_call
-    def post_characters_character_id_fittings_with_http_info(
+    def post_characters_character_id_fittings(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         post_characters_character_id_fittings_request: PostCharactersCharacterIdFittingsRequest,
@@ -846,6 +868,9 @@ class FittingsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_fittings_serialize(
             character_id=character_id,
@@ -933,6 +958,9 @@ class FittingsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_fittings_serialize(
             character_id=character_id,

@@ -312,8 +312,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character fleet info
         api_response = api_instance.get_characters_character_id_fleet(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FleetsApi->get_characters_character_id_fleet:\n")
+        print(api_response.status_code)
         print("The response of FleetsApi->get_characters_character_id_fleet:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FleetsApi->get_characters_character_id_fleet\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FleetsApi->get_characters_character_id_fleet: %s\n" % e)
 ```
@@ -396,8 +400,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get fleet information
         api_response = api_instance.get_fleets_fleet_id(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FleetsApi->get_fleets_fleet_id:\n")
+        print(api_response.status_code)
         print("The response of FleetsApi->get_fleets_fleet_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FleetsApi->get_fleets_fleet_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FleetsApi->get_fleets_fleet_id: %s\n" % e)
 ```
@@ -480,8 +488,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get fleet members
         api_response = api_instance.get_fleets_fleet_id_members(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FleetsApi->get_fleets_fleet_id_members:\n")
+        print(api_response.status_code)
         print("The response of FleetsApi->get_fleets_fleet_id_members:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FleetsApi->get_fleets_fleet_id_members\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FleetsApi->get_fleets_fleet_id_members: %s\n" % e)
 ```
@@ -564,8 +576,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get fleet wings
         api_response = api_instance.get_fleets_fleet_id_wings(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FleetsApi->get_fleets_fleet_id_wings:\n")
+        print(api_response.status_code)
         print("The response of FleetsApi->get_fleets_fleet_id_wings:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FleetsApi->get_fleets_fleet_id_wings\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FleetsApi->get_fleets_fleet_id_wings: %s\n" % e)
 ```
@@ -732,8 +748,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Create fleet wing
         api_response = api_instance.post_fleets_fleet_id_wings(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FleetsApi->post_fleets_fleet_id_wings:\n")
+        print(api_response.status_code)
         print("The response of FleetsApi->post_fleets_fleet_id_wings:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FleetsApi->post_fleets_fleet_id_wings\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FleetsApi->post_fleets_fleet_id_wings: %s\n" % e)
 ```
@@ -817,8 +837,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Create fleet squad
         api_response = api_instance.post_fleets_fleet_id_wings_wing_id_squads(fleet_id, wing_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FleetsApi->post_fleets_fleet_id_wings_wing_id_squads:\n")
+        print(api_response.status_code)
         print("The response of FleetsApi->post_fleets_fleet_id_wings_wing_id_squads:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FleetsApi->post_fleets_fleet_id_wings_wing_id_squads\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FleetsApi->post_fleets_fleet_id_wings_wing_id_squads: %s\n" % e)
 ```

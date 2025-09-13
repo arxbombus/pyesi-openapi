@@ -51,8 +51,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get clones
         api_response = api_instance.get_characters_character_id_clones(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ClonesApi->get_characters_character_id_clones:\n")
+        print(api_response.status_code)
         print("The response of ClonesApi->get_characters_character_id_clones:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ClonesApi->get_characters_character_id_clones\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ClonesApi->get_characters_character_id_clones: %s\n" % e)
 ```
@@ -134,8 +138,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get active implants
         api_response = api_instance.get_characters_character_id_implants(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of ClonesApi->get_characters_character_id_implants:\n")
+        print(api_response.status_code)
         print("The response of ClonesApi->get_characters_character_id_implants:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of ClonesApi->get_characters_character_id_implants\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling ClonesApi->get_characters_character_id_implants: %s\n" % e)
 ```

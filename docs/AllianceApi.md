@@ -44,8 +44,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List all alliances
         api_response = api_instance.get_alliances(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AllianceApi->get_alliances:\n")
+        print(api_response.status_code)
         print("The response of AllianceApi->get_alliances:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AllianceApi->get_alliances\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AllianceApi->get_alliances: %s\n" % e)
 ```
@@ -120,8 +124,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get alliance information
         api_response = api_instance.get_alliances_alliance_id(alliance_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AllianceApi->get_alliances_alliance_id:\n")
+        print(api_response.status_code)
         print("The response of AllianceApi->get_alliances_alliance_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AllianceApi->get_alliances_alliance_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AllianceApi->get_alliances_alliance_id: %s\n" % e)
 ```
@@ -196,8 +204,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List alliance's corporations
         api_response = api_instance.get_alliances_alliance_id_corporations(alliance_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AllianceApi->get_alliances_alliance_id_corporations:\n")
+        print(api_response.status_code)
         print("The response of AllianceApi->get_alliances_alliance_id_corporations:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AllianceApi->get_alliances_alliance_id_corporations\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AllianceApi->get_alliances_alliance_id_corporations: %s\n" % e)
 ```
@@ -275,8 +287,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get alliance icon
         api_response = api_instance.get_alliances_alliance_id_icons(alliance_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AllianceApi->get_alliances_alliance_id_icons:\n")
+        print(api_response.status_code)
         print("The response of AllianceApi->get_alliances_alliance_id_icons:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AllianceApi->get_alliances_alliance_id_icons\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AllianceApi->get_alliances_alliance_id_icons: %s\n" % e)
 ```

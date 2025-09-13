@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -42,7 +43,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_autopilot_waypoint(
+    def post_ui_autopilot_waypoint_data(
         self,
         add_to_beginning: StrictBool,
         clear_other_waypoints: StrictBool,
@@ -104,6 +105,9 @@ class UserInterfaceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_ui_autopilot_waypoint_serialize(
             add_to_beginning=add_to_beginning,
             clear_other_waypoints=clear_other_waypoints,
@@ -133,7 +137,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_autopilot_waypoint_with_http_info(
+    def post_ui_autopilot_waypoint(
         self,
         add_to_beginning: StrictBool,
         clear_other_waypoints: StrictBool,
@@ -194,6 +198,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_autopilot_waypoint_serialize(
             add_to_beginning=add_to_beginning,
@@ -285,6 +292,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_autopilot_waypoint_serialize(
             add_to_beginning=add_to_beginning,
@@ -399,7 +409,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_openwindow_contract(
+    def post_ui_openwindow_contract_data(
         self,
         contract_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -455,6 +465,9 @@ class UserInterfaceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_ui_openwindow_contract_serialize(
             contract_id=contract_id,
             accept_language=accept_language,
@@ -482,7 +495,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_openwindow_contract_with_http_info(
+    def post_ui_openwindow_contract(
         self,
         contract_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -537,6 +550,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_openwindow_contract_serialize(
             contract_id=contract_id,
@@ -620,6 +636,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_openwindow_contract_serialize(
             contract_id=contract_id,
@@ -722,7 +741,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_openwindow_information(
+    def post_ui_openwindow_information_data(
         self,
         target_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -778,6 +797,9 @@ class UserInterfaceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_ui_openwindow_information_serialize(
             target_id=target_id,
             accept_language=accept_language,
@@ -805,7 +827,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_openwindow_information_with_http_info(
+    def post_ui_openwindow_information(
         self,
         target_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -860,6 +882,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_openwindow_information_serialize(
             target_id=target_id,
@@ -943,6 +968,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_openwindow_information_serialize(
             target_id=target_id,
@@ -1045,7 +1073,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_openwindow_marketdetails(
+    def post_ui_openwindow_marketdetails_data(
         self,
         type_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1101,6 +1129,9 @@ class UserInterfaceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_ui_openwindow_marketdetails_serialize(
             type_id=type_id,
             accept_language=accept_language,
@@ -1128,7 +1159,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_openwindow_marketdetails_with_http_info(
+    def post_ui_openwindow_marketdetails(
         self,
         type_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1183,6 +1214,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_openwindow_marketdetails_serialize(
             type_id=type_id,
@@ -1266,6 +1300,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_openwindow_marketdetails_serialize(
             type_id=type_id,
@@ -1368,7 +1405,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_openwindow_newmail(
+    def post_ui_openwindow_newmail_data(
         self,
         post_ui_openwindow_newmail_request: PostUiOpenwindowNewmailRequest,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1424,6 +1461,9 @@ class UserInterfaceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_ui_openwindow_newmail_serialize(
             post_ui_openwindow_newmail_request=post_ui_openwindow_newmail_request,
             accept_language=accept_language,
@@ -1451,7 +1491,7 @@ class UserInterfaceApi:
 
 
     @validate_call
-    def post_ui_openwindow_newmail_with_http_info(
+    def post_ui_openwindow_newmail(
         self,
         post_ui_openwindow_newmail_request: PostUiOpenwindowNewmailRequest,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1506,6 +1546,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_openwindow_newmail_serialize(
             post_ui_openwindow_newmail_request=post_ui_openwindow_newmail_request,
@@ -1589,6 +1632,9 @@ class UserInterfaceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_ui_openwindow_newmail_serialize(
             post_ui_openwindow_newmail_request=post_ui_openwindow_newmail_request,

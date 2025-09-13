@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -49,7 +50,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_characters_character_id_industry_jobs(
+    def get_characters_character_id_industry_jobs_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         include_completed: Optional[StrictBool] = None,
@@ -108,6 +109,9 @@ class IndustryApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_industry_jobs_serialize(
             character_id=character_id,
             include_completed=include_completed,
@@ -136,7 +140,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_characters_character_id_industry_jobs_with_http_info(
+    def get_characters_character_id_industry_jobs(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         include_completed: Optional[StrictBool] = None,
@@ -194,6 +198,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_industry_jobs_serialize(
             character_id=character_id,
@@ -281,6 +288,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_industry_jobs_serialize(
             character_id=character_id,
@@ -387,7 +397,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_characters_character_id_mining(
+    def get_characters_character_id_mining_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -446,6 +456,9 @@ class IndustryApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_mining_serialize(
             character_id=character_id,
             page=page,
@@ -474,7 +487,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_characters_character_id_mining_with_http_info(
+    def get_characters_character_id_mining(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -532,6 +545,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mining_serialize(
             character_id=character_id,
@@ -619,6 +635,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mining_serialize(
             character_id=character_id,
@@ -725,7 +744,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_corporation_corporation_id_mining_extractions(
+    def get_corporation_corporation_id_mining_extractions_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -784,6 +803,9 @@ class IndustryApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporation_corporation_id_mining_extractions_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -812,7 +834,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_corporation_corporation_id_mining_extractions_with_http_info(
+    def get_corporation_corporation_id_mining_extractions(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -870,6 +892,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporation_corporation_id_mining_extractions_serialize(
             corporation_id=corporation_id,
@@ -957,6 +982,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporation_corporation_id_mining_extractions_serialize(
             corporation_id=corporation_id,
@@ -1063,7 +1091,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_corporation_corporation_id_mining_observers(
+    def get_corporation_corporation_id_mining_observers_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1122,6 +1150,9 @@ class IndustryApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporation_corporation_id_mining_observers_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -1150,7 +1181,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_corporation_corporation_id_mining_observers_with_http_info(
+    def get_corporation_corporation_id_mining_observers(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1208,6 +1239,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporation_corporation_id_mining_observers_serialize(
             corporation_id=corporation_id,
@@ -1295,6 +1329,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporation_corporation_id_mining_observers_serialize(
             corporation_id=corporation_id,
@@ -1401,7 +1438,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_corporation_corporation_id_mining_observers_observer_id(
+    def get_corporation_corporation_id_mining_observers_observer_id_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         observer_id: StrictInt,
@@ -1463,6 +1500,9 @@ class IndustryApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporation_corporation_id_mining_observers_observer_id_serialize(
             corporation_id=corporation_id,
             observer_id=observer_id,
@@ -1492,7 +1532,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_corporation_corporation_id_mining_observers_observer_id_with_http_info(
+    def get_corporation_corporation_id_mining_observers_observer_id(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         observer_id: StrictInt,
@@ -1553,6 +1593,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporation_corporation_id_mining_observers_observer_id_serialize(
             corporation_id=corporation_id,
@@ -1644,6 +1687,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporation_corporation_id_mining_observers_observer_id_serialize(
             corporation_id=corporation_id,
@@ -1754,7 +1800,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_industry_jobs(
+    def get_corporations_corporation_id_industry_jobs_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         include_completed: Optional[StrictBool] = None,
@@ -1816,6 +1862,9 @@ class IndustryApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_industry_jobs_serialize(
             corporation_id=corporation_id,
             include_completed=include_completed,
@@ -1845,7 +1894,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_industry_jobs_with_http_info(
+    def get_corporations_corporation_id_industry_jobs(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         include_completed: Optional[StrictBool] = None,
@@ -1906,6 +1955,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_industry_jobs_serialize(
             corporation_id=corporation_id,
@@ -1997,6 +2049,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_industry_jobs_serialize(
             corporation_id=corporation_id,
@@ -2109,7 +2164,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_industry_facilities(
+    def get_industry_facilities_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2162,6 +2217,9 @@ class IndustryApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_industry_facilities_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -2188,7 +2246,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_industry_facilities_with_http_info(
+    def get_industry_facilities(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2240,6 +2298,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_industry_facilities_serialize(
             accept_language=accept_language,
@@ -2319,6 +2380,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_industry_facilities_serialize(
             accept_language=accept_language,
@@ -2414,7 +2478,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_industry_systems(
+    def get_industry_systems_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2467,6 +2531,9 @@ class IndustryApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_industry_systems_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -2493,7 +2560,7 @@ class IndustryApi:
 
 
     @validate_call
-    def get_industry_systems_with_http_info(
+    def get_industry_systems(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2545,6 +2612,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_industry_systems_serialize(
             accept_language=accept_language,
@@ -2624,6 +2694,9 @@ class IndustryApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_industry_systems_serialize(
             accept_language=accept_language,

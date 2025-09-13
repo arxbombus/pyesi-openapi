@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -44,7 +45,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_attributes(
+    def get_dogma_attributes_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -97,6 +98,9 @@ class DogmaApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_dogma_attributes_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -123,7 +127,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_attributes_with_http_info(
+    def get_dogma_attributes(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -175,6 +179,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_attributes_serialize(
             accept_language=accept_language,
@@ -254,6 +261,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_attributes_serialize(
             accept_language=accept_language,
@@ -349,7 +359,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_attributes_attribute_id(
+    def get_dogma_attributes_attribute_id_data(
         self,
         attribute_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -405,6 +415,9 @@ class DogmaApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_dogma_attributes_attribute_id_serialize(
             attribute_id=attribute_id,
             accept_language=accept_language,
@@ -432,7 +445,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_attributes_attribute_id_with_http_info(
+    def get_dogma_attributes_attribute_id(
         self,
         attribute_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -487,6 +500,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_attributes_attribute_id_serialize(
             attribute_id=attribute_id,
@@ -570,6 +586,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_attributes_attribute_id_serialize(
             attribute_id=attribute_id,
@@ -669,7 +688,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_dynamic_items_type_id_item_id(
+    def get_dogma_dynamic_items_type_id_item_id_data(
         self,
         item_id: StrictInt,
         type_id: StrictInt,
@@ -728,6 +747,9 @@ class DogmaApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_dogma_dynamic_items_type_id_item_id_serialize(
             item_id=item_id,
             type_id=type_id,
@@ -756,7 +778,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_dynamic_items_type_id_item_id_with_http_info(
+    def get_dogma_dynamic_items_type_id_item_id(
         self,
         item_id: StrictInt,
         type_id: StrictInt,
@@ -814,6 +836,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_dynamic_items_type_id_item_id_serialize(
             item_id=item_id,
@@ -901,6 +926,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_dynamic_items_type_id_item_id_serialize(
             item_id=item_id,
@@ -1004,7 +1032,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_effects(
+    def get_dogma_effects_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1057,6 +1085,9 @@ class DogmaApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_dogma_effects_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -1083,7 +1114,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_effects_with_http_info(
+    def get_dogma_effects(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1135,6 +1166,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_effects_serialize(
             accept_language=accept_language,
@@ -1214,6 +1248,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_effects_serialize(
             accept_language=accept_language,
@@ -1309,7 +1346,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_effects_effect_id(
+    def get_dogma_effects_effect_id_data(
         self,
         effect_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1365,6 +1402,9 @@ class DogmaApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_dogma_effects_effect_id_serialize(
             effect_id=effect_id,
             accept_language=accept_language,
@@ -1392,7 +1432,7 @@ class DogmaApi:
 
 
     @validate_call
-    def get_dogma_effects_effect_id_with_http_info(
+    def get_dogma_effects_effect_id(
         self,
         effect_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1447,6 +1487,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_effects_effect_id_serialize(
             effect_id=effect_id,
@@ -1530,6 +1573,9 @@ class DogmaApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_dogma_effects_effect_id_serialize(
             effect_id=effect_id,

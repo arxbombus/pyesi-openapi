@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -45,7 +46,7 @@ class ContactsApi:
 
 
     @validate_call
-    def delete_characters_character_id_contacts(
+    def delete_characters_character_id_contacts_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         contact_ids: Annotated[List[StrictInt], Field(min_length=1, max_length=20)],
@@ -104,6 +105,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._delete_characters_character_id_contacts_serialize(
             character_id=character_id,
             contact_ids=contact_ids,
@@ -132,7 +136,7 @@ class ContactsApi:
 
 
     @validate_call
-    def delete_characters_character_id_contacts_with_http_info(
+    def delete_characters_character_id_contacts(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         contact_ids: Annotated[List[StrictInt], Field(min_length=1, max_length=20)],
@@ -190,6 +194,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_characters_character_id_contacts_serialize(
             character_id=character_id,
@@ -277,6 +284,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_characters_character_id_contacts_serialize(
             character_id=character_id,
@@ -384,7 +394,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_contacts(
+    def get_alliances_alliance_id_contacts_data(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -443,6 +453,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_alliances_alliance_id_contacts_serialize(
             alliance_id=alliance_id,
             page=page,
@@ -471,7 +484,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_contacts_with_http_info(
+    def get_alliances_alliance_id_contacts(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -529,6 +542,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_contacts_serialize(
             alliance_id=alliance_id,
@@ -616,6 +632,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_contacts_serialize(
             alliance_id=alliance_id,
@@ -722,7 +741,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_contacts_labels(
+    def get_alliances_alliance_id_contacts_labels_data(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -778,6 +797,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_alliances_alliance_id_contacts_labels_serialize(
             alliance_id=alliance_id,
             accept_language=accept_language,
@@ -805,7 +827,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_contacts_labels_with_http_info(
+    def get_alliances_alliance_id_contacts_labels(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -860,6 +882,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_contacts_labels_serialize(
             alliance_id=alliance_id,
@@ -943,6 +968,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_contacts_labels_serialize(
             alliance_id=alliance_id,
@@ -1043,7 +1071,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_characters_character_id_contacts(
+    def get_characters_character_id_contacts_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1102,6 +1130,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_contacts_serialize(
             character_id=character_id,
             page=page,
@@ -1130,7 +1161,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_characters_character_id_contacts_with_http_info(
+    def get_characters_character_id_contacts(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1188,6 +1219,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contacts_serialize(
             character_id=character_id,
@@ -1275,6 +1309,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contacts_serialize(
             character_id=character_id,
@@ -1381,7 +1418,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_characters_character_id_contacts_labels(
+    def get_characters_character_id_contacts_labels_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1437,6 +1474,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_contacts_labels_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -1464,7 +1504,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_characters_character_id_contacts_labels_with_http_info(
+    def get_characters_character_id_contacts_labels(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1519,6 +1559,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contacts_labels_serialize(
             character_id=character_id,
@@ -1602,6 +1645,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_contacts_labels_serialize(
             character_id=character_id,
@@ -1702,7 +1748,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contacts(
+    def get_corporations_corporation_id_contacts_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1761,6 +1807,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_contacts_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -1789,7 +1838,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contacts_with_http_info(
+    def get_corporations_corporation_id_contacts(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1847,6 +1896,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contacts_serialize(
             corporation_id=corporation_id,
@@ -1934,6 +1986,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contacts_serialize(
             corporation_id=corporation_id,
@@ -2040,7 +2095,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contacts_labels(
+    def get_corporations_corporation_id_contacts_labels_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2096,6 +2151,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_contacts_labels_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -2123,7 +2181,7 @@ class ContactsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_contacts_labels_with_http_info(
+    def get_corporations_corporation_id_contacts_labels(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2178,6 +2236,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contacts_labels_serialize(
             corporation_id=corporation_id,
@@ -2261,6 +2322,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_contacts_labels_serialize(
             corporation_id=corporation_id,
@@ -2361,7 +2425,7 @@ class ContactsApi:
 
 
     @validate_call
-    def post_characters_character_id_contacts(
+    def post_characters_character_id_contacts_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         standing: Union[StrictFloat, StrictInt],
@@ -2429,6 +2493,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_characters_character_id_contacts_serialize(
             character_id=character_id,
             standing=standing,
@@ -2460,7 +2527,7 @@ class ContactsApi:
 
 
     @validate_call
-    def post_characters_character_id_contacts_with_http_info(
+    def post_characters_character_id_contacts(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         standing: Union[StrictFloat, StrictInt],
@@ -2527,6 +2594,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_contacts_serialize(
             character_id=character_id,
@@ -2626,6 +2696,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_contacts_serialize(
             character_id=character_id,
@@ -2763,7 +2836,7 @@ class ContactsApi:
 
 
     @validate_call
-    def put_characters_character_id_contacts(
+    def put_characters_character_id_contacts_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         standing: Union[StrictFloat, StrictInt],
@@ -2831,6 +2904,9 @@ class ContactsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._put_characters_character_id_contacts_serialize(
             character_id=character_id,
             standing=standing,
@@ -2862,7 +2938,7 @@ class ContactsApi:
 
 
     @validate_call
-    def put_characters_character_id_contacts_with_http_info(
+    def put_characters_character_id_contacts(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         standing: Union[StrictFloat, StrictInt],
@@ -2929,6 +3005,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_characters_character_id_contacts_serialize(
             character_id=character_id,
@@ -3028,6 +3107,9 @@ class ContactsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_characters_character_id_contacts_serialize(
             character_id=character_id,

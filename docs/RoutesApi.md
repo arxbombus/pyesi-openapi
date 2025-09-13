@@ -46,8 +46,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get route
         api_response = api_instance.get_route_origin_destination(destination, origin, avoid=avoid, connections=connections, flag=flag, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of RoutesApi->get_route_origin_destination:\n")
+        print(api_response.status_code)
         print("The response of RoutesApi->get_route_origin_destination:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of RoutesApi->get_route_origin_destination\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling RoutesApi->get_route_origin_destination: %s\n" % e)
 ```

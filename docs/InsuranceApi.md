@@ -42,8 +42,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List insurance levels
         api_response = api_instance.get_insurance_prices(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of InsuranceApi->get_insurance_prices:\n")
+        print(api_response.status_code)
         print("The response of InsuranceApi->get_insurance_prices:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of InsuranceApi->get_insurance_prices\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling InsuranceApi->get_insurance_prices: %s\n" % e)
 ```

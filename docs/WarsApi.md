@@ -44,8 +44,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List wars
         api_response = api_instance.get_wars(max_war_id=max_war_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WarsApi->get_wars:\n")
+        print(api_response.status_code)
         print("The response of WarsApi->get_wars:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WarsApi->get_wars\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WarsApi->get_wars: %s\n" % e)
 ```
@@ -121,8 +125,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get war information
         api_response = api_instance.get_wars_war_id(war_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WarsApi->get_wars_war_id:\n")
+        print(api_response.status_code)
         print("The response of WarsApi->get_wars_war_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WarsApi->get_wars_war_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WarsApi->get_wars_war_id: %s\n" % e)
 ```
@@ -199,8 +207,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List kills for a war
         api_response = api_instance.get_wars_war_id_killmails(war_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WarsApi->get_wars_war_id_killmails:\n")
+        print(api_response.status_code)
         print("The response of WarsApi->get_wars_war_id_killmails:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WarsApi->get_wars_war_id_killmails\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WarsApi->get_wars_war_id_killmails: %s\n" % e)
 ```

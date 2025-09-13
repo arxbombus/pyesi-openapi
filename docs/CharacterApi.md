@@ -56,8 +56,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character's public information
         api_response = api_instance.get_characters_character_id(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id: %s\n" % e)
 ```
@@ -140,8 +144,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get agents research
         api_response = api_instance.get_characters_character_id_agents_research(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_agents_research:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_agents_research:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_agents_research\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_agents_research: %s\n" % e)
 ```
@@ -225,8 +233,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get blueprints
         api_response = api_instance.get_characters_character_id_blueprints(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_blueprints:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_blueprints:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_blueprints\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_blueprints: %s\n" % e)
 ```
@@ -303,8 +315,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation history
         api_response = api_instance.get_characters_character_id_corporationhistory(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_corporationhistory:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_corporationhistory:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_corporationhistory\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_corporationhistory: %s\n" % e)
 ```
@@ -387,8 +403,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get jump fatigue
         api_response = api_instance.get_characters_character_id_fatigue(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_fatigue:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_fatigue:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_fatigue\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_fatigue: %s\n" % e)
 ```
@@ -471,8 +491,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get medals
         api_response = api_instance.get_characters_character_id_medals(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_medals:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_medals:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_medals\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_medals: %s\n" % e)
 ```
@@ -555,8 +579,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character notifications
         api_response = api_instance.get_characters_character_id_notifications(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_notifications:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_notifications:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_notifications\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_notifications: %s\n" % e)
 ```
@@ -639,8 +667,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get new contact notifications
         api_response = api_instance.get_characters_character_id_notifications_contacts(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_notifications_contacts:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_notifications_contacts:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_notifications_contacts\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_notifications_contacts: %s\n" % e)
 ```
@@ -718,8 +750,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character portraits
         api_response = api_instance.get_characters_character_id_portrait(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_portrait:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_portrait:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_portrait\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_portrait: %s\n" % e)
 ```
@@ -802,8 +838,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character corporation roles
         api_response = api_instance.get_characters_character_id_roles(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_roles:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_roles:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_roles\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_roles: %s\n" % e)
 ```
@@ -886,8 +926,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get standings
         api_response = api_instance.get_characters_character_id_standings(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_standings:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_standings:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_standings\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_standings: %s\n" % e)
 ```
@@ -970,8 +1014,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character corporation titles
         api_response = api_instance.get_characters_character_id_titles(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->get_characters_character_id_titles:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->get_characters_character_id_titles:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->get_characters_character_id_titles\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->get_characters_character_id_titles: %s\n" % e)
 ```
@@ -1047,8 +1095,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Character affiliation
         api_response = api_instance.post_characters_affiliation(request_body, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->post_characters_affiliation:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->post_characters_affiliation:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->post_characters_affiliation\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->post_characters_affiliation: %s\n" % e)
 ```
@@ -1131,8 +1183,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Calculate a CSPA charge cost
         api_response = api_instance.post_characters_character_id_cspa(character_id, request_body, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CharacterApi->post_characters_character_id_cspa:\n")
+        print(api_response.status_code)
         print("The response of CharacterApi->post_characters_character_id_cspa:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CharacterApi->post_characters_character_id_cspa\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CharacterApi->post_characters_character_id_cspa: %s\n" % e)
 ```

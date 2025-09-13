@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -41,7 +42,7 @@ class RoutesApi:
 
 
     @validate_call
-    def get_route_origin_destination(
+    def get_route_origin_destination_data(
         self,
         destination: StrictInt,
         origin: StrictInt,
@@ -109,6 +110,9 @@ class RoutesApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_route_origin_destination_serialize(
             destination=destination,
             origin=origin,
@@ -140,7 +144,7 @@ class RoutesApi:
 
 
     @validate_call
-    def get_route_origin_destination_with_http_info(
+    def get_route_origin_destination(
         self,
         destination: StrictInt,
         origin: StrictInt,
@@ -207,6 +211,9 @@ class RoutesApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_route_origin_destination_serialize(
             destination=destination,
@@ -306,6 +313,9 @@ class RoutesApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_route_origin_destination_serialize(
             destination=destination,

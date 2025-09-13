@@ -47,8 +47,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get attributes
         api_response = api_instance.get_dogma_attributes(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of DogmaApi->get_dogma_attributes:\n")
+        print(api_response.status_code)
         print("The response of DogmaApi->get_dogma_attributes:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of DogmaApi->get_dogma_attributes\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling DogmaApi->get_dogma_attributes: %s\n" % e)
 ```
@@ -125,8 +129,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get attribute information
         api_response = api_instance.get_dogma_attributes_attribute_id(attribute_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of DogmaApi->get_dogma_attributes_attribute_id:\n")
+        print(api_response.status_code)
         print("The response of DogmaApi->get_dogma_attributes_attribute_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of DogmaApi->get_dogma_attributes_attribute_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling DogmaApi->get_dogma_attributes_attribute_id: %s\n" % e)
 ```
@@ -205,8 +213,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get dynamic item information
         api_response = api_instance.get_dogma_dynamic_items_type_id_item_id(item_id, type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of DogmaApi->get_dogma_dynamic_items_type_id_item_id:\n")
+        print(api_response.status_code)
         print("The response of DogmaApi->get_dogma_dynamic_items_type_id_item_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of DogmaApi->get_dogma_dynamic_items_type_id_item_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling DogmaApi->get_dogma_dynamic_items_type_id_item_id: %s\n" % e)
 ```
@@ -283,8 +295,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get effects
         api_response = api_instance.get_dogma_effects(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of DogmaApi->get_dogma_effects:\n")
+        print(api_response.status_code)
         print("The response of DogmaApi->get_dogma_effects:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of DogmaApi->get_dogma_effects\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling DogmaApi->get_dogma_effects: %s\n" % e)
 ```
@@ -361,8 +377,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get effect information
         api_response = api_instance.get_dogma_effects_effect_id(effect_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of DogmaApi->get_dogma_effects_effect_id:\n")
+        print(api_response.status_code)
         print("The response of DogmaApi->get_dogma_effects_effect_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of DogmaApi->get_dogma_effects_effect_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling DogmaApi->get_dogma_effects_effect_id: %s\n" % e)
 ```

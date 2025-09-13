@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -45,7 +46,7 @@ class CalendarApi:
 
 
     @validate_call
-    def get_characters_character_id_calendar(
+    def get_characters_character_id_calendar_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         from_event: Optional[StrictInt] = None,
@@ -104,6 +105,9 @@ class CalendarApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_calendar_serialize(
             character_id=character_id,
             from_event=from_event,
@@ -132,7 +136,7 @@ class CalendarApi:
 
 
     @validate_call
-    def get_characters_character_id_calendar_with_http_info(
+    def get_characters_character_id_calendar(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         from_event: Optional[StrictInt] = None,
@@ -190,6 +194,9 @@ class CalendarApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_calendar_serialize(
             character_id=character_id,
@@ -277,6 +284,9 @@ class CalendarApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_calendar_serialize(
             character_id=character_id,
@@ -383,7 +393,7 @@ class CalendarApi:
 
 
     @validate_call
-    def get_characters_character_id_calendar_event_id(
+    def get_characters_character_id_calendar_event_id_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         event_id: StrictInt,
@@ -442,6 +452,9 @@ class CalendarApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_calendar_event_id_serialize(
             character_id=character_id,
             event_id=event_id,
@@ -470,7 +483,7 @@ class CalendarApi:
 
 
     @validate_call
-    def get_characters_character_id_calendar_event_id_with_http_info(
+    def get_characters_character_id_calendar_event_id(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         event_id: StrictInt,
@@ -528,6 +541,9 @@ class CalendarApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_calendar_event_id_serialize(
             character_id=character_id,
@@ -615,6 +631,9 @@ class CalendarApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_calendar_event_id_serialize(
             character_id=character_id,
@@ -719,7 +738,7 @@ class CalendarApi:
 
 
     @validate_call
-    def get_characters_character_id_calendar_event_id_attendees(
+    def get_characters_character_id_calendar_event_id_attendees_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         event_id: StrictInt,
@@ -778,6 +797,9 @@ class CalendarApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_calendar_event_id_attendees_serialize(
             character_id=character_id,
             event_id=event_id,
@@ -806,7 +828,7 @@ class CalendarApi:
 
 
     @validate_call
-    def get_characters_character_id_calendar_event_id_attendees_with_http_info(
+    def get_characters_character_id_calendar_event_id_attendees(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         event_id: StrictInt,
@@ -864,6 +886,9 @@ class CalendarApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_calendar_event_id_attendees_serialize(
             character_id=character_id,
@@ -951,6 +976,9 @@ class CalendarApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_calendar_event_id_attendees_serialize(
             character_id=character_id,
@@ -1055,7 +1083,7 @@ class CalendarApi:
 
 
     @validate_call
-    def put_characters_character_id_calendar_event_id(
+    def put_characters_character_id_calendar_event_id_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         event_id: StrictInt,
@@ -1117,6 +1145,9 @@ class CalendarApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._put_characters_character_id_calendar_event_id_serialize(
             character_id=character_id,
             event_id=event_id,
@@ -1146,7 +1177,7 @@ class CalendarApi:
 
 
     @validate_call
-    def put_characters_character_id_calendar_event_id_with_http_info(
+    def put_characters_character_id_calendar_event_id(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         event_id: StrictInt,
@@ -1207,6 +1238,9 @@ class CalendarApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_characters_character_id_calendar_event_id_serialize(
             character_id=character_id,
@@ -1298,6 +1332,9 @@ class CalendarApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_characters_character_id_calendar_event_id_serialize(
             character_id=character_id,

@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -44,7 +45,7 @@ class SovereigntyApi:
 
 
     @validate_call
-    def get_sovereignty_campaigns(
+    def get_sovereignty_campaigns_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -97,6 +98,9 @@ class SovereigntyApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_sovereignty_campaigns_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -123,7 +127,7 @@ class SovereigntyApi:
 
 
     @validate_call
-    def get_sovereignty_campaigns_with_http_info(
+    def get_sovereignty_campaigns(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -175,6 +179,9 @@ class SovereigntyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_sovereignty_campaigns_serialize(
             accept_language=accept_language,
@@ -254,6 +261,9 @@ class SovereigntyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_sovereignty_campaigns_serialize(
             accept_language=accept_language,
@@ -349,7 +359,7 @@ class SovereigntyApi:
 
 
     @validate_call
-    def get_sovereignty_map(
+    def get_sovereignty_map_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -402,6 +412,9 @@ class SovereigntyApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_sovereignty_map_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -428,7 +441,7 @@ class SovereigntyApi:
 
 
     @validate_call
-    def get_sovereignty_map_with_http_info(
+    def get_sovereignty_map(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -480,6 +493,9 @@ class SovereigntyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_sovereignty_map_serialize(
             accept_language=accept_language,
@@ -559,6 +575,9 @@ class SovereigntyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_sovereignty_map_serialize(
             accept_language=accept_language,
@@ -654,7 +673,7 @@ class SovereigntyApi:
 
 
     @validate_call
-    def get_sovereignty_structures(
+    def get_sovereignty_structures_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -707,6 +726,9 @@ class SovereigntyApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_sovereignty_structures_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -733,7 +755,7 @@ class SovereigntyApi:
 
 
     @validate_call
-    def get_sovereignty_structures_with_http_info(
+    def get_sovereignty_structures(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -785,6 +807,9 @@ class SovereigntyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_sovereignty_structures_serialize(
             accept_language=accept_language,
@@ -864,6 +889,9 @@ class SovereigntyApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_sovereignty_structures_serialize(
             accept_language=accept_language,

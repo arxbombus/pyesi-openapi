@@ -54,8 +54,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get a character's wallet balance
         api_response = api_instance.get_characters_character_id_wallet(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WalletApi->get_characters_character_id_wallet:\n")
+        print(api_response.status_code)
         print("The response of WalletApi->get_characters_character_id_wallet:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WalletApi->get_characters_character_id_wallet\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WalletApi->get_characters_character_id_wallet: %s\n" % e)
 ```
@@ -139,8 +143,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character wallet journal
         api_response = api_instance.get_characters_character_id_wallet_journal(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WalletApi->get_characters_character_id_wallet_journal:\n")
+        print(api_response.status_code)
         print("The response of WalletApi->get_characters_character_id_wallet_journal:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WalletApi->get_characters_character_id_wallet_journal\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WalletApi->get_characters_character_id_wallet_journal: %s\n" % e)
 ```
@@ -225,8 +233,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get wallet transactions
         api_response = api_instance.get_characters_character_id_wallet_transactions(character_id, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WalletApi->get_characters_character_id_wallet_transactions:\n")
+        print(api_response.status_code)
         print("The response of WalletApi->get_characters_character_id_wallet_transactions:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WalletApi->get_characters_character_id_wallet_transactions\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WalletApi->get_characters_character_id_wallet_transactions: %s\n" % e)
 ```
@@ -310,8 +322,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Returns a corporation's wallet balance
         api_response = api_instance.get_corporations_corporation_id_wallets(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WalletApi->get_corporations_corporation_id_wallets:\n")
+        print(api_response.status_code)
         print("The response of WalletApi->get_corporations_corporation_id_wallets:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WalletApi->get_corporations_corporation_id_wallets\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WalletApi->get_corporations_corporation_id_wallets: %s\n" % e)
 ```
@@ -396,8 +412,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation wallet journal
         api_response = api_instance.get_corporations_corporation_id_wallets_division_journal(corporation_id, division, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WalletApi->get_corporations_corporation_id_wallets_division_journal:\n")
+        print(api_response.status_code)
         print("The response of WalletApi->get_corporations_corporation_id_wallets_division_journal:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WalletApi->get_corporations_corporation_id_wallets_division_journal\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WalletApi->get_corporations_corporation_id_wallets_division_journal: %s\n" % e)
 ```
@@ -484,8 +504,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation wallet transactions
         api_response = api_instance.get_corporations_corporation_id_wallets_division_transactions(corporation_id, division, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of WalletApi->get_corporations_corporation_id_wallets_division_transactions:\n")
+        print(api_response.status_code)
         print("The response of WalletApi->get_corporations_corporation_id_wallets_division_transactions:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of WalletApi->get_corporations_corporation_id_wallets_division_transactions\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling WalletApi->get_corporations_corporation_id_wallets_division_transactions: %s\n" % e)
 ```

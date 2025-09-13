@@ -51,8 +51,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get loyalty points
         api_response = api_instance.get_characters_character_id_loyalty_points(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of LoyaltyApi->get_characters_character_id_loyalty_points:\n")
+        print(api_response.status_code)
         print("The response of LoyaltyApi->get_characters_character_id_loyalty_points:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of LoyaltyApi->get_characters_character_id_loyalty_points\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling LoyaltyApi->get_characters_character_id_loyalty_points: %s\n" % e)
 ```
@@ -130,8 +134,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List loyalty store offers
         api_response = api_instance.get_loyalty_stores_corporation_id_offers(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of LoyaltyApi->get_loyalty_stores_corporation_id_offers:\n")
+        print(api_response.status_code)
         print("The response of LoyaltyApi->get_loyalty_stores_corporation_id_offers:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of LoyaltyApi->get_loyalty_stores_corporation_id_offers\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling LoyaltyApi->get_loyalty_stores_corporation_id_offers: %s\n" % e)
 ```

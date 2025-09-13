@@ -56,8 +56,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character assets
         api_response = api_instance.get_characters_character_id_assets(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AssetsApi->get_characters_character_id_assets:\n")
+        print(api_response.status_code)
         print("The response of AssetsApi->get_characters_character_id_assets:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AssetsApi->get_characters_character_id_assets\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AssetsApi->get_characters_character_id_assets: %s\n" % e)
 ```
@@ -142,8 +146,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation assets
         api_response = api_instance.get_corporations_corporation_id_assets(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AssetsApi->get_corporations_corporation_id_assets:\n")
+        print(api_response.status_code)
         print("The response of AssetsApi->get_corporations_corporation_id_assets:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AssetsApi->get_corporations_corporation_id_assets\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AssetsApi->get_corporations_corporation_id_assets: %s\n" % e)
 ```
@@ -228,8 +236,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character asset locations
         api_response = api_instance.post_characters_character_id_assets_locations(character_id, request_body, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AssetsApi->post_characters_character_id_assets_locations:\n")
+        print(api_response.status_code)
         print("The response of AssetsApi->post_characters_character_id_assets_locations:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AssetsApi->post_characters_character_id_assets_locations\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AssetsApi->post_characters_character_id_assets_locations: %s\n" % e)
 ```
@@ -314,8 +326,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character asset names
         api_response = api_instance.post_characters_character_id_assets_names(character_id, request_body, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AssetsApi->post_characters_character_id_assets_names:\n")
+        print(api_response.status_code)
         print("The response of AssetsApi->post_characters_character_id_assets_names:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AssetsApi->post_characters_character_id_assets_names\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AssetsApi->post_characters_character_id_assets_names: %s\n" % e)
 ```
@@ -400,8 +416,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation asset locations
         api_response = api_instance.post_corporations_corporation_id_assets_locations(corporation_id, request_body, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AssetsApi->post_corporations_corporation_id_assets_locations:\n")
+        print(api_response.status_code)
         print("The response of AssetsApi->post_corporations_corporation_id_assets_locations:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AssetsApi->post_corporations_corporation_id_assets_locations\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AssetsApi->post_corporations_corporation_id_assets_locations: %s\n" % e)
 ```
@@ -486,8 +506,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get corporation asset names
         api_response = api_instance.post_corporations_corporation_id_assets_names(corporation_id, request_body, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of AssetsApi->post_corporations_corporation_id_assets_names:\n")
+        print(api_response.status_code)
         print("The response of AssetsApi->post_corporations_corporation_id_assets_names:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of AssetsApi->post_corporations_corporation_id_assets_names\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling AssetsApi->post_corporations_corporation_id_assets_names: %s\n" % e)
 ```

@@ -48,7 +48,7 @@ TITLE = "PyESI (OpenAPI) - EVE Stable Infrastructure (ESI)"
 # Generated content (short and long)
 SUMMARY = "Type-safe Python SDK generated with openapi-generator (https://openapi-generator.tech/) using OpenAPI specification for EVE Online's ESI. Predictable client generation and stable typing in Python."
 DESCRIPTION = (
-    "This python SDK was generated with openapi-generator (https://openapi-generator.tech/) using OpenAPI specification for EVE Stable Infrastructure / EVE Swagger Interface (ESI) (https://developers.eveonline.com/api-explorer)"
+    "This python SDK was generated with openapi-generator (https://openapi-generator.tech/) using OpenAPI specification for EVE Stable Infrastructure / EVE Swagger Interface (ESI) (https://developers.eveonline.com/api-explorer) "
     "and is lightly normalized to improve client generation via our custom templates. It preserves endpoint coverage "
     "from CCP's published specification while adjusting metadata and select parameter shapes "
     "for a more ergonomic, type-safe Python SDK."

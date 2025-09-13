@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -51,7 +52,7 @@ class FleetsApi:
 
 
     @validate_call
-    def delete_fleets_fleet_id_members_member_id(
+    def delete_fleets_fleet_id_members_member_id_data(
         self,
         fleet_id: StrictInt,
         member_id: StrictInt,
@@ -110,6 +111,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._delete_fleets_fleet_id_members_member_id_serialize(
             fleet_id=fleet_id,
             member_id=member_id,
@@ -138,7 +142,7 @@ class FleetsApi:
 
 
     @validate_call
-    def delete_fleets_fleet_id_members_member_id_with_http_info(
+    def delete_fleets_fleet_id_members_member_id(
         self,
         fleet_id: StrictInt,
         member_id: StrictInt,
@@ -196,6 +200,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_fleets_fleet_id_members_member_id_serialize(
             fleet_id=fleet_id,
@@ -283,6 +290,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_fleets_fleet_id_members_member_id_serialize(
             fleet_id=fleet_id,
@@ -387,7 +397,7 @@ class FleetsApi:
 
 
     @validate_call
-    def delete_fleets_fleet_id_squads_squad_id(
+    def delete_fleets_fleet_id_squads_squad_id_data(
         self,
         fleet_id: StrictInt,
         squad_id: StrictInt,
@@ -446,6 +456,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._delete_fleets_fleet_id_squads_squad_id_serialize(
             fleet_id=fleet_id,
             squad_id=squad_id,
@@ -474,7 +487,7 @@ class FleetsApi:
 
 
     @validate_call
-    def delete_fleets_fleet_id_squads_squad_id_with_http_info(
+    def delete_fleets_fleet_id_squads_squad_id(
         self,
         fleet_id: StrictInt,
         squad_id: StrictInt,
@@ -532,6 +545,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_fleets_fleet_id_squads_squad_id_serialize(
             fleet_id=fleet_id,
@@ -619,6 +635,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_fleets_fleet_id_squads_squad_id_serialize(
             fleet_id=fleet_id,
@@ -723,7 +742,7 @@ class FleetsApi:
 
 
     @validate_call
-    def delete_fleets_fleet_id_wings_wing_id(
+    def delete_fleets_fleet_id_wings_wing_id_data(
         self,
         fleet_id: StrictInt,
         wing_id: StrictInt,
@@ -782,6 +801,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._delete_fleets_fleet_id_wings_wing_id_serialize(
             fleet_id=fleet_id,
             wing_id=wing_id,
@@ -810,7 +832,7 @@ class FleetsApi:
 
 
     @validate_call
-    def delete_fleets_fleet_id_wings_wing_id_with_http_info(
+    def delete_fleets_fleet_id_wings_wing_id(
         self,
         fleet_id: StrictInt,
         wing_id: StrictInt,
@@ -868,6 +890,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_fleets_fleet_id_wings_wing_id_serialize(
             fleet_id=fleet_id,
@@ -955,6 +980,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_fleets_fleet_id_wings_wing_id_serialize(
             fleet_id=fleet_id,
@@ -1059,7 +1087,7 @@ class FleetsApi:
 
 
     @validate_call
-    def get_characters_character_id_fleet(
+    def get_characters_character_id_fleet_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1115,6 +1143,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_fleet_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -1142,7 +1173,7 @@ class FleetsApi:
 
 
     @validate_call
-    def get_characters_character_id_fleet_with_http_info(
+    def get_characters_character_id_fleet(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1197,6 +1228,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_fleet_serialize(
             character_id=character_id,
@@ -1280,6 +1314,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_fleet_serialize(
             character_id=character_id,
@@ -1380,7 +1417,7 @@ class FleetsApi:
 
 
     @validate_call
-    def get_fleets_fleet_id(
+    def get_fleets_fleet_id_data(
         self,
         fleet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1436,6 +1473,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fleets_fleet_id_serialize(
             fleet_id=fleet_id,
             accept_language=accept_language,
@@ -1463,7 +1503,7 @@ class FleetsApi:
 
 
     @validate_call
-    def get_fleets_fleet_id_with_http_info(
+    def get_fleets_fleet_id(
         self,
         fleet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1518,6 +1558,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fleets_fleet_id_serialize(
             fleet_id=fleet_id,
@@ -1601,6 +1644,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fleets_fleet_id_serialize(
             fleet_id=fleet_id,
@@ -1701,7 +1747,7 @@ class FleetsApi:
 
 
     @validate_call
-    def get_fleets_fleet_id_members(
+    def get_fleets_fleet_id_members_data(
         self,
         fleet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1757,6 +1803,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fleets_fleet_id_members_serialize(
             fleet_id=fleet_id,
             accept_language=accept_language,
@@ -1784,7 +1833,7 @@ class FleetsApi:
 
 
     @validate_call
-    def get_fleets_fleet_id_members_with_http_info(
+    def get_fleets_fleet_id_members(
         self,
         fleet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1839,6 +1888,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fleets_fleet_id_members_serialize(
             fleet_id=fleet_id,
@@ -1922,6 +1974,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fleets_fleet_id_members_serialize(
             fleet_id=fleet_id,
@@ -2022,7 +2077,7 @@ class FleetsApi:
 
 
     @validate_call
-    def get_fleets_fleet_id_wings(
+    def get_fleets_fleet_id_wings_data(
         self,
         fleet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2078,6 +2133,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fleets_fleet_id_wings_serialize(
             fleet_id=fleet_id,
             accept_language=accept_language,
@@ -2105,7 +2163,7 @@ class FleetsApi:
 
 
     @validate_call
-    def get_fleets_fleet_id_wings_with_http_info(
+    def get_fleets_fleet_id_wings(
         self,
         fleet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2160,6 +2218,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fleets_fleet_id_wings_serialize(
             fleet_id=fleet_id,
@@ -2243,6 +2304,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fleets_fleet_id_wings_serialize(
             fleet_id=fleet_id,
@@ -2343,7 +2407,7 @@ class FleetsApi:
 
 
     @validate_call
-    def post_fleets_fleet_id_members(
+    def post_fleets_fleet_id_members_data(
         self,
         fleet_id: StrictInt,
         post_fleets_fleet_id_members_request: PostFleetsFleetIdMembersRequest,
@@ -2402,6 +2466,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_fleets_fleet_id_members_serialize(
             fleet_id=fleet_id,
             post_fleets_fleet_id_members_request=post_fleets_fleet_id_members_request,
@@ -2430,7 +2497,7 @@ class FleetsApi:
 
 
     @validate_call
-    def post_fleets_fleet_id_members_with_http_info(
+    def post_fleets_fleet_id_members(
         self,
         fleet_id: StrictInt,
         post_fleets_fleet_id_members_request: PostFleetsFleetIdMembersRequest,
@@ -2488,6 +2555,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_fleets_fleet_id_members_serialize(
             fleet_id=fleet_id,
@@ -2575,6 +2645,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_fleets_fleet_id_members_serialize(
             fleet_id=fleet_id,
@@ -2692,7 +2765,7 @@ class FleetsApi:
 
 
     @validate_call
-    def post_fleets_fleet_id_wings(
+    def post_fleets_fleet_id_wings_data(
         self,
         fleet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2748,6 +2821,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_fleets_fleet_id_wings_serialize(
             fleet_id=fleet_id,
             accept_language=accept_language,
@@ -2775,7 +2851,7 @@ class FleetsApi:
 
 
     @validate_call
-    def post_fleets_fleet_id_wings_with_http_info(
+    def post_fleets_fleet_id_wings(
         self,
         fleet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2830,6 +2906,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_fleets_fleet_id_wings_serialize(
             fleet_id=fleet_id,
@@ -2913,6 +2992,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_fleets_fleet_id_wings_serialize(
             fleet_id=fleet_id,
@@ -3013,7 +3095,7 @@ class FleetsApi:
 
 
     @validate_call
-    def post_fleets_fleet_id_wings_wing_id_squads(
+    def post_fleets_fleet_id_wings_wing_id_squads_data(
         self,
         fleet_id: StrictInt,
         wing_id: StrictInt,
@@ -3072,6 +3154,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_fleets_fleet_id_wings_wing_id_squads_serialize(
             fleet_id=fleet_id,
             wing_id=wing_id,
@@ -3100,7 +3185,7 @@ class FleetsApi:
 
 
     @validate_call
-    def post_fleets_fleet_id_wings_wing_id_squads_with_http_info(
+    def post_fleets_fleet_id_wings_wing_id_squads(
         self,
         fleet_id: StrictInt,
         wing_id: StrictInt,
@@ -3158,6 +3243,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_fleets_fleet_id_wings_wing_id_squads_serialize(
             fleet_id=fleet_id,
@@ -3245,6 +3333,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_fleets_fleet_id_wings_wing_id_squads_serialize(
             fleet_id=fleet_id,
@@ -3349,7 +3440,7 @@ class FleetsApi:
 
 
     @validate_call
-    def put_fleets_fleet_id(
+    def put_fleets_fleet_id_data(
         self,
         fleet_id: StrictInt,
         put_fleets_fleet_id_request: PutFleetsFleetIdRequest,
@@ -3408,6 +3499,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._put_fleets_fleet_id_serialize(
             fleet_id=fleet_id,
             put_fleets_fleet_id_request=put_fleets_fleet_id_request,
@@ -3436,7 +3530,7 @@ class FleetsApi:
 
 
     @validate_call
-    def put_fleets_fleet_id_with_http_info(
+    def put_fleets_fleet_id(
         self,
         fleet_id: StrictInt,
         put_fleets_fleet_id_request: PutFleetsFleetIdRequest,
@@ -3494,6 +3588,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_fleets_fleet_id_serialize(
             fleet_id=fleet_id,
@@ -3581,6 +3678,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_fleets_fleet_id_serialize(
             fleet_id=fleet_id,
@@ -3698,7 +3798,7 @@ class FleetsApi:
 
 
     @validate_call
-    def put_fleets_fleet_id_members_member_id(
+    def put_fleets_fleet_id_members_member_id_data(
         self,
         fleet_id: StrictInt,
         member_id: StrictInt,
@@ -3760,6 +3860,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._put_fleets_fleet_id_members_member_id_serialize(
             fleet_id=fleet_id,
             member_id=member_id,
@@ -3789,7 +3892,7 @@ class FleetsApi:
 
 
     @validate_call
-    def put_fleets_fleet_id_members_member_id_with_http_info(
+    def put_fleets_fleet_id_members_member_id(
         self,
         fleet_id: StrictInt,
         member_id: StrictInt,
@@ -3850,6 +3953,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_fleets_fleet_id_members_member_id_serialize(
             fleet_id=fleet_id,
@@ -3941,6 +4047,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_fleets_fleet_id_members_member_id_serialize(
             fleet_id=fleet_id,
@@ -4062,7 +4171,7 @@ class FleetsApi:
 
 
     @validate_call
-    def put_fleets_fleet_id_squads_squad_id(
+    def put_fleets_fleet_id_squads_squad_id_data(
         self,
         fleet_id: StrictInt,
         squad_id: StrictInt,
@@ -4124,6 +4233,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._put_fleets_fleet_id_squads_squad_id_serialize(
             fleet_id=fleet_id,
             squad_id=squad_id,
@@ -4153,7 +4265,7 @@ class FleetsApi:
 
 
     @validate_call
-    def put_fleets_fleet_id_squads_squad_id_with_http_info(
+    def put_fleets_fleet_id_squads_squad_id(
         self,
         fleet_id: StrictInt,
         squad_id: StrictInt,
@@ -4214,6 +4326,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_fleets_fleet_id_squads_squad_id_serialize(
             fleet_id=fleet_id,
@@ -4305,6 +4420,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_fleets_fleet_id_squads_squad_id_serialize(
             fleet_id=fleet_id,
@@ -4426,7 +4544,7 @@ class FleetsApi:
 
 
     @validate_call
-    def put_fleets_fleet_id_wings_wing_id(
+    def put_fleets_fleet_id_wings_wing_id_data(
         self,
         fleet_id: StrictInt,
         wing_id: StrictInt,
@@ -4488,6 +4606,9 @@ class FleetsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._put_fleets_fleet_id_wings_wing_id_serialize(
             fleet_id=fleet_id,
             wing_id=wing_id,
@@ -4517,7 +4638,7 @@ class FleetsApi:
 
 
     @validate_call
-    def put_fleets_fleet_id_wings_wing_id_with_http_info(
+    def put_fleets_fleet_id_wings_wing_id(
         self,
         fleet_id: StrictInt,
         wing_id: StrictInt,
@@ -4578,6 +4699,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_fleets_fleet_id_wings_wing_id_serialize(
             fleet_id=fleet_id,
@@ -4669,6 +4793,9 @@ class FleetsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_fleets_fleet_id_wings_wing_id_serialize(
             fleet_id=fleet_id,

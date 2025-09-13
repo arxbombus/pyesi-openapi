@@ -52,8 +52,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character attributes
         api_response = api_instance.get_characters_character_id_attributes(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of SkillsApi->get_characters_character_id_attributes:\n")
+        print(api_response.status_code)
         print("The response of SkillsApi->get_characters_character_id_attributes:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of SkillsApi->get_characters_character_id_attributes\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling SkillsApi->get_characters_character_id_attributes: %s\n" % e)
 ```
@@ -136,8 +140,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character's skill queue
         api_response = api_instance.get_characters_character_id_skillqueue(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of SkillsApi->get_characters_character_id_skillqueue:\n")
+        print(api_response.status_code)
         print("The response of SkillsApi->get_characters_character_id_skillqueue:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of SkillsApi->get_characters_character_id_skillqueue\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling SkillsApi->get_characters_character_id_skillqueue: %s\n" % e)
 ```
@@ -220,8 +228,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character skills
         api_response = api_instance.get_characters_character_id_skills(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of SkillsApi->get_characters_character_id_skills:\n")
+        print(api_response.status_code)
         print("The response of SkillsApi->get_characters_character_id_skills:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of SkillsApi->get_characters_character_id_skills\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling SkillsApi->get_characters_character_id_skills: %s\n" % e)
 ```

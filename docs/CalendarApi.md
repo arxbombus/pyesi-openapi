@@ -54,8 +54,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List calendar event summaries
         api_response = api_instance.get_characters_character_id_calendar(character_id, from_event=from_event, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CalendarApi->get_characters_character_id_calendar:\n")
+        print(api_response.status_code)
         print("The response of CalendarApi->get_characters_character_id_calendar:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CalendarApi->get_characters_character_id_calendar\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CalendarApi->get_characters_character_id_calendar: %s\n" % e)
 ```
@@ -140,8 +144,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get an event
         api_response = api_instance.get_characters_character_id_calendar_event_id(character_id, event_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CalendarApi->get_characters_character_id_calendar_event_id:\n")
+        print(api_response.status_code)
         print("The response of CalendarApi->get_characters_character_id_calendar_event_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CalendarApi->get_characters_character_id_calendar_event_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CalendarApi->get_characters_character_id_calendar_event_id: %s\n" % e)
 ```
@@ -226,8 +234,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get attendees
         api_response = api_instance.get_characters_character_id_calendar_event_id_attendees(character_id, event_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of CalendarApi->get_characters_character_id_calendar_event_id_attendees:\n")
+        print(api_response.status_code)
         print("The response of CalendarApi->get_characters_character_id_calendar_event_id_attendees:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of CalendarApi->get_characters_character_id_calendar_event_id_attendees\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling CalendarApi->get_characters_character_id_calendar_event_id_attendees: %s\n" % e)
 ```

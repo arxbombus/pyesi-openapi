@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -63,7 +64,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_ancestries(
+    def get_universe_ancestries_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -116,6 +117,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_ancestries_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -142,7 +146,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_ancestries_with_http_info(
+    def get_universe_ancestries(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -194,6 +198,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_ancestries_serialize(
             accept_language=accept_language,
@@ -273,6 +280,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_ancestries_serialize(
             accept_language=accept_language,
@@ -368,7 +378,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_asteroid_belts_asteroid_belt_id(
+    def get_universe_asteroid_belts_asteroid_belt_id_data(
         self,
         asteroid_belt_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -424,6 +434,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_asteroid_belts_asteroid_belt_id_serialize(
             asteroid_belt_id=asteroid_belt_id,
             accept_language=accept_language,
@@ -451,7 +464,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_asteroid_belts_asteroid_belt_id_with_http_info(
+    def get_universe_asteroid_belts_asteroid_belt_id(
         self,
         asteroid_belt_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -506,6 +519,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_asteroid_belts_asteroid_belt_id_serialize(
             asteroid_belt_id=asteroid_belt_id,
@@ -589,6 +605,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_asteroid_belts_asteroid_belt_id_serialize(
             asteroid_belt_id=asteroid_belt_id,
@@ -688,7 +707,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_bloodlines(
+    def get_universe_bloodlines_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -741,6 +760,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_bloodlines_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -767,7 +789,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_bloodlines_with_http_info(
+    def get_universe_bloodlines(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -819,6 +841,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_bloodlines_serialize(
             accept_language=accept_language,
@@ -898,6 +923,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_bloodlines_serialize(
             accept_language=accept_language,
@@ -993,7 +1021,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_categories(
+    def get_universe_categories_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1046,6 +1074,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_categories_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -1072,7 +1103,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_categories_with_http_info(
+    def get_universe_categories(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1124,6 +1155,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_categories_serialize(
             accept_language=accept_language,
@@ -1203,6 +1237,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_categories_serialize(
             accept_language=accept_language,
@@ -1298,7 +1335,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_categories_category_id(
+    def get_universe_categories_category_id_data(
         self,
         category_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1354,6 +1391,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_categories_category_id_serialize(
             category_id=category_id,
             accept_language=accept_language,
@@ -1381,7 +1421,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_categories_category_id_with_http_info(
+    def get_universe_categories_category_id(
         self,
         category_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1436,6 +1476,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_categories_category_id_serialize(
             category_id=category_id,
@@ -1519,6 +1562,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_categories_category_id_serialize(
             category_id=category_id,
@@ -1618,7 +1664,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_constellations(
+    def get_universe_constellations_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1671,6 +1717,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_constellations_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -1697,7 +1746,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_constellations_with_http_info(
+    def get_universe_constellations(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1749,6 +1798,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_constellations_serialize(
             accept_language=accept_language,
@@ -1828,6 +1880,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_constellations_serialize(
             accept_language=accept_language,
@@ -1923,7 +1978,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_constellations_constellation_id(
+    def get_universe_constellations_constellation_id_data(
         self,
         constellation_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1979,6 +2034,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_constellations_constellation_id_serialize(
             constellation_id=constellation_id,
             accept_language=accept_language,
@@ -2006,7 +2064,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_constellations_constellation_id_with_http_info(
+    def get_universe_constellations_constellation_id(
         self,
         constellation_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2061,6 +2119,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_constellations_constellation_id_serialize(
             constellation_id=constellation_id,
@@ -2144,6 +2205,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_constellations_constellation_id_serialize(
             constellation_id=constellation_id,
@@ -2243,7 +2307,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_factions(
+    def get_universe_factions_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2296,6 +2360,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_factions_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -2322,7 +2389,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_factions_with_http_info(
+    def get_universe_factions(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2374,6 +2441,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_factions_serialize(
             accept_language=accept_language,
@@ -2453,6 +2523,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_factions_serialize(
             accept_language=accept_language,
@@ -2548,7 +2621,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_graphics(
+    def get_universe_graphics_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2601,6 +2674,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_graphics_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -2627,7 +2703,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_graphics_with_http_info(
+    def get_universe_graphics(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2679,6 +2755,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_graphics_serialize(
             accept_language=accept_language,
@@ -2758,6 +2837,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_graphics_serialize(
             accept_language=accept_language,
@@ -2853,7 +2935,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_graphics_graphic_id(
+    def get_universe_graphics_graphic_id_data(
         self,
         graphic_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2909,6 +2991,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_graphics_graphic_id_serialize(
             graphic_id=graphic_id,
             accept_language=accept_language,
@@ -2936,7 +3021,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_graphics_graphic_id_with_http_info(
+    def get_universe_graphics_graphic_id(
         self,
         graphic_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -2991,6 +3076,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_graphics_graphic_id_serialize(
             graphic_id=graphic_id,
@@ -3074,6 +3162,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_graphics_graphic_id_serialize(
             graphic_id=graphic_id,
@@ -3173,7 +3264,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_groups(
+    def get_universe_groups_data(
         self,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3229,6 +3320,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_groups_serialize(
             page=page,
             accept_language=accept_language,
@@ -3256,7 +3350,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_groups_with_http_info(
+    def get_universe_groups(
         self,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3311,6 +3405,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_groups_serialize(
             page=page,
@@ -3394,6 +3491,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_groups_serialize(
             page=page,
@@ -3495,7 +3595,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_groups_group_id(
+    def get_universe_groups_group_id_data(
         self,
         group_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3551,6 +3651,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_groups_group_id_serialize(
             group_id=group_id,
             accept_language=accept_language,
@@ -3578,7 +3681,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_groups_group_id_with_http_info(
+    def get_universe_groups_group_id(
         self,
         group_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3633,6 +3736,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_groups_group_id_serialize(
             group_id=group_id,
@@ -3716,6 +3822,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_groups_group_id_serialize(
             group_id=group_id,
@@ -3815,7 +3924,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_moons_moon_id(
+    def get_universe_moons_moon_id_data(
         self,
         moon_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3871,6 +3980,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_moons_moon_id_serialize(
             moon_id=moon_id,
             accept_language=accept_language,
@@ -3898,7 +4010,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_moons_moon_id_with_http_info(
+    def get_universe_moons_moon_id(
         self,
         moon_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -3953,6 +4065,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_moons_moon_id_serialize(
             moon_id=moon_id,
@@ -4036,6 +4151,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_moons_moon_id_serialize(
             moon_id=moon_id,
@@ -4135,7 +4253,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_planets_planet_id(
+    def get_universe_planets_planet_id_data(
         self,
         planet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -4191,6 +4309,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_planets_planet_id_serialize(
             planet_id=planet_id,
             accept_language=accept_language,
@@ -4218,7 +4339,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_planets_planet_id_with_http_info(
+    def get_universe_planets_planet_id(
         self,
         planet_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -4273,6 +4394,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_planets_planet_id_serialize(
             planet_id=planet_id,
@@ -4356,6 +4480,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_planets_planet_id_serialize(
             planet_id=planet_id,
@@ -4455,7 +4582,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_races(
+    def get_universe_races_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -4508,6 +4635,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_races_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -4534,7 +4664,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_races_with_http_info(
+    def get_universe_races(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -4586,6 +4716,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_races_serialize(
             accept_language=accept_language,
@@ -4665,6 +4798,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_races_serialize(
             accept_language=accept_language,
@@ -4760,7 +4896,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_regions(
+    def get_universe_regions_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -4813,6 +4949,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_regions_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -4839,7 +4978,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_regions_with_http_info(
+    def get_universe_regions(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -4891,6 +5030,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_regions_serialize(
             accept_language=accept_language,
@@ -4970,6 +5112,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_regions_serialize(
             accept_language=accept_language,
@@ -5065,7 +5210,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_regions_region_id(
+    def get_universe_regions_region_id_data(
         self,
         region_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -5121,6 +5266,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_regions_region_id_serialize(
             region_id=region_id,
             accept_language=accept_language,
@@ -5148,7 +5296,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_regions_region_id_with_http_info(
+    def get_universe_regions_region_id(
         self,
         region_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -5203,6 +5351,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_regions_region_id_serialize(
             region_id=region_id,
@@ -5286,6 +5437,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_regions_region_id_serialize(
             region_id=region_id,
@@ -5385,7 +5539,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_stargates_stargate_id(
+    def get_universe_stargates_stargate_id_data(
         self,
         stargate_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -5441,6 +5595,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_stargates_stargate_id_serialize(
             stargate_id=stargate_id,
             accept_language=accept_language,
@@ -5468,7 +5625,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_stargates_stargate_id_with_http_info(
+    def get_universe_stargates_stargate_id(
         self,
         stargate_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -5523,6 +5680,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_stargates_stargate_id_serialize(
             stargate_id=stargate_id,
@@ -5606,6 +5766,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_stargates_stargate_id_serialize(
             stargate_id=stargate_id,
@@ -5705,7 +5868,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_stars_star_id(
+    def get_universe_stars_star_id_data(
         self,
         star_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -5761,6 +5924,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_stars_star_id_serialize(
             star_id=star_id,
             accept_language=accept_language,
@@ -5788,7 +5954,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_stars_star_id_with_http_info(
+    def get_universe_stars_star_id(
         self,
         star_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -5843,6 +6009,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_stars_star_id_serialize(
             star_id=star_id,
@@ -5926,6 +6095,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_stars_star_id_serialize(
             star_id=star_id,
@@ -6025,7 +6197,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_stations_station_id(
+    def get_universe_stations_station_id_data(
         self,
         station_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -6081,6 +6253,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_stations_station_id_serialize(
             station_id=station_id,
             accept_language=accept_language,
@@ -6108,7 +6283,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_stations_station_id_with_http_info(
+    def get_universe_stations_station_id(
         self,
         station_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -6163,6 +6338,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_stations_station_id_serialize(
             station_id=station_id,
@@ -6246,6 +6424,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_stations_station_id_serialize(
             station_id=station_id,
@@ -6345,7 +6526,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_structures(
+    def get_universe_structures_data(
         self,
         filter: Optional[StrictStr] = None,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -6401,6 +6582,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_structures_serialize(
             filter=filter,
             accept_language=accept_language,
@@ -6428,7 +6612,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_structures_with_http_info(
+    def get_universe_structures(
         self,
         filter: Optional[StrictStr] = None,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -6483,6 +6667,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_structures_serialize(
             filter=filter,
@@ -6566,6 +6753,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_structures_serialize(
             filter=filter,
@@ -6667,7 +6857,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_structures_structure_id(
+    def get_universe_structures_structure_id_data(
         self,
         structure_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -6723,6 +6913,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_structures_structure_id_serialize(
             structure_id=structure_id,
             accept_language=accept_language,
@@ -6750,7 +6943,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_structures_structure_id_with_http_info(
+    def get_universe_structures_structure_id(
         self,
         structure_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -6805,6 +6998,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_structures_structure_id_serialize(
             structure_id=structure_id,
@@ -6888,6 +7084,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_structures_structure_id_serialize(
             structure_id=structure_id,
@@ -6988,7 +7187,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_system_jumps(
+    def get_universe_system_jumps_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -7041,6 +7240,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_system_jumps_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -7067,7 +7269,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_system_jumps_with_http_info(
+    def get_universe_system_jumps(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -7119,6 +7321,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_system_jumps_serialize(
             accept_language=accept_language,
@@ -7198,6 +7403,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_system_jumps_serialize(
             accept_language=accept_language,
@@ -7293,7 +7501,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_system_kills(
+    def get_universe_system_kills_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -7346,6 +7554,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_system_kills_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -7372,7 +7583,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_system_kills_with_http_info(
+    def get_universe_system_kills(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -7424,6 +7635,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_system_kills_serialize(
             accept_language=accept_language,
@@ -7503,6 +7717,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_system_kills_serialize(
             accept_language=accept_language,
@@ -7598,7 +7815,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_systems(
+    def get_universe_systems_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -7651,6 +7868,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_systems_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -7677,7 +7897,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_systems_with_http_info(
+    def get_universe_systems(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -7729,6 +7949,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_systems_serialize(
             accept_language=accept_language,
@@ -7808,6 +8031,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_systems_serialize(
             accept_language=accept_language,
@@ -7903,7 +8129,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_systems_system_id(
+    def get_universe_systems_system_id_data(
         self,
         system_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -7959,6 +8185,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_systems_system_id_serialize(
             system_id=system_id,
             accept_language=accept_language,
@@ -7986,7 +8215,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_systems_system_id_with_http_info(
+    def get_universe_systems_system_id(
         self,
         system_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -8041,6 +8270,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_systems_system_id_serialize(
             system_id=system_id,
@@ -8124,6 +8356,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_systems_system_id_serialize(
             system_id=system_id,
@@ -8223,7 +8458,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_types(
+    def get_universe_types_data(
         self,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -8279,6 +8514,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_types_serialize(
             page=page,
             accept_language=accept_language,
@@ -8306,7 +8544,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_types_with_http_info(
+    def get_universe_types(
         self,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -8361,6 +8599,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_types_serialize(
             page=page,
@@ -8444,6 +8685,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_types_serialize(
             page=page,
@@ -8545,7 +8789,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_types_type_id(
+    def get_universe_types_type_id_data(
         self,
         type_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -8601,6 +8845,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_universe_types_type_id_serialize(
             type_id=type_id,
             accept_language=accept_language,
@@ -8628,7 +8875,7 @@ class UniverseApi:
 
 
     @validate_call
-    def get_universe_types_type_id_with_http_info(
+    def get_universe_types_type_id(
         self,
         type_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -8683,6 +8930,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_types_type_id_serialize(
             type_id=type_id,
@@ -8766,6 +9016,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_universe_types_type_id_serialize(
             type_id=type_id,
@@ -8865,7 +9118,7 @@ class UniverseApi:
 
 
     @validate_call
-    def post_universe_ids(
+    def post_universe_ids_data(
         self,
         request_body: Annotated[List[Annotated[str, Field(min_length=1, strict=True, max_length=100)]], Field(min_length=1, max_length=500)],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -8921,6 +9174,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_universe_ids_serialize(
             request_body=request_body,
             accept_language=accept_language,
@@ -8948,7 +9204,7 @@ class UniverseApi:
 
 
     @validate_call
-    def post_universe_ids_with_http_info(
+    def post_universe_ids(
         self,
         request_body: Annotated[List[Annotated[str, Field(min_length=1, strict=True, max_length=100)]], Field(min_length=1, max_length=500)],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -9003,6 +9259,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_universe_ids_serialize(
             request_body=request_body,
@@ -9086,6 +9345,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_universe_ids_serialize(
             request_body=request_body,
@@ -9199,7 +9461,7 @@ class UniverseApi:
 
 
     @validate_call
-    def post_universe_names(
+    def post_universe_names_data(
         self,
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -9255,6 +9517,9 @@ class UniverseApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_universe_names_serialize(
             request_body=request_body,
             accept_language=accept_language,
@@ -9282,7 +9547,7 @@ class UniverseApi:
 
 
     @validate_call
-    def post_universe_names_with_http_info(
+    def post_universe_names(
         self,
         request_body: Annotated[List[StrictInt], Field(min_length=1, max_length=1000)],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -9337,6 +9602,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_universe_names_serialize(
             request_body=request_body,
@@ -9420,6 +9688,9 @@ class UniverseApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_universe_names_serialize(
             request_body=request_body,

@@ -42,8 +42,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Retrieve the uptime and player counts
         api_response = api_instance.get_status(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of StatusApi->get_status:\n")
+        print(api_response.status_code)
         print("The response of StatusApi->get_status:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of StatusApi->get_status\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling StatusApi->get_status: %s\n" % e)
 ```

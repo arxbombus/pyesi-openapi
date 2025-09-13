@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -46,7 +47,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_characters_character_id_wallet(
+    def get_characters_character_id_wallet_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -102,6 +103,9 @@ class WalletApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_wallet_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -129,7 +133,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_characters_character_id_wallet_with_http_info(
+    def get_characters_character_id_wallet(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -184,6 +188,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_wallet_serialize(
             character_id=character_id,
@@ -267,6 +274,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_wallet_serialize(
             character_id=character_id,
@@ -367,7 +377,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_characters_character_id_wallet_journal(
+    def get_characters_character_id_wallet_journal_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -426,6 +436,9 @@ class WalletApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_wallet_journal_serialize(
             character_id=character_id,
             page=page,
@@ -454,7 +467,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_characters_character_id_wallet_journal_with_http_info(
+    def get_characters_character_id_wallet_journal(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -512,6 +525,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_wallet_journal_serialize(
             character_id=character_id,
@@ -599,6 +615,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_wallet_journal_serialize(
             character_id=character_id,
@@ -705,7 +724,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_characters_character_id_wallet_transactions(
+    def get_characters_character_id_wallet_transactions_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         from_id: Optional[StrictInt] = None,
@@ -764,6 +783,9 @@ class WalletApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_wallet_transactions_serialize(
             character_id=character_id,
             from_id=from_id,
@@ -792,7 +814,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_characters_character_id_wallet_transactions_with_http_info(
+    def get_characters_character_id_wallet_transactions(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         from_id: Optional[StrictInt] = None,
@@ -850,6 +872,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_wallet_transactions_serialize(
             character_id=character_id,
@@ -937,6 +962,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_wallet_transactions_serialize(
             character_id=character_id,
@@ -1043,7 +1071,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_wallets(
+    def get_corporations_corporation_id_wallets_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1099,6 +1127,9 @@ class WalletApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_wallets_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -1126,7 +1157,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_wallets_with_http_info(
+    def get_corporations_corporation_id_wallets(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1181,6 +1212,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_wallets_serialize(
             corporation_id=corporation_id,
@@ -1264,6 +1298,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_wallets_serialize(
             corporation_id=corporation_id,
@@ -1364,7 +1401,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_wallets_division_journal(
+    def get_corporations_corporation_id_wallets_division_journal_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         division: StrictInt,
@@ -1426,6 +1463,9 @@ class WalletApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_wallets_division_journal_serialize(
             corporation_id=corporation_id,
             division=division,
@@ -1455,7 +1495,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_wallets_division_journal_with_http_info(
+    def get_corporations_corporation_id_wallets_division_journal(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         division: StrictInt,
@@ -1516,6 +1556,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_wallets_division_journal_serialize(
             corporation_id=corporation_id,
@@ -1607,6 +1650,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_wallets_division_journal_serialize(
             corporation_id=corporation_id,
@@ -1717,7 +1763,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_wallets_division_transactions(
+    def get_corporations_corporation_id_wallets_division_transactions_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         division: StrictInt,
@@ -1779,6 +1825,9 @@ class WalletApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_wallets_division_transactions_serialize(
             corporation_id=corporation_id,
             division=division,
@@ -1808,7 +1857,7 @@ class WalletApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_wallets_division_transactions_with_http_info(
+    def get_corporations_corporation_id_wallets_division_transactions(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         division: StrictInt,
@@ -1869,6 +1918,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_wallets_division_transactions_serialize(
             corporation_id=corporation_id,
@@ -1960,6 +2012,9 @@ class WalletApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_wallets_division_transactions_serialize(
             corporation_id=corporation_id,

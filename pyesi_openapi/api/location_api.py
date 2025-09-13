@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -44,7 +45,7 @@ class LocationApi:
 
 
     @validate_call
-    def get_characters_character_id_location(
+    def get_characters_character_id_location_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -100,6 +101,9 @@ class LocationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_location_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -127,7 +131,7 @@ class LocationApi:
 
 
     @validate_call
-    def get_characters_character_id_location_with_http_info(
+    def get_characters_character_id_location(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -182,6 +186,9 @@ class LocationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_location_serialize(
             character_id=character_id,
@@ -265,6 +272,9 @@ class LocationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_location_serialize(
             character_id=character_id,
@@ -365,7 +375,7 @@ class LocationApi:
 
 
     @validate_call
-    def get_characters_character_id_online(
+    def get_characters_character_id_online_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -421,6 +431,9 @@ class LocationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_online_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -448,7 +461,7 @@ class LocationApi:
 
 
     @validate_call
-    def get_characters_character_id_online_with_http_info(
+    def get_characters_character_id_online(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -503,6 +516,9 @@ class LocationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_online_serialize(
             character_id=character_id,
@@ -586,6 +602,9 @@ class LocationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_online_serialize(
             character_id=character_id,
@@ -686,7 +705,7 @@ class LocationApi:
 
 
     @validate_call
-    def get_characters_character_id_ship(
+    def get_characters_character_id_ship_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -742,6 +761,9 @@ class LocationApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_ship_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -769,7 +791,7 @@ class LocationApi:
 
 
     @validate_call
-    def get_characters_character_id_ship_with_http_info(
+    def get_characters_character_id_ship(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -824,6 +846,9 @@ class LocationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_ship_serialize(
             character_id=character_id,
@@ -907,6 +932,9 @@ class LocationApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_ship_serialize(
             character_id=character_id,

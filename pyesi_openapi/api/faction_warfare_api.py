@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -49,7 +50,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_characters_character_id_fw_stats(
+    def get_characters_character_id_fw_stats_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -105,6 +106,9 @@ class FactionWarfareApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_fw_stats_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -132,7 +136,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_characters_character_id_fw_stats_with_http_info(
+    def get_characters_character_id_fw_stats(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -187,6 +191,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_fw_stats_serialize(
             character_id=character_id,
@@ -270,6 +277,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_fw_stats_serialize(
             character_id=character_id,
@@ -370,7 +380,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_fw_stats(
+    def get_corporations_corporation_id_fw_stats_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -426,6 +436,9 @@ class FactionWarfareApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_fw_stats_serialize(
             corporation_id=corporation_id,
             accept_language=accept_language,
@@ -453,7 +466,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_fw_stats_with_http_info(
+    def get_corporations_corporation_id_fw_stats(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -508,6 +521,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_fw_stats_serialize(
             corporation_id=corporation_id,
@@ -591,6 +607,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_fw_stats_serialize(
             corporation_id=corporation_id,
@@ -691,7 +710,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_leaderboards(
+    def get_fw_leaderboards_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -744,6 +763,9 @@ class FactionWarfareApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fw_leaderboards_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -770,7 +792,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_leaderboards_with_http_info(
+    def get_fw_leaderboards(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -822,6 +844,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_leaderboards_serialize(
             accept_language=accept_language,
@@ -901,6 +926,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_leaderboards_serialize(
             accept_language=accept_language,
@@ -996,7 +1024,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_leaderboards_characters(
+    def get_fw_leaderboards_characters_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1049,6 +1077,9 @@ class FactionWarfareApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fw_leaderboards_characters_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -1075,7 +1106,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_leaderboards_characters_with_http_info(
+    def get_fw_leaderboards_characters(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1127,6 +1158,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_leaderboards_characters_serialize(
             accept_language=accept_language,
@@ -1206,6 +1240,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_leaderboards_characters_serialize(
             accept_language=accept_language,
@@ -1301,7 +1338,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_leaderboards_corporations(
+    def get_fw_leaderboards_corporations_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1354,6 +1391,9 @@ class FactionWarfareApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fw_leaderboards_corporations_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -1380,7 +1420,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_leaderboards_corporations_with_http_info(
+    def get_fw_leaderboards_corporations(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1432,6 +1472,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_leaderboards_corporations_serialize(
             accept_language=accept_language,
@@ -1511,6 +1554,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_leaderboards_corporations_serialize(
             accept_language=accept_language,
@@ -1606,7 +1652,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_stats(
+    def get_fw_stats_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1659,6 +1705,9 @@ class FactionWarfareApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fw_stats_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -1685,7 +1734,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_stats_with_http_info(
+    def get_fw_stats(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1737,6 +1786,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_stats_serialize(
             accept_language=accept_language,
@@ -1816,6 +1868,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_stats_serialize(
             accept_language=accept_language,
@@ -1911,7 +1966,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_systems(
+    def get_fw_systems_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1964,6 +2019,9 @@ class FactionWarfareApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fw_systems_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -1990,7 +2048,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_systems_with_http_info(
+    def get_fw_systems(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2042,6 +2100,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_systems_serialize(
             accept_language=accept_language,
@@ -2121,6 +2182,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_systems_serialize(
             accept_language=accept_language,
@@ -2216,7 +2280,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_wars(
+    def get_fw_wars_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2269,6 +2333,9 @@ class FactionWarfareApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_fw_wars_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -2295,7 +2362,7 @@ class FactionWarfareApi:
 
 
     @validate_call
-    def get_fw_wars_with_http_info(
+    def get_fw_wars(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2347,6 +2414,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_wars_serialize(
             accept_language=accept_language,
@@ -2426,6 +2496,9 @@ class FactionWarfareApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_fw_wars_serialize(
             accept_language=accept_language,

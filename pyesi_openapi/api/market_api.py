@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -50,7 +51,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_characters_character_id_orders(
+    def get_characters_character_id_orders_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -106,6 +107,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_orders_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -133,7 +137,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_characters_character_id_orders_with_http_info(
+    def get_characters_character_id_orders(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -188,6 +192,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_orders_serialize(
             character_id=character_id,
@@ -271,6 +278,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_orders_serialize(
             character_id=character_id,
@@ -371,7 +381,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_characters_character_id_orders_history(
+    def get_characters_character_id_orders_history_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -430,6 +440,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_orders_history_serialize(
             character_id=character_id,
             page=page,
@@ -458,7 +471,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_characters_character_id_orders_history_with_http_info(
+    def get_characters_character_id_orders_history(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -516,6 +529,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_orders_history_serialize(
             character_id=character_id,
@@ -603,6 +619,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_orders_history_serialize(
             character_id=character_id,
@@ -709,7 +728,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_orders(
+    def get_corporations_corporation_id_orders_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -768,6 +787,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_orders_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -796,7 +818,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_orders_with_http_info(
+    def get_corporations_corporation_id_orders(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -854,6 +876,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_orders_serialize(
             corporation_id=corporation_id,
@@ -941,6 +966,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_orders_serialize(
             corporation_id=corporation_id,
@@ -1047,7 +1075,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_orders_history(
+    def get_corporations_corporation_id_orders_history_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1106,6 +1134,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_orders_history_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -1134,7 +1165,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_orders_history_with_http_info(
+    def get_corporations_corporation_id_orders_history(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -1192,6 +1223,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_orders_history_serialize(
             corporation_id=corporation_id,
@@ -1279,6 +1313,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_orders_history_serialize(
             corporation_id=corporation_id,
@@ -1385,7 +1422,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_groups(
+    def get_markets_groups_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1438,6 +1475,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_markets_groups_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -1464,7 +1504,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_groups_with_http_info(
+    def get_markets_groups(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -1516,6 +1556,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_groups_serialize(
             accept_language=accept_language,
@@ -1595,6 +1638,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_groups_serialize(
             accept_language=accept_language,
@@ -1690,7 +1736,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_groups_market_group_id(
+    def get_markets_groups_market_group_id_data(
         self,
         market_group_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1746,6 +1792,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_markets_groups_market_group_id_serialize(
             market_group_id=market_group_id,
             accept_language=accept_language,
@@ -1773,7 +1822,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_groups_market_group_id_with_http_info(
+    def get_markets_groups_market_group_id(
         self,
         market_group_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1828,6 +1877,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_groups_market_group_id_serialize(
             market_group_id=market_group_id,
@@ -1911,6 +1963,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_groups_market_group_id_serialize(
             market_group_id=market_group_id,
@@ -2010,7 +2065,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_prices(
+    def get_markets_prices_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2063,6 +2118,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_markets_prices_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -2089,7 +2147,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_prices_with_http_info(
+    def get_markets_prices(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -2141,6 +2199,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_prices_serialize(
             accept_language=accept_language,
@@ -2220,6 +2281,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_prices_serialize(
             accept_language=accept_language,
@@ -2315,7 +2379,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_region_id_history(
+    def get_markets_region_id_history_data(
         self,
         region_id: StrictInt,
         type_id: StrictInt,
@@ -2374,6 +2438,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_markets_region_id_history_serialize(
             region_id=region_id,
             type_id=type_id,
@@ -2402,7 +2469,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_region_id_history_with_http_info(
+    def get_markets_region_id_history(
         self,
         region_id: StrictInt,
         type_id: StrictInt,
@@ -2460,6 +2527,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_region_id_history_serialize(
             region_id=region_id,
@@ -2547,6 +2617,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_region_id_history_serialize(
             region_id=region_id,
@@ -2652,7 +2725,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_region_id_orders(
+    def get_markets_region_id_orders_data(
         self,
         order_type: StrictStr,
         region_id: StrictInt,
@@ -2717,6 +2790,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_markets_region_id_orders_serialize(
             order_type=order_type,
             region_id=region_id,
@@ -2747,7 +2823,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_region_id_orders_with_http_info(
+    def get_markets_region_id_orders(
         self,
         order_type: StrictStr,
         region_id: StrictInt,
@@ -2811,6 +2887,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_region_id_orders_serialize(
             order_type=order_type,
@@ -2906,6 +2985,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_region_id_orders_serialize(
             order_type=order_type,
@@ -3023,7 +3105,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_region_id_types(
+    def get_markets_region_id_types_data(
         self,
         region_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -3082,6 +3164,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_markets_region_id_types_serialize(
             region_id=region_id,
             page=page,
@@ -3110,7 +3195,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_region_id_types_with_http_info(
+    def get_markets_region_id_types(
         self,
         region_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -3168,6 +3253,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_region_id_types_serialize(
             region_id=region_id,
@@ -3255,6 +3343,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_region_id_types_serialize(
             region_id=region_id,
@@ -3360,7 +3451,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_structures_structure_id(
+    def get_markets_structures_structure_id_data(
         self,
         structure_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -3419,6 +3510,9 @@ class MarketApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_markets_structures_structure_id_serialize(
             structure_id=structure_id,
             page=page,
@@ -3447,7 +3541,7 @@ class MarketApi:
 
 
     @validate_call
-    def get_markets_structures_structure_id_with_http_info(
+    def get_markets_structures_structure_id(
         self,
         structure_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -3505,6 +3599,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_structures_structure_id_serialize(
             structure_id=structure_id,
@@ -3592,6 +3689,9 @@ class MarketApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_markets_structures_structure_id_serialize(
             structure_id=structure_id,

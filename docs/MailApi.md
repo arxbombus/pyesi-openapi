@@ -226,8 +226,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Return mail headers
         api_response = api_instance.get_characters_character_id_mail(character_id, labels=labels, last_mail_id=last_mail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MailApi->get_characters_character_id_mail:\n")
+        print(api_response.status_code)
         print("The response of MailApi->get_characters_character_id_mail:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MailApi->get_characters_character_id_mail\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MailApi->get_characters_character_id_mail: %s\n" % e)
 ```
@@ -312,8 +316,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get mail labels and unread counts
         api_response = api_instance.get_characters_character_id_mail_labels(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MailApi->get_characters_character_id_mail_labels:\n")
+        print(api_response.status_code)
         print("The response of MailApi->get_characters_character_id_mail_labels:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MailApi->get_characters_character_id_mail_labels\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MailApi->get_characters_character_id_mail_labels: %s\n" % e)
 ```
@@ -396,8 +404,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Return mailing list subscriptions
         api_response = api_instance.get_characters_character_id_mail_lists(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MailApi->get_characters_character_id_mail_lists:\n")
+        print(api_response.status_code)
         print("The response of MailApi->get_characters_character_id_mail_lists:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MailApi->get_characters_character_id_mail_lists\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MailApi->get_characters_character_id_mail_lists: %s\n" % e)
 ```
@@ -481,8 +493,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Return a mail
         api_response = api_instance.get_characters_character_id_mail_mail_id(character_id, mail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MailApi->get_characters_character_id_mail_mail_id:\n")
+        print(api_response.status_code)
         print("The response of MailApi->get_characters_character_id_mail_mail_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MailApi->get_characters_character_id_mail_mail_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MailApi->get_characters_character_id_mail_mail_id: %s\n" % e)
 ```
@@ -567,8 +583,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Send a new mail
         api_response = api_instance.post_characters_character_id_mail(character_id, post_characters_character_id_mail_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MailApi->post_characters_character_id_mail:\n")
+        print(api_response.status_code)
         print("The response of MailApi->post_characters_character_id_mail:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MailApi->post_characters_character_id_mail\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MailApi->post_characters_character_id_mail: %s\n" % e)
 ```
@@ -653,8 +673,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Create a mail label
         api_response = api_instance.post_characters_character_id_mail_labels(character_id, post_characters_character_id_mail_labels_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MailApi->post_characters_character_id_mail_labels:\n")
+        print(api_response.status_code)
         print("The response of MailApi->post_characters_character_id_mail_labels:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MailApi->post_characters_character_id_mail_labels\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MailApi->post_characters_character_id_mail_labels: %s\n" % e)
 ```

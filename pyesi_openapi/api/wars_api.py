@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -43,7 +44,7 @@ class WarsApi:
 
 
     @validate_call
-    def get_wars(
+    def get_wars_data(
         self,
         max_war_id: Optional[StrictInt] = None,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -99,6 +100,9 @@ class WarsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_wars_serialize(
             max_war_id=max_war_id,
             accept_language=accept_language,
@@ -126,7 +130,7 @@ class WarsApi:
 
 
     @validate_call
-    def get_wars_with_http_info(
+    def get_wars(
         self,
         max_war_id: Optional[StrictInt] = None,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -181,6 +185,9 @@ class WarsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_wars_serialize(
             max_war_id=max_war_id,
@@ -264,6 +271,9 @@ class WarsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_wars_serialize(
             max_war_id=max_war_id,
@@ -365,7 +375,7 @@ class WarsApi:
 
 
     @validate_call
-    def get_wars_war_id(
+    def get_wars_war_id_data(
         self,
         war_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -421,6 +431,9 @@ class WarsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_wars_war_id_serialize(
             war_id=war_id,
             accept_language=accept_language,
@@ -448,7 +461,7 @@ class WarsApi:
 
 
     @validate_call
-    def get_wars_war_id_with_http_info(
+    def get_wars_war_id(
         self,
         war_id: StrictInt,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -503,6 +516,9 @@ class WarsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_wars_war_id_serialize(
             war_id=war_id,
@@ -586,6 +602,9 @@ class WarsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_wars_war_id_serialize(
             war_id=war_id,
@@ -685,7 +704,7 @@ class WarsApi:
 
 
     @validate_call
-    def get_wars_war_id_killmails(
+    def get_wars_war_id_killmails_data(
         self,
         war_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -744,6 +763,9 @@ class WarsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_wars_war_id_killmails_serialize(
             war_id=war_id,
             page=page,
@@ -772,7 +794,7 @@ class WarsApi:
 
 
     @validate_call
-    def get_wars_war_id_killmails_with_http_info(
+    def get_wars_war_id_killmails(
         self,
         war_id: StrictInt,
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -830,6 +852,9 @@ class WarsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_wars_war_id_killmails_serialize(
             war_id=war_id,
@@ -917,6 +942,9 @@ class WarsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_wars_war_id_killmails_serialize(
             war_id=war_id,

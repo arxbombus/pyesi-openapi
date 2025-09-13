@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -43,7 +44,7 @@ class KillmailsApi:
 
 
     @validate_call
-    def get_characters_character_id_killmails_recent(
+    def get_characters_character_id_killmails_recent_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -102,6 +103,9 @@ class KillmailsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_killmails_recent_serialize(
             character_id=character_id,
             page=page,
@@ -130,7 +134,7 @@ class KillmailsApi:
 
 
     @validate_call
-    def get_characters_character_id_killmails_recent_with_http_info(
+    def get_characters_character_id_killmails_recent(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -188,6 +192,9 @@ class KillmailsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_killmails_recent_serialize(
             character_id=character_id,
@@ -275,6 +282,9 @@ class KillmailsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_killmails_recent_serialize(
             character_id=character_id,
@@ -381,7 +391,7 @@ class KillmailsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_killmails_recent(
+    def get_corporations_corporation_id_killmails_recent_data(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -440,6 +450,9 @@ class KillmailsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_corporations_corporation_id_killmails_recent_serialize(
             corporation_id=corporation_id,
             page=page,
@@ -468,7 +481,7 @@ class KillmailsApi:
 
 
     @validate_call
-    def get_corporations_corporation_id_killmails_recent_with_http_info(
+    def get_corporations_corporation_id_killmails_recent(
         self,
         corporation_id: Annotated[StrictInt, Field(description="The ID of the corporation")],
         page: Optional[Annotated[int, Field(strict=True, ge=1)]] = None,
@@ -526,6 +539,9 @@ class KillmailsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_killmails_recent_serialize(
             corporation_id=corporation_id,
@@ -613,6 +629,9 @@ class KillmailsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_corporations_corporation_id_killmails_recent_serialize(
             corporation_id=corporation_id,
@@ -719,7 +738,7 @@ class KillmailsApi:
 
 
     @validate_call
-    def get_killmails_killmail_id_killmail_hash(
+    def get_killmails_killmail_id_killmail_hash_data(
         self,
         killmail_hash: StrictStr,
         killmail_id: StrictInt,
@@ -778,6 +797,9 @@ class KillmailsApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_killmails_killmail_id_killmail_hash_serialize(
             killmail_hash=killmail_hash,
             killmail_id=killmail_id,
@@ -806,7 +828,7 @@ class KillmailsApi:
 
 
     @validate_call
-    def get_killmails_killmail_id_killmail_hash_with_http_info(
+    def get_killmails_killmail_id_killmail_hash(
         self,
         killmail_hash: StrictStr,
         killmail_id: StrictInt,
@@ -864,6 +886,9 @@ class KillmailsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_killmails_killmail_id_killmail_hash_serialize(
             killmail_hash=killmail_hash,
@@ -951,6 +976,9 @@ class KillmailsApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_killmails_killmail_id_killmail_hash_serialize(
             killmail_hash=killmail_hash,

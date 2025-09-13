@@ -53,8 +53,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get colonies
         api_response = api_instance.get_characters_character_id_planets(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of PlanetaryInteractionApi->get_characters_character_id_planets:\n")
+        print(api_response.status_code)
         print("The response of PlanetaryInteractionApi->get_characters_character_id_planets:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of PlanetaryInteractionApi->get_characters_character_id_planets\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling PlanetaryInteractionApi->get_characters_character_id_planets: %s\n" % e)
 ```
@@ -138,8 +142,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get colony layout
         api_response = api_instance.get_characters_character_id_planets_planet_id(character_id, planet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of PlanetaryInteractionApi->get_characters_character_id_planets_planet_id:\n")
+        print(api_response.status_code)
         print("The response of PlanetaryInteractionApi->get_characters_character_id_planets_planet_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of PlanetaryInteractionApi->get_characters_character_id_planets_planet_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling PlanetaryInteractionApi->get_characters_character_id_planets_planet_id: %s\n" % e)
 ```
@@ -224,8 +232,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List corporation customs offices
         api_response = api_instance.get_corporations_corporation_id_customs_offices(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of PlanetaryInteractionApi->get_corporations_corporation_id_customs_offices:\n")
+        print(api_response.status_code)
         print("The response of PlanetaryInteractionApi->get_corporations_corporation_id_customs_offices:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of PlanetaryInteractionApi->get_corporations_corporation_id_customs_offices\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling PlanetaryInteractionApi->get_corporations_corporation_id_customs_offices: %s\n" % e)
 ```
@@ -302,8 +314,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get schematic information
         api_response = api_instance.get_universe_schematics_schematic_id(schematic_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of PlanetaryInteractionApi->get_universe_schematics_schematic_id:\n")
+        print(api_response.status_code)
         print("The response of PlanetaryInteractionApi->get_universe_schematics_schematic_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of PlanetaryInteractionApi->get_universe_schematics_schematic_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling PlanetaryInteractionApi->get_universe_schematics_schematic_id: %s\n" % e)
 ```

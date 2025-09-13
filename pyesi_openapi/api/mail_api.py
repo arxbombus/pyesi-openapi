@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -48,7 +49,7 @@ class MailApi:
 
 
     @validate_call
-    def delete_characters_character_id_mail_labels_label_id(
+    def delete_characters_character_id_mail_labels_label_id_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         label_id: StrictInt,
@@ -107,6 +108,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._delete_characters_character_id_mail_labels_label_id_serialize(
             character_id=character_id,
             label_id=label_id,
@@ -135,7 +139,7 @@ class MailApi:
 
 
     @validate_call
-    def delete_characters_character_id_mail_labels_label_id_with_http_info(
+    def delete_characters_character_id_mail_labels_label_id(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         label_id: StrictInt,
@@ -193,6 +197,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_characters_character_id_mail_labels_label_id_serialize(
             character_id=character_id,
@@ -280,6 +287,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_characters_character_id_mail_labels_label_id_serialize(
             character_id=character_id,
@@ -384,7 +394,7 @@ class MailApi:
 
 
     @validate_call
-    def delete_characters_character_id_mail_mail_id(
+    def delete_characters_character_id_mail_mail_id_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         mail_id: StrictInt,
@@ -443,6 +453,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._delete_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,
             mail_id=mail_id,
@@ -471,7 +484,7 @@ class MailApi:
 
 
     @validate_call
-    def delete_characters_character_id_mail_mail_id_with_http_info(
+    def delete_characters_character_id_mail_mail_id(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         mail_id: StrictInt,
@@ -529,6 +542,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,
@@ -616,6 +632,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._delete_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,
@@ -720,7 +739,7 @@ class MailApi:
 
 
     @validate_call
-    def get_characters_character_id_mail(
+    def get_characters_character_id_mail_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         labels: Optional[Annotated[List[StrictInt], Field(min_length=1, max_length=25)]] = None,
@@ -782,6 +801,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_mail_serialize(
             character_id=character_id,
             labels=labels,
@@ -811,7 +833,7 @@ class MailApi:
 
 
     @validate_call
-    def get_characters_character_id_mail_with_http_info(
+    def get_characters_character_id_mail(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         labels: Optional[Annotated[List[StrictInt], Field(min_length=1, max_length=25)]] = None,
@@ -872,6 +894,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mail_serialize(
             character_id=character_id,
@@ -963,6 +988,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mail_serialize(
             character_id=character_id,
@@ -1076,7 +1104,7 @@ class MailApi:
 
 
     @validate_call
-    def get_characters_character_id_mail_labels(
+    def get_characters_character_id_mail_labels_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1132,6 +1160,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_mail_labels_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -1159,7 +1190,7 @@ class MailApi:
 
 
     @validate_call
-    def get_characters_character_id_mail_labels_with_http_info(
+    def get_characters_character_id_mail_labels(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1214,6 +1245,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mail_labels_serialize(
             character_id=character_id,
@@ -1297,6 +1331,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mail_labels_serialize(
             character_id=character_id,
@@ -1397,7 +1434,7 @@ class MailApi:
 
 
     @validate_call
-    def get_characters_character_id_mail_lists(
+    def get_characters_character_id_mail_lists_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1453,6 +1490,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_mail_lists_serialize(
             character_id=character_id,
             accept_language=accept_language,
@@ -1480,7 +1520,7 @@ class MailApi:
 
 
     @validate_call
-    def get_characters_character_id_mail_lists_with_http_info(
+    def get_characters_character_id_mail_lists(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1535,6 +1575,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mail_lists_serialize(
             character_id=character_id,
@@ -1618,6 +1661,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mail_lists_serialize(
             character_id=character_id,
@@ -1718,7 +1764,7 @@ class MailApi:
 
 
     @validate_call
-    def get_characters_character_id_mail_mail_id(
+    def get_characters_character_id_mail_mail_id_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         mail_id: StrictInt,
@@ -1777,6 +1823,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,
             mail_id=mail_id,
@@ -1805,7 +1854,7 @@ class MailApi:
 
 
     @validate_call
-    def get_characters_character_id_mail_mail_id_with_http_info(
+    def get_characters_character_id_mail_mail_id(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         mail_id: StrictInt,
@@ -1863,6 +1912,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,
@@ -1950,6 +2002,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,
@@ -2054,7 +2109,7 @@ class MailApi:
 
 
     @validate_call
-    def post_characters_character_id_mail(
+    def post_characters_character_id_mail_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         post_characters_character_id_mail_request: PostCharactersCharacterIdMailRequest,
@@ -2113,6 +2168,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_characters_character_id_mail_serialize(
             character_id=character_id,
             post_characters_character_id_mail_request=post_characters_character_id_mail_request,
@@ -2141,7 +2199,7 @@ class MailApi:
 
 
     @validate_call
-    def post_characters_character_id_mail_with_http_info(
+    def post_characters_character_id_mail(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         post_characters_character_id_mail_request: PostCharactersCharacterIdMailRequest,
@@ -2199,6 +2257,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_mail_serialize(
             character_id=character_id,
@@ -2286,6 +2347,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_mail_serialize(
             character_id=character_id,
@@ -2403,7 +2467,7 @@ class MailApi:
 
 
     @validate_call
-    def post_characters_character_id_mail_labels(
+    def post_characters_character_id_mail_labels_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         post_characters_character_id_mail_labels_request: PostCharactersCharacterIdMailLabelsRequest,
@@ -2462,6 +2526,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._post_characters_character_id_mail_labels_serialize(
             character_id=character_id,
             post_characters_character_id_mail_labels_request=post_characters_character_id_mail_labels_request,
@@ -2490,7 +2557,7 @@ class MailApi:
 
 
     @validate_call
-    def post_characters_character_id_mail_labels_with_http_info(
+    def post_characters_character_id_mail_labels(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         post_characters_character_id_mail_labels_request: PostCharactersCharacterIdMailLabelsRequest,
@@ -2548,6 +2615,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_mail_labels_serialize(
             character_id=character_id,
@@ -2635,6 +2705,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._post_characters_character_id_mail_labels_serialize(
             character_id=character_id,
@@ -2752,7 +2825,7 @@ class MailApi:
 
 
     @validate_call
-    def put_characters_character_id_mail_mail_id(
+    def put_characters_character_id_mail_mail_id_data(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         mail_id: StrictInt,
@@ -2814,6 +2887,9 @@ class MailApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._put_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,
             mail_id=mail_id,
@@ -2843,7 +2919,7 @@ class MailApi:
 
 
     @validate_call
-    def put_characters_character_id_mail_mail_id_with_http_info(
+    def put_characters_character_id_mail_mail_id(
         self,
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
         mail_id: StrictInt,
@@ -2904,6 +2980,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,
@@ -2995,6 +3074,9 @@ class MailApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._put_characters_character_id_mail_mail_id_serialize(
             character_id=character_id,

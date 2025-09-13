@@ -52,8 +52,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character location
         api_response = api_instance.get_characters_character_id_location(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of LocationApi->get_characters_character_id_location:\n")
+        print(api_response.status_code)
         print("The response of LocationApi->get_characters_character_id_location:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of LocationApi->get_characters_character_id_location\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling LocationApi->get_characters_character_id_location: %s\n" % e)
 ```
@@ -136,8 +140,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get character online
         api_response = api_instance.get_characters_character_id_online(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of LocationApi->get_characters_character_id_online:\n")
+        print(api_response.status_code)
         print("The response of LocationApi->get_characters_character_id_online:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of LocationApi->get_characters_character_id_online\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling LocationApi->get_characters_character_id_online: %s\n" % e)
 ```
@@ -220,8 +228,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get current ship
         api_response = api_instance.get_characters_character_id_ship(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of LocationApi->get_characters_character_id_ship:\n")
+        print(api_response.status_code)
         print("The response of LocationApi->get_characters_character_id_ship:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of LocationApi->get_characters_character_id_ship\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling LocationApi->get_characters_character_id_ship: %s\n" % e)
 ```

@@ -135,8 +135,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get fittings
         api_response = api_instance.get_characters_character_id_fittings(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FittingsApi->get_characters_character_id_fittings:\n")
+        print(api_response.status_code)
         print("The response of FittingsApi->get_characters_character_id_fittings:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FittingsApi->get_characters_character_id_fittings\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FittingsApi->get_characters_character_id_fittings: %s\n" % e)
 ```
@@ -221,8 +225,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Create fitting
         api_response = api_instance.post_characters_character_id_fittings(character_id, post_characters_character_id_fittings_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FittingsApi->post_characters_character_id_fittings:\n")
+        print(api_response.status_code)
         print("The response of FittingsApi->post_characters_character_id_fittings:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FittingsApi->post_characters_character_id_fittings\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FittingsApi->post_characters_character_id_fittings: %s\n" % e)
 ```

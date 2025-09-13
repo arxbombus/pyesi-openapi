@@ -58,8 +58,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List character industry jobs
         api_response = api_instance.get_characters_character_id_industry_jobs(character_id, include_completed=include_completed, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of IndustryApi->get_characters_character_id_industry_jobs:\n")
+        print(api_response.status_code)
         print("The response of IndustryApi->get_characters_character_id_industry_jobs:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of IndustryApi->get_characters_character_id_industry_jobs\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling IndustryApi->get_characters_character_id_industry_jobs: %s\n" % e)
 ```
@@ -144,8 +148,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Character mining ledger
         api_response = api_instance.get_characters_character_id_mining(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of IndustryApi->get_characters_character_id_mining:\n")
+        print(api_response.status_code)
         print("The response of IndustryApi->get_characters_character_id_mining:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of IndustryApi->get_characters_character_id_mining\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling IndustryApi->get_characters_character_id_mining: %s\n" % e)
 ```
@@ -230,8 +238,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Moon extraction timers
         api_response = api_instance.get_corporation_corporation_id_mining_extractions(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of IndustryApi->get_corporation_corporation_id_mining_extractions:\n")
+        print(api_response.status_code)
         print("The response of IndustryApi->get_corporation_corporation_id_mining_extractions:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of IndustryApi->get_corporation_corporation_id_mining_extractions\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling IndustryApi->get_corporation_corporation_id_mining_extractions: %s\n" % e)
 ```
@@ -316,8 +328,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Corporation mining observers
         api_response = api_instance.get_corporation_corporation_id_mining_observers(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of IndustryApi->get_corporation_corporation_id_mining_observers:\n")
+        print(api_response.status_code)
         print("The response of IndustryApi->get_corporation_corporation_id_mining_observers:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of IndustryApi->get_corporation_corporation_id_mining_observers\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling IndustryApi->get_corporation_corporation_id_mining_observers: %s\n" % e)
 ```
@@ -403,8 +419,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Observed corporation mining
         api_response = api_instance.get_corporation_corporation_id_mining_observers_observer_id(corporation_id, observer_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of IndustryApi->get_corporation_corporation_id_mining_observers_observer_id:\n")
+        print(api_response.status_code)
         print("The response of IndustryApi->get_corporation_corporation_id_mining_observers_observer_id:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of IndustryApi->get_corporation_corporation_id_mining_observers_observer_id\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling IndustryApi->get_corporation_corporation_id_mining_observers_observer_id: %s\n" % e)
 ```
@@ -491,8 +511,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List corporation industry jobs
         api_response = api_instance.get_corporations_corporation_id_industry_jobs(corporation_id, include_completed=include_completed, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of IndustryApi->get_corporations_corporation_id_industry_jobs:\n")
+        print(api_response.status_code)
         print("The response of IndustryApi->get_corporations_corporation_id_industry_jobs:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of IndustryApi->get_corporations_corporation_id_industry_jobs\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling IndustryApi->get_corporations_corporation_id_industry_jobs: %s\n" % e)
 ```
@@ -569,8 +593,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List industry facilities
         api_response = api_instance.get_industry_facilities(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of IndustryApi->get_industry_facilities:\n")
+        print(api_response.status_code)
         print("The response of IndustryApi->get_industry_facilities:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of IndustryApi->get_industry_facilities\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling IndustryApi->get_industry_facilities: %s\n" % e)
 ```
@@ -644,8 +672,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List solar system cost indices
         api_response = api_instance.get_industry_systems(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of IndustryApi->get_industry_systems:\n")
+        print(api_response.status_code)
         print("The response of IndustryApi->get_industry_systems:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of IndustryApi->get_industry_systems\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling IndustryApi->get_industry_systems: %s\n" % e)
 ```

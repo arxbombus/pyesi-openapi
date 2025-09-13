@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -42,7 +43,7 @@ class SearchApi:
 
 
     @validate_call
-    def get_characters_character_id_search(
+    def get_characters_character_id_search_data(
         self,
         categories: Annotated[List[StrictStr], Field(min_length=1, max_length=11)],
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
@@ -107,6 +108,9 @@ class SearchApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_characters_character_id_search_serialize(
             categories=categories,
             character_id=character_id,
@@ -137,7 +141,7 @@ class SearchApi:
 
 
     @validate_call
-    def get_characters_character_id_search_with_http_info(
+    def get_characters_character_id_search(
         self,
         categories: Annotated[List[StrictStr], Field(min_length=1, max_length=11)],
         character_id: Annotated[StrictInt, Field(description="The ID of the character")],
@@ -201,6 +205,9 @@ class SearchApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_search_serialize(
             categories=categories,
@@ -296,6 +303,9 @@ class SearchApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_characters_character_id_search_serialize(
             categories=categories,

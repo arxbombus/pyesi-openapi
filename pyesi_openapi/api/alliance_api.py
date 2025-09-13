@@ -13,6 +13,7 @@
 """  # noqa: E501
 
 import warnings
+from datetime import date
 from pydantic import validate_call, Field, StrictFloat, StrictStr, StrictInt
 from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
@@ -43,7 +44,7 @@ class AllianceApi:
 
 
     @validate_call
-    def get_alliances(
+    def get_alliances_data(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -96,6 +97,9 @@ class AllianceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_alliances_serialize(
             accept_language=accept_language,
             if_none_match=if_none_match,
@@ -122,7 +126,7 @@ class AllianceApi:
 
 
     @validate_call
-    def get_alliances_with_http_info(
+    def get_alliances(
         self,
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
         if_none_match: Annotated[Optional[StrictStr], Field(description="The ETag of the previous request. A 304 will be returned if this matches the current ETag.")] = None,
@@ -174,6 +178,9 @@ class AllianceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_serialize(
             accept_language=accept_language,
@@ -253,6 +260,9 @@ class AllianceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_serialize(
             accept_language=accept_language,
@@ -348,7 +358,7 @@ class AllianceApi:
 
 
     @validate_call
-    def get_alliances_alliance_id(
+    def get_alliances_alliance_id_data(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -404,6 +414,9 @@ class AllianceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_alliances_alliance_id_serialize(
             alliance_id=alliance_id,
             accept_language=accept_language,
@@ -431,7 +444,7 @@ class AllianceApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_with_http_info(
+    def get_alliances_alliance_id(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -486,6 +499,9 @@ class AllianceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_serialize(
             alliance_id=alliance_id,
@@ -569,6 +585,9 @@ class AllianceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_serialize(
             alliance_id=alliance_id,
@@ -668,7 +687,7 @@ class AllianceApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_corporations(
+    def get_alliances_alliance_id_corporations_data(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -724,6 +743,9 @@ class AllianceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_alliances_alliance_id_corporations_serialize(
             alliance_id=alliance_id,
             accept_language=accept_language,
@@ -751,7 +773,7 @@ class AllianceApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_corporations_with_http_info(
+    def get_alliances_alliance_id_corporations(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -806,6 +828,9 @@ class AllianceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_corporations_serialize(
             alliance_id=alliance_id,
@@ -889,6 +914,9 @@ class AllianceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_corporations_serialize(
             alliance_id=alliance_id,
@@ -988,7 +1016,7 @@ class AllianceApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_icons(
+    def get_alliances_alliance_id_icons_data(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1044,6 +1072,9 @@ class AllianceApi:
         :return: Returns the result object.
         """ # noqa: E501
 
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
+
         _param = self._get_alliances_alliance_id_icons_serialize(
             alliance_id=alliance_id,
             accept_language=accept_language,
@@ -1071,7 +1102,7 @@ class AllianceApi:
 
 
     @validate_call
-    def get_alliances_alliance_id_icons_with_http_info(
+    def get_alliances_alliance_id_icons(
         self,
         alliance_id: Annotated[StrictInt, Field(description="The ID of the alliance")],
         accept_language: Annotated[Optional[StrictStr], Field(description="The language to use for the response.")] = None,
@@ -1126,6 +1157,9 @@ class AllianceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_icons_serialize(
             alliance_id=alliance_id,
@@ -1209,6 +1243,9 @@ class AllianceApi:
         :type _host_index: int, optional
         :return: Returns the result object.
         """ # noqa: E501
+
+        if not x_compatibility_date:
+            x_compatibility_date = date(2025, 8, 26)
 
         _param = self._get_alliances_alliance_id_icons_serialize(
             alliance_id=alliance_id,

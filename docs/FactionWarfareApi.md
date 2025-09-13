@@ -59,8 +59,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Overview of a character involved in faction warfare
         api_response = api_instance.get_characters_character_id_fw_stats(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FactionWarfareApi->get_characters_character_id_fw_stats:\n")
+        print(api_response.status_code)
         print("The response of FactionWarfareApi->get_characters_character_id_fw_stats:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FactionWarfareApi->get_characters_character_id_fw_stats\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FactionWarfareApi->get_characters_character_id_fw_stats: %s\n" % e)
 ```
@@ -145,8 +149,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Overview of a corporation involved in faction warfare
         api_response = api_instance.get_corporations_corporation_id_fw_stats(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FactionWarfareApi->get_corporations_corporation_id_fw_stats:\n")
+        print(api_response.status_code)
         print("The response of FactionWarfareApi->get_corporations_corporation_id_fw_stats:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FactionWarfareApi->get_corporations_corporation_id_fw_stats\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FactionWarfareApi->get_corporations_corporation_id_fw_stats: %s\n" % e)
 ```
@@ -223,8 +231,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List of the top factions in faction warfare
         api_response = api_instance.get_fw_leaderboards(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FactionWarfareApi->get_fw_leaderboards:\n")
+        print(api_response.status_code)
         print("The response of FactionWarfareApi->get_fw_leaderboards:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FactionWarfareApi->get_fw_leaderboards\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FactionWarfareApi->get_fw_leaderboards: %s\n" % e)
 ```
@@ -300,8 +312,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List of the top pilots in faction warfare
         api_response = api_instance.get_fw_leaderboards_characters(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FactionWarfareApi->get_fw_leaderboards_characters:\n")
+        print(api_response.status_code)
         print("The response of FactionWarfareApi->get_fw_leaderboards_characters:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FactionWarfareApi->get_fw_leaderboards_characters\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FactionWarfareApi->get_fw_leaderboards_characters: %s\n" % e)
 ```
@@ -377,8 +393,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # List of the top corporations in faction warfare
         api_response = api_instance.get_fw_leaderboards_corporations(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FactionWarfareApi->get_fw_leaderboards_corporations:\n")
+        print(api_response.status_code)
         print("The response of FactionWarfareApi->get_fw_leaderboards_corporations:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FactionWarfareApi->get_fw_leaderboards_corporations\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FactionWarfareApi->get_fw_leaderboards_corporations: %s\n" % e)
 ```
@@ -454,8 +474,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # An overview of statistics about factions involved in faction warfare
         api_response = api_instance.get_fw_stats(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FactionWarfareApi->get_fw_stats:\n")
+        print(api_response.status_code)
         print("The response of FactionWarfareApi->get_fw_stats:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FactionWarfareApi->get_fw_stats\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FactionWarfareApi->get_fw_stats: %s\n" % e)
 ```
@@ -529,8 +553,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Ownership of faction warfare systems
         api_response = api_instance.get_fw_systems(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FactionWarfareApi->get_fw_systems:\n")
+        print(api_response.status_code)
         print("The response of FactionWarfareApi->get_fw_systems:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FactionWarfareApi->get_fw_systems\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FactionWarfareApi->get_fw_systems: %s\n" % e)
 ```
@@ -606,8 +634,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Data about which NPC factions are at war
         api_response = api_instance.get_fw_wars(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of FactionWarfareApi->get_fw_wars:\n")
+        print(api_response.status_code)
         print("The response of FactionWarfareApi->get_fw_wars:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of FactionWarfareApi->get_fw_wars\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling FactionWarfareApi->get_fw_wars: %s\n" % e)
 ```

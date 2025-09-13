@@ -43,8 +43,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get changelog
         api_response = api_instance.get_meta_changelog(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MetaApi->get_meta_changelog:\n")
+        print(api_response.status_code)
         print("The response of MetaApi->get_meta_changelog:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MetaApi->get_meta_changelog\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MetaApi->get_meta_changelog: %s\n" % e)
 ```
@@ -118,8 +122,12 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     try:
         # Get compatibility dates
         api_response = api_instance.get_meta_compatibility_dates(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
+        print("The response status code of MetaApi->get_meta_compatibility_dates:\n")
+        print(api_response.status_code)
         print("The response of MetaApi->get_meta_compatibility_dates:\n")
-        pprint(api_response)
+        pprint(api_response.data)
+        print("The response headers of MetaApi->get_meta_compatibility_dates\n")
+        pprint(api_response.headers)
     except Exception as e:
         print("Exception when calling MetaApi->get_meta_compatibility_dates: %s\n" % e)
 ```
