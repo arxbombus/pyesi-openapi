@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 
 # **get_characters_character_id_orders**
-> List[CharactersCharacterIdOrdersGetInner] get_characters_character_id_orders(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CharactersCharacterIdOrdersGetInner] get_characters_character_id_orders(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List open orders from a character
 
@@ -52,14 +52,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List open orders from a character
-        api_response = api_instance.get_characters_character_id_orders(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_orders(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_characters_character_id_orders:\n")
         pprint(api_response)
     except Exception as e:
@@ -74,9 +74,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_orders_history**
-> List[CharactersCharacterIdOrdersHistoryGetInner] get_characters_character_id_orders_history(character_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CharactersCharacterIdOrdersHistoryGetInner] get_characters_character_id_orders_history(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List historical orders by a character
 
@@ -136,15 +136,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List historical orders by a character
-        api_response = api_instance.get_characters_character_id_orders_history(character_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_orders_history(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_characters_character_id_orders_history:\n")
         pprint(api_response)
     except Exception as e:
@@ -159,10 +159,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -188,7 +188,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_corporations_corporation_id_orders**
-> List[CorporationsCorporationIdOrdersGetInner] get_corporations_corporation_id_orders(corporation_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CorporationsCorporationIdOrdersGetInner] get_corporations_corporation_id_orders(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List open orders from a corporation
 
@@ -222,15 +222,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List open orders from a corporation
-        api_response = api_instance.get_corporations_corporation_id_orders(corporation_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_corporations_corporation_id_orders(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_corporations_corporation_id_orders:\n")
         pprint(api_response)
     except Exception as e:
@@ -245,10 +245,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| The ID of the corporation | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_corporations_corporation_id_orders_history**
-> List[CorporationsCorporationIdOrdersHistoryGetInner] get_corporations_corporation_id_orders_history(corporation_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CorporationsCorporationIdOrdersHistoryGetInner] get_corporations_corporation_id_orders_history(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List historical orders from a corporation
 
@@ -308,15 +308,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List historical orders from a corporation
-        api_response = api_instance.get_corporations_corporation_id_orders_history(corporation_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_corporations_corporation_id_orders_history(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_corporations_corporation_id_orders_history:\n")
         pprint(api_response)
     except Exception as e:
@@ -331,10 +331,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| The ID of the corporation | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_markets_groups**
-> List[int] get_markets_groups(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[int] get_markets_groups(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get item groups
 
@@ -387,14 +387,14 @@ configuration = pyesi_openapi.Configuration(
 with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get item groups
-        api_response = api_instance.get_markets_groups(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_markets_groups(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_markets_groups:\n")
         pprint(api_response)
     except Exception as e:
@@ -408,9 +408,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -436,7 +436,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_markets_groups_market_group_id**
-> MarketsGroupsMarketGroupIdGet get_markets_groups_market_group_id(market_group_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> MarketsGroupsMarketGroupIdGet get_markets_groups_market_group_id(market_group_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get item group information
 
@@ -465,14 +465,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
     market_group_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get item group information
-        api_response = api_instance.get_markets_groups_market_group_id(market_group_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_markets_groups_market_group_id(market_group_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_markets_groups_market_group_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -487,9 +487,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **market_group_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -515,7 +515,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_markets_prices**
-> List[MarketsPricesGetInner] get_markets_prices(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[MarketsPricesGetInner] get_markets_prices(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List market prices
 
@@ -541,14 +541,14 @@ configuration = pyesi_openapi.Configuration(
 with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List market prices
-        api_response = api_instance.get_markets_prices(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_markets_prices(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_markets_prices:\n")
         pprint(api_response)
     except Exception as e:
@@ -562,9 +562,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -590,7 +590,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_markets_region_id_history**
-> List[MarketsRegionIdHistoryGetInner] get_markets_region_id_history(region_id, type_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[MarketsRegionIdHistoryGetInner] get_markets_region_id_history(region_id, type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List historical market statistics in a region
 
@@ -620,14 +620,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.MarketApi(api_client)
     region_id = 56 # int | 
     type_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List historical market statistics in a region
-        api_response = api_instance.get_markets_region_id_history(region_id, type_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_markets_region_id_history(region_id, type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_markets_region_id_history:\n")
         pprint(api_response)
     except Exception as e:
@@ -643,9 +643,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **region_id** | **int**|  | 
  **type_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -671,7 +671,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_markets_region_id_orders**
-> List[MarketsRegionIdOrdersGetInner] get_markets_region_id_orders(order_type, region_id, x_compatibility_date, page=page, type_id=type_id, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[MarketsRegionIdOrdersGetInner] get_markets_region_id_orders(order_type, region_id, page=page, type_id=type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List orders in a region
 
@@ -699,16 +699,16 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.MarketApi(api_client)
     order_type = all # str |  (default to all)
     region_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     type_id = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List orders in a region
-        api_response = api_instance.get_markets_region_id_orders(order_type, region_id, x_compatibility_date, page=page, type_id=type_id, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_markets_region_id_orders(order_type, region_id, page=page, type_id=type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_markets_region_id_orders:\n")
         pprint(api_response)
     except Exception as e:
@@ -724,11 +724,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **order_type** | **str**|  | [default to all]
  **region_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **type_id** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -754,7 +754,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_markets_region_id_types**
-> List[int] get_markets_region_id_types(region_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[int] get_markets_region_id_types(region_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List type IDs relevant to a market
 
@@ -780,15 +780,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
     region_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List type IDs relevant to a market
-        api_response = api_instance.get_markets_region_id_types(region_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_markets_region_id_types(region_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_markets_region_id_types:\n")
         pprint(api_response)
     except Exception as e:
@@ -803,10 +803,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **region_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -832,7 +832,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_markets_structures_structure_id**
-> List[MarketsStructuresStructureIdGetInner] get_markets_structures_structure_id(structure_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[MarketsStructuresStructureIdGetInner] get_markets_structures_structure_id(structure_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List orders in a structure
 
@@ -866,15 +866,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MarketApi(api_client)
     structure_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List orders in a structure
-        api_response = api_instance.get_markets_structures_structure_id(structure_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_markets_structures_structure_id(structure_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MarketApi->get_markets_structures_structure_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -889,10 +889,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **structure_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type

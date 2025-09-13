@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **get_dogma_attributes**
-> List[int] get_dogma_attributes(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[int] get_dogma_attributes(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get attributes
 
@@ -39,14 +39,14 @@ configuration = pyesi_openapi.Configuration(
 with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.DogmaApi(api_client)
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get attributes
-        api_response = api_instance.get_dogma_attributes(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_dogma_attributes(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of DogmaApi->get_dogma_attributes:\n")
         pprint(api_response)
     except Exception as e:
@@ -60,9 +60,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -88,7 +88,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_dogma_attributes_attribute_id**
-> DogmaAttributesAttributeIdGet get_dogma_attributes_attribute_id(attribute_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> DogmaAttributesAttributeIdGet get_dogma_attributes_attribute_id(attribute_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get attribute information
 
@@ -117,14 +117,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.DogmaApi(api_client)
     attribute_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get attribute information
-        api_response = api_instance.get_dogma_attributes_attribute_id(attribute_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_dogma_attributes_attribute_id(attribute_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of DogmaApi->get_dogma_attributes_attribute_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -139,9 +139,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **attribute_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -167,7 +167,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_dogma_dynamic_items_type_id_item_id**
-> DogmaDynamicItemsTypeIdItemIdGet get_dogma_dynamic_items_type_id_item_id(item_id, type_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> DogmaDynamicItemsTypeIdItemIdGet get_dogma_dynamic_items_type_id_item_id(item_id, type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get dynamic item information
 
@@ -197,14 +197,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.DogmaApi(api_client)
     item_id = 56 # int | 
     type_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get dynamic item information
-        api_response = api_instance.get_dogma_dynamic_items_type_id_item_id(item_id, type_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_dogma_dynamic_items_type_id_item_id(item_id, type_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of DogmaApi->get_dogma_dynamic_items_type_id_item_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -220,9 +220,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **item_id** | **int**|  | 
  **type_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -248,7 +248,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_dogma_effects**
-> List[int] get_dogma_effects(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[int] get_dogma_effects(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get effects
 
@@ -275,14 +275,14 @@ configuration = pyesi_openapi.Configuration(
 with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.DogmaApi(api_client)
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get effects
-        api_response = api_instance.get_dogma_effects(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_dogma_effects(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of DogmaApi->get_dogma_effects:\n")
         pprint(api_response)
     except Exception as e:
@@ -296,9 +296,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -324,7 +324,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_dogma_effects_effect_id**
-> DogmaEffectsEffectIdGet get_dogma_effects_effect_id(effect_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> DogmaEffectsEffectIdGet get_dogma_effects_effect_id(effect_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get effect information
 
@@ -353,14 +353,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.DogmaApi(api_client)
     effect_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get effect information
-        api_response = api_instance.get_dogma_effects_effect_id(effect_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_dogma_effects_effect_id(effect_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of DogmaApi->get_dogma_effects_effect_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -375,9 +375,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **effect_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type

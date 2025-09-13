@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **delete_characters_character_id_contacts**
-> delete_characters_character_id_contacts(character_id, contact_ids, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> delete_characters_character_id_contacts(character_id, contact_ids, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Delete contacts
 
@@ -50,14 +50,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
     contact_ids = [56] # List[int] | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Delete contacts
-        api_instance.delete_characters_character_id_contacts(character_id, contact_ids, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.delete_characters_character_id_contacts(character_id, contact_ids, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling ContactsApi->delete_characters_character_id_contacts: %s\n" % e)
 ```
@@ -71,9 +71,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
  **contact_ids** | [**List[int]**](int.md)|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -99,7 +99,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_alliances_alliance_id_contacts**
-> List[AlliancesAllianceIdContactsGetInner] get_alliances_alliance_id_contacts(alliance_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[AlliancesAllianceIdContactsGetInner] get_alliances_alliance_id_contacts(alliance_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get alliance contacts
 
@@ -133,15 +133,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.ContactsApi(api_client)
     alliance_id = 56 # int | The ID of the alliance
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get alliance contacts
-        api_response = api_instance.get_alliances_alliance_id_contacts(alliance_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_alliances_alliance_id_contacts(alliance_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of ContactsApi->get_alliances_alliance_id_contacts:\n")
         pprint(api_response)
     except Exception as e:
@@ -156,10 +156,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **alliance_id** | **int**| The ID of the alliance | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_alliances_alliance_id_contacts_labels**
-> List[AlliancesAllianceIdContactsLabelsGetInner] get_alliances_alliance_id_contacts_labels(alliance_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[AlliancesAllianceIdContactsLabelsGetInner] get_alliances_alliance_id_contacts_labels(alliance_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get alliance contact labels
 
@@ -219,14 +219,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.ContactsApi(api_client)
     alliance_id = 56 # int | The ID of the alliance
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get alliance contact labels
-        api_response = api_instance.get_alliances_alliance_id_contacts_labels(alliance_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_alliances_alliance_id_contacts_labels(alliance_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of ContactsApi->get_alliances_alliance_id_contacts_labels:\n")
         pprint(api_response)
     except Exception as e:
@@ -241,9 +241,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **alliance_id** | **int**| The ID of the alliance | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -269,7 +269,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_contacts**
-> List[CharactersCharacterIdContactsGetInner] get_characters_character_id_contacts(character_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CharactersCharacterIdContactsGetInner] get_characters_character_id_contacts(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get contacts
 
@@ -303,15 +303,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get contacts
-        api_response = api_instance.get_characters_character_id_contacts(character_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_contacts(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of ContactsApi->get_characters_character_id_contacts:\n")
         pprint(api_response)
     except Exception as e:
@@ -326,10 +326,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -355,7 +355,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_contacts_labels**
-> List[AlliancesAllianceIdContactsLabelsGetInner] get_characters_character_id_contacts_labels(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[AlliancesAllianceIdContactsLabelsGetInner] get_characters_character_id_contacts_labels(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get contact labels
 
@@ -389,14 +389,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get contact labels
-        api_response = api_instance.get_characters_character_id_contacts_labels(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_contacts_labels(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of ContactsApi->get_characters_character_id_contacts_labels:\n")
         pprint(api_response)
     except Exception as e:
@@ -411,9 +411,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -439,7 +439,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_corporations_corporation_id_contacts**
-> List[CorporationsCorporationIdContactsGetInner] get_corporations_corporation_id_contacts(corporation_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CorporationsCorporationIdContactsGetInner] get_corporations_corporation_id_contacts(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get corporation contacts
 
@@ -473,15 +473,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.ContactsApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get corporation contacts
-        api_response = api_instance.get_corporations_corporation_id_contacts(corporation_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_corporations_corporation_id_contacts(corporation_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of ContactsApi->get_corporations_corporation_id_contacts:\n")
         pprint(api_response)
     except Exception as e:
@@ -496,10 +496,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| The ID of the corporation | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -525,7 +525,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_corporations_corporation_id_contacts_labels**
-> List[AlliancesAllianceIdContactsLabelsGetInner] get_corporations_corporation_id_contacts_labels(corporation_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[AlliancesAllianceIdContactsLabelsGetInner] get_corporations_corporation_id_contacts_labels(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get corporation contact labels
 
@@ -559,14 +559,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.ContactsApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get corporation contact labels
-        api_response = api_instance.get_corporations_corporation_id_contacts_labels(corporation_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_corporations_corporation_id_contacts_labels(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of ContactsApi->get_corporations_corporation_id_contacts_labels:\n")
         pprint(api_response)
     except Exception as e:
@@ -581,9 +581,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| The ID of the corporation | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -609,7 +609,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_characters_character_id_contacts**
-> List[int] post_characters_character_id_contacts(character_id, standing, x_compatibility_date, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[int] post_characters_character_id_contacts(character_id, standing, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Add contacts
 
@@ -643,17 +643,17 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
     standing = 3.4 # float | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     request_body = [56] # List[int] | 
     label_ids = [56] # List[int] |  (optional)
     watched = False # bool |  (optional) (default to False)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Add contacts
-        api_response = api_instance.post_characters_character_id_contacts(character_id, standing, x_compatibility_date, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.post_characters_character_id_contacts(character_id, standing, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of ContactsApi->post_characters_character_id_contacts:\n")
         pprint(api_response)
     except Exception as e:
@@ -669,12 +669,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
  **standing** | **float**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **request_body** | [**List[int]**](int.md)|  | 
  **label_ids** | [**List[int]**](int.md)|  | [optional] 
  **watched** | **bool**|  | [optional] [default to False]
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -700,7 +700,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_characters_character_id_contacts**
-> put_characters_character_id_contacts(character_id, standing, x_compatibility_date, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> put_characters_character_id_contacts(character_id, standing, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Edit contacts
 
@@ -734,17 +734,17 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.ContactsApi(api_client)
     character_id = 56 # int | The ID of the character
     standing = 3.4 # float | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     request_body = [56] # List[int] | 
     label_ids = [56] # List[int] |  (optional)
     watched = False # bool |  (optional) (default to False)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Edit contacts
-        api_instance.put_characters_character_id_contacts(character_id, standing, x_compatibility_date, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.put_characters_character_id_contacts(character_id, standing, request_body, label_ids=label_ids, watched=watched, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling ContactsApi->put_characters_character_id_contacts: %s\n" % e)
 ```
@@ -758,12 +758,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
  **standing** | **float**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **request_body** | [**List[int]**](int.md)|  | 
  **label_ids** | [**List[int]**](int.md)|  | [optional] 
  **watched** | **bool**|  | [optional] [default to False]
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type

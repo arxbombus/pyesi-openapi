@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_insurance_prices**
-> List[InsurancePricesGetInner] get_insurance_prices(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[InsurancePricesGetInner] get_insurance_prices(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 List insurance levels
 
@@ -34,14 +34,14 @@ configuration = pyesi_openapi.Configuration(
 with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.InsuranceApi(api_client)
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # List insurance levels
-        api_response = api_instance.get_insurance_prices(x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_insurance_prices(accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of InsuranceApi->get_insurance_prices:\n")
         pprint(api_response)
     except Exception as e:
@@ -55,9 +55,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type

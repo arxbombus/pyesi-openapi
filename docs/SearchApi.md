@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_characters_character_id_search**
-> CharactersCharacterIdSearchGet get_characters_character_id_search(categories, character_id, search, x_compatibility_date, strict=strict, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> CharactersCharacterIdSearchGet get_characters_character_id_search(categories, character_id, search, strict=strict, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Search on a string
 
@@ -44,15 +44,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     categories = ['categories_example'] # List[str] | 
     character_id = 56 # int | The ID of the character
     search = 'search_example' # str | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     strict = False # bool |  (optional) (default to False)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Search on a string
-        api_response = api_instance.get_characters_character_id_search(categories, character_id, search, x_compatibility_date, strict=strict, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_search(categories, character_id, search, strict=strict, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of SearchApi->get_characters_character_id_search:\n")
         pprint(api_response)
     except Exception as e:
@@ -69,10 +69,10 @@ Name | Type | Description  | Notes
  **categories** | [**List[str]**](str.md)|  | 
  **character_id** | **int**| The ID of the character | 
  **search** | **str**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **strict** | **bool**|  | [optional] [default to False]
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type

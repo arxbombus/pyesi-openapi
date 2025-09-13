@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **get_characters_character_id_wallet**
-> float get_characters_character_id_wallet(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> float get_characters_character_id_wallet(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get a character's wallet balance
 
@@ -46,14 +46,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.WalletApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get a character's wallet balance
-        api_response = api_instance.get_characters_character_id_wallet(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_wallet(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of WalletApi->get_characters_character_id_wallet:\n")
         pprint(api_response)
     except Exception as e:
@@ -68,9 +68,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -96,7 +96,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_wallet_journal**
-> List[CharactersCharacterIdWalletJournalGetInner] get_characters_character_id_wallet_journal(character_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CharactersCharacterIdWalletJournalGetInner] get_characters_character_id_wallet_journal(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get character wallet journal
 
@@ -130,15 +130,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.WalletApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get character wallet journal
-        api_response = api_instance.get_characters_character_id_wallet_journal(character_id, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_wallet_journal(character_id, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of WalletApi->get_characters_character_id_wallet_journal:\n")
         pprint(api_response)
     except Exception as e:
@@ -153,10 +153,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_wallet_transactions**
-> List[CharactersCharacterIdWalletTransactionsGetInner] get_characters_character_id_wallet_transactions(character_id, x_compatibility_date, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CharactersCharacterIdWalletTransactionsGetInner] get_characters_character_id_wallet_transactions(character_id, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get wallet transactions
 
@@ -216,15 +216,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.WalletApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     from_id = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get wallet transactions
-        api_response = api_instance.get_characters_character_id_wallet_transactions(character_id, x_compatibility_date, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_wallet_transactions(character_id, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of WalletApi->get_characters_character_id_wallet_transactions:\n")
         pprint(api_response)
     except Exception as e:
@@ -239,10 +239,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **from_id** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_corporations_corporation_id_wallets**
-> List[CorporationsCorporationIdWalletsGetInner] get_corporations_corporation_id_wallets(corporation_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CorporationsCorporationIdWalletsGetInner] get_corporations_corporation_id_wallets(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Returns a corporation's wallet balance
 
@@ -302,14 +302,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.WalletApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Returns a corporation's wallet balance
-        api_response = api_instance.get_corporations_corporation_id_wallets(corporation_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_corporations_corporation_id_wallets(corporation_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of WalletApi->get_corporations_corporation_id_wallets:\n")
         pprint(api_response)
     except Exception as e:
@@ -324,9 +324,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| The ID of the corporation | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -352,7 +352,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_corporations_corporation_id_wallets_division_journal**
-> List[CorporationsCorporationIdWalletsDivisionJournalGetInner] get_corporations_corporation_id_wallets_division_journal(corporation_id, division, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CorporationsCorporationIdWalletsDivisionJournalGetInner] get_corporations_corporation_id_wallets_division_journal(corporation_id, division, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get corporation wallet journal
 
@@ -387,15 +387,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.WalletApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     division = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     page = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get corporation wallet journal
-        api_response = api_instance.get_corporations_corporation_id_wallets_division_journal(corporation_id, division, x_compatibility_date, page=page, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_corporations_corporation_id_wallets_division_journal(corporation_id, division, page=page, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of WalletApi->get_corporations_corporation_id_wallets_division_journal:\n")
         pprint(api_response)
     except Exception as e:
@@ -411,10 +411,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| The ID of the corporation | 
  **division** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **page** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -440,7 +440,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_corporations_corporation_id_wallets_division_transactions**
-> List[CorporationsCorporationIdWalletsDivisionTransactionsGetInner] get_corporations_corporation_id_wallets_division_transactions(corporation_id, division, x_compatibility_date, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CorporationsCorporationIdWalletsDivisionTransactionsGetInner] get_corporations_corporation_id_wallets_division_transactions(corporation_id, division, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get corporation wallet transactions
 
@@ -475,15 +475,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.WalletApi(api_client)
     corporation_id = 56 # int | The ID of the corporation
     division = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     from_id = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get corporation wallet transactions
-        api_response = api_instance.get_corporations_corporation_id_wallets_division_transactions(corporation_id, division, x_compatibility_date, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_corporations_corporation_id_wallets_division_transactions(corporation_id, division, from_id=from_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of WalletApi->get_corporations_corporation_id_wallets_division_transactions:\n")
         pprint(api_response)
     except Exception as e:
@@ -499,10 +499,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **corporation_id** | **int**| The ID of the corporation | 
  **division** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **from_id** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type

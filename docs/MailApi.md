@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **delete_characters_character_id_mail_labels_label_id**
-> delete_characters_character_id_mail_labels_label_id(character_id, label_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> delete_characters_character_id_mail_labels_label_id(character_id, label_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Delete a mail label
 
@@ -50,14 +50,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     label_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Delete a mail label
-        api_instance.delete_characters_character_id_mail_labels_label_id(character_id, label_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.delete_characters_character_id_mail_labels_label_id(character_id, label_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling MailApi->delete_characters_character_id_mail_labels_label_id: %s\n" % e)
 ```
@@ -71,9 +71,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
  **label_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -99,7 +99,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_characters_character_id_mail_mail_id**
-> delete_characters_character_id_mail_mail_id(character_id, mail_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> delete_characters_character_id_mail_mail_id(character_id, mail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Delete a mail
 
@@ -133,14 +133,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     mail_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Delete a mail
-        api_instance.delete_characters_character_id_mail_mail_id(character_id, mail_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.delete_characters_character_id_mail_mail_id(character_id, mail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling MailApi->delete_characters_character_id_mail_mail_id: %s\n" % e)
 ```
@@ -154,9 +154,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
  **mail_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -182,7 +182,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_mail**
-> List[CharactersCharacterIdMailGetInner] get_characters_character_id_mail(character_id, x_compatibility_date, labels=labels, last_mail_id=last_mail_id, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CharactersCharacterIdMailGetInner] get_characters_character_id_mail(character_id, labels=labels, last_mail_id=last_mail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Return mail headers
 
@@ -216,16 +216,16 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     labels = [56] # List[int] |  (optional)
     last_mail_id = 56 # int |  (optional)
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Return mail headers
-        api_response = api_instance.get_characters_character_id_mail(character_id, x_compatibility_date, labels=labels, last_mail_id=last_mail_id, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_mail(character_id, labels=labels, last_mail_id=last_mail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MailApi->get_characters_character_id_mail:\n")
         pprint(api_response)
     except Exception as e:
@@ -240,11 +240,11 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **labels** | [**List[int]**](int.md)|  | [optional] 
  **last_mail_id** | **int**|  | [optional] 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_mail_labels**
-> CharactersCharacterIdMailLabelsGet get_characters_character_id_mail_labels(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> CharactersCharacterIdMailLabelsGet get_characters_character_id_mail_labels(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get mail labels and unread counts
 
@@ -304,14 +304,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get mail labels and unread counts
-        api_response = api_instance.get_characters_character_id_mail_labels(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_mail_labels(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MailApi->get_characters_character_id_mail_labels:\n")
         pprint(api_response)
     except Exception as e:
@@ -326,9 +326,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_mail_lists**
-> List[CharactersCharacterIdMailListsGetInner] get_characters_character_id_mail_lists(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[CharactersCharacterIdMailListsGetInner] get_characters_character_id_mail_lists(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Return mailing list subscriptions
 
@@ -388,14 +388,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Return mailing list subscriptions
-        api_response = api_instance.get_characters_character_id_mail_lists(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_mail_lists(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MailApi->get_characters_character_id_mail_lists:\n")
         pprint(api_response)
     except Exception as e:
@@ -410,9 +410,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -438,7 +438,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_mail_mail_id**
-> CharactersCharacterIdMailMailIdGet get_characters_character_id_mail_mail_id(character_id, mail_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> CharactersCharacterIdMailMailIdGet get_characters_character_id_mail_mail_id(character_id, mail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Return a mail
 
@@ -473,14 +473,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     mail_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Return a mail
-        api_response = api_instance.get_characters_character_id_mail_mail_id(character_id, mail_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_mail_mail_id(character_id, mail_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MailApi->get_characters_character_id_mail_mail_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -496,9 +496,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
  **mail_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -524,7 +524,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_characters_character_id_mail**
-> int post_characters_character_id_mail(character_id, x_compatibility_date, post_characters_character_id_mail_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> int post_characters_character_id_mail(character_id, post_characters_character_id_mail_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Send a new mail
 
@@ -558,15 +558,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     post_characters_character_id_mail_request = pyesi_openapi.PostCharactersCharacterIdMailRequest() # PostCharactersCharacterIdMailRequest | 
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Send a new mail
-        api_response = api_instance.post_characters_character_id_mail(character_id, x_compatibility_date, post_characters_character_id_mail_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.post_characters_character_id_mail(character_id, post_characters_character_id_mail_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MailApi->post_characters_character_id_mail:\n")
         pprint(api_response)
     except Exception as e:
@@ -581,10 +581,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **post_characters_character_id_mail_request** | [**PostCharactersCharacterIdMailRequest**](PostCharactersCharacterIdMailRequest.md)|  | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -610,7 +610,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_characters_character_id_mail_labels**
-> int post_characters_character_id_mail_labels(character_id, x_compatibility_date, post_characters_character_id_mail_labels_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> int post_characters_character_id_mail_labels(character_id, post_characters_character_id_mail_labels_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Create a mail label
 
@@ -644,15 +644,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     post_characters_character_id_mail_labels_request = pyesi_openapi.PostCharactersCharacterIdMailLabelsRequest() # PostCharactersCharacterIdMailLabelsRequest | 
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Create a mail label
-        api_response = api_instance.post_characters_character_id_mail_labels(character_id, x_compatibility_date, post_characters_character_id_mail_labels_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.post_characters_character_id_mail_labels(character_id, post_characters_character_id_mail_labels_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of MailApi->post_characters_character_id_mail_labels:\n")
         pprint(api_response)
     except Exception as e:
@@ -667,10 +667,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **post_characters_character_id_mail_labels_request** | [**PostCharactersCharacterIdMailLabelsRequest**](PostCharactersCharacterIdMailLabelsRequest.md)|  | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -696,7 +696,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_characters_character_id_mail_mail_id**
-> put_characters_character_id_mail_mail_id(character_id, mail_id, x_compatibility_date, put_characters_character_id_mail_mail_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> put_characters_character_id_mail_mail_id(character_id, mail_id, put_characters_character_id_mail_mail_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Update metadata about a mail
 
@@ -731,15 +731,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.MailApi(api_client)
     character_id = 56 # int | The ID of the character
     mail_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     put_characters_character_id_mail_mail_id_request = pyesi_openapi.PutCharactersCharacterIdMailMailIdRequest() # PutCharactersCharacterIdMailMailIdRequest | 
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Update metadata about a mail
-        api_instance.put_characters_character_id_mail_mail_id(character_id, mail_id, x_compatibility_date, put_characters_character_id_mail_mail_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.put_characters_character_id_mail_mail_id(character_id, mail_id, put_characters_character_id_mail_mail_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling MailApi->put_characters_character_id_mail_mail_id: %s\n" % e)
 ```
@@ -753,10 +753,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
  **mail_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **put_characters_character_id_mail_mail_id_request** | [**PutCharactersCharacterIdMailMailIdRequest**](PutCharactersCharacterIdMailMailIdRequest.md)|  | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type

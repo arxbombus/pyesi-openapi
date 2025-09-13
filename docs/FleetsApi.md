@@ -21,7 +21,7 @@ Method | HTTP request | Description
 
 
 # **delete_fleets_fleet_id_members_member_id**
-> delete_fleets_fleet_id_members_member_id(fleet_id, member_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> delete_fleets_fleet_id_members_member_id(fleet_id, member_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Kick fleet member
 
@@ -55,14 +55,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
     member_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Kick fleet member
-        api_instance.delete_fleets_fleet_id_members_member_id(fleet_id, member_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.delete_fleets_fleet_id_members_member_id(fleet_id, member_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling FleetsApi->delete_fleets_fleet_id_members_member_id: %s\n" % e)
 ```
@@ -76,9 +76,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
  **member_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -104,7 +104,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_fleets_fleet_id_squads_squad_id**
-> delete_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> delete_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Delete fleet squad
 
@@ -138,14 +138,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
     squad_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Delete fleet squad
-        api_instance.delete_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.delete_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling FleetsApi->delete_fleets_fleet_id_squads_squad_id: %s\n" % e)
 ```
@@ -159,9 +159,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
  **squad_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -187,7 +187,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_fleets_fleet_id_wings_wing_id**
-> delete_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> delete_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Delete fleet wing
 
@@ -221,14 +221,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
     wing_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Delete fleet wing
-        api_instance.delete_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.delete_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling FleetsApi->delete_fleets_fleet_id_wings_wing_id: %s\n" % e)
 ```
@@ -242,9 +242,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
  **wing_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -270,7 +270,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_characters_character_id_fleet**
-> CharactersCharacterIdFleetGet get_characters_character_id_fleet(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> CharactersCharacterIdFleetGet get_characters_character_id_fleet(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get character fleet info
 
@@ -304,14 +304,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.FleetsApi(api_client)
     character_id = 56 # int | The ID of the character
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get character fleet info
-        api_response = api_instance.get_characters_character_id_fleet(character_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_characters_character_id_fleet(character_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of FleetsApi->get_characters_character_id_fleet:\n")
         pprint(api_response)
     except Exception as e:
@@ -326,9 +326,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **character_id** | **int**| The ID of the character | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_fleets_fleet_id**
-> FleetsFleetIdGet get_fleets_fleet_id(fleet_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> FleetsFleetIdGet get_fleets_fleet_id(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get fleet information
 
@@ -388,14 +388,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get fleet information
-        api_response = api_instance.get_fleets_fleet_id(fleet_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_fleets_fleet_id(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of FleetsApi->get_fleets_fleet_id:\n")
         pprint(api_response)
     except Exception as e:
@@ -410,9 +410,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -438,7 +438,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_fleets_fleet_id_members**
-> List[FleetsFleetIdMembersGetInner] get_fleets_fleet_id_members(fleet_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[FleetsFleetIdMembersGetInner] get_fleets_fleet_id_members(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get fleet members
 
@@ -472,14 +472,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get fleet members
-        api_response = api_instance.get_fleets_fleet_id_members(fleet_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_fleets_fleet_id_members(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of FleetsApi->get_fleets_fleet_id_members:\n")
         pprint(api_response)
     except Exception as e:
@@ -494,9 +494,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_fleets_fleet_id_wings**
-> List[FleetsFleetIdWingsGetInner] get_fleets_fleet_id_wings(fleet_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> List[FleetsFleetIdWingsGetInner] get_fleets_fleet_id_wings(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Get fleet wings
 
@@ -556,14 +556,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Get fleet wings
-        api_response = api_instance.get_fleets_fleet_id_wings(fleet_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.get_fleets_fleet_id_wings(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of FleetsApi->get_fleets_fleet_id_wings:\n")
         pprint(api_response)
     except Exception as e:
@@ -578,9 +578,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -606,7 +606,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_fleets_fleet_id_members**
-> post_fleets_fleet_id_members(fleet_id, x_compatibility_date, post_fleets_fleet_id_members_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> post_fleets_fleet_id_members(fleet_id, post_fleets_fleet_id_members_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Create fleet invitation
 
@@ -640,15 +640,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     post_fleets_fleet_id_members_request = pyesi_openapi.PostFleetsFleetIdMembersRequest() # PostFleetsFleetIdMembersRequest | 
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Create fleet invitation
-        api_instance.post_fleets_fleet_id_members(fleet_id, x_compatibility_date, post_fleets_fleet_id_members_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.post_fleets_fleet_id_members(fleet_id, post_fleets_fleet_id_members_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling FleetsApi->post_fleets_fleet_id_members: %s\n" % e)
 ```
@@ -661,10 +661,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **post_fleets_fleet_id_members_request** | [**PostFleetsFleetIdMembersRequest**](PostFleetsFleetIdMembersRequest.md)|  | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -690,7 +690,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_fleets_fleet_id_wings**
-> FleetsFleetIdWingsPost post_fleets_fleet_id_wings(fleet_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> FleetsFleetIdWingsPost post_fleets_fleet_id_wings(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Create fleet wing
 
@@ -724,14 +724,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Create fleet wing
-        api_response = api_instance.post_fleets_fleet_id_wings(fleet_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.post_fleets_fleet_id_wings(fleet_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of FleetsApi->post_fleets_fleet_id_wings:\n")
         pprint(api_response)
     except Exception as e:
@@ -746,9 +746,9 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -774,7 +774,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **post_fleets_fleet_id_wings_wing_id_squads**
-> FleetsFleetIdWingsWingIdSquadsPost post_fleets_fleet_id_wings_wing_id_squads(fleet_id, wing_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> FleetsFleetIdWingsWingIdSquadsPost post_fleets_fleet_id_wings_wing_id_squads(fleet_id, wing_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Create fleet squad
 
@@ -809,14 +809,14 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
     wing_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Create fleet squad
-        api_response = api_instance.post_fleets_fleet_id_wings_wing_id_squads(fleet_id, wing_id, x_compatibility_date, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_response = api_instance.post_fleets_fleet_id_wings_wing_id_squads(fleet_id, wing_id, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
         print("The response of FleetsApi->post_fleets_fleet_id_wings_wing_id_squads:\n")
         pprint(api_response)
     except Exception as e:
@@ -832,9 +832,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
  **wing_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -860,7 +860,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_fleets_fleet_id**
-> put_fleets_fleet_id(fleet_id, x_compatibility_date, put_fleets_fleet_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> put_fleets_fleet_id(fleet_id, put_fleets_fleet_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Update fleet
 
@@ -894,15 +894,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     put_fleets_fleet_id_request = pyesi_openapi.PutFleetsFleetIdRequest() # PutFleetsFleetIdRequest | 
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Update fleet
-        api_instance.put_fleets_fleet_id(fleet_id, x_compatibility_date, put_fleets_fleet_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.put_fleets_fleet_id(fleet_id, put_fleets_fleet_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling FleetsApi->put_fleets_fleet_id: %s\n" % e)
 ```
@@ -915,10 +915,10 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **put_fleets_fleet_id_request** | [**PutFleetsFleetIdRequest**](PutFleetsFleetIdRequest.md)|  | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -944,7 +944,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_fleets_fleet_id_members_member_id**
-> put_fleets_fleet_id_members_member_id(fleet_id, member_id, x_compatibility_date, put_fleets_fleet_id_members_member_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> put_fleets_fleet_id_members_member_id(fleet_id, member_id, put_fleets_fleet_id_members_member_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Move fleet member
 
@@ -979,15 +979,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
     member_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     put_fleets_fleet_id_members_member_id_request = pyesi_openapi.PutFleetsFleetIdMembersMemberIdRequest() # PutFleetsFleetIdMembersMemberIdRequest | 
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Move fleet member
-        api_instance.put_fleets_fleet_id_members_member_id(fleet_id, member_id, x_compatibility_date, put_fleets_fleet_id_members_member_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.put_fleets_fleet_id_members_member_id(fleet_id, member_id, put_fleets_fleet_id_members_member_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling FleetsApi->put_fleets_fleet_id_members_member_id: %s\n" % e)
 ```
@@ -1001,10 +1001,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
  **member_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **put_fleets_fleet_id_members_member_id_request** | [**PutFleetsFleetIdMembersMemberIdRequest**](PutFleetsFleetIdMembersMemberIdRequest.md)|  | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -1030,7 +1030,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_fleets_fleet_id_squads_squad_id**
-> put_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, x_compatibility_date, put_fleets_fleet_id_squads_squad_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> put_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, put_fleets_fleet_id_squads_squad_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Rename fleet squad
 
@@ -1065,15 +1065,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
     squad_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     put_fleets_fleet_id_squads_squad_id_request = pyesi_openapi.PutFleetsFleetIdSquadsSquadIdRequest() # PutFleetsFleetIdSquadsSquadIdRequest | 
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Rename fleet squad
-        api_instance.put_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, x_compatibility_date, put_fleets_fleet_id_squads_squad_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.put_fleets_fleet_id_squads_squad_id(fleet_id, squad_id, put_fleets_fleet_id_squads_squad_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling FleetsApi->put_fleets_fleet_id_squads_squad_id: %s\n" % e)
 ```
@@ -1087,10 +1087,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
  **squad_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **put_fleets_fleet_id_squads_squad_id_request** | [**PutFleetsFleetIdSquadsSquadIdRequest**](PutFleetsFleetIdSquadsSquadIdRequest.md)|  | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type
@@ -1116,7 +1116,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **put_fleets_fleet_id_wings_wing_id**
-> put_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, x_compatibility_date, put_fleets_fleet_id_squads_squad_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+> put_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, put_fleets_fleet_id_squads_squad_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
 
 Rename fleet wing
 
@@ -1151,15 +1151,15 @@ with pyesi_openapi.ApiClient(configuration) as api_client:
     api_instance = pyesi_openapi.FleetsApi(api_client)
     fleet_id = 56 # int | 
     wing_id = 56 # int | 
-    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request.
     put_fleets_fleet_id_squads_squad_id_request = pyesi_openapi.PutFleetsFleetIdSquadsSquadIdRequest() # PutFleetsFleetIdSquadsSquadIdRequest | 
     accept_language = en # str | The language to use for the response. (optional) (default to en)
     if_none_match = 'if_none_match_example' # str | The ETag of the previous request. A 304 will be returned if this matches the current ETag. (optional)
+    x_compatibility_date = '2013-10-20' # date | The compatibility date for the request. (optional)
     x_tenant = 'tranquility' # str | The tenant ID for the request. (optional) (default to 'tranquility')
 
     try:
         # Rename fleet wing
-        api_instance.put_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, x_compatibility_date, put_fleets_fleet_id_squads_squad_id_request, accept_language=accept_language, if_none_match=if_none_match, x_tenant=x_tenant)
+        api_instance.put_fleets_fleet_id_wings_wing_id(fleet_id, wing_id, put_fleets_fleet_id_squads_squad_id_request, accept_language=accept_language, if_none_match=if_none_match, x_compatibility_date=x_compatibility_date, x_tenant=x_tenant)
     except Exception as e:
         print("Exception when calling FleetsApi->put_fleets_fleet_id_wings_wing_id: %s\n" % e)
 ```
@@ -1173,10 +1173,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**|  | 
  **wing_id** | **int**|  | 
- **x_compatibility_date** | **date**| The compatibility date for the request. | 
  **put_fleets_fleet_id_squads_squad_id_request** | [**PutFleetsFleetIdSquadsSquadIdRequest**](PutFleetsFleetIdSquadsSquadIdRequest.md)|  | 
  **accept_language** | **str**| The language to use for the response. | [optional] [default to en]
  **if_none_match** | **str**| The ETag of the previous request. A 304 will be returned if this matches the current ETag. | [optional] 
+ **x_compatibility_date** | **date**| The compatibility date for the request. | [optional] 
  **x_tenant** | **str**| The tenant ID for the request. | [optional] [default to &#39;tranquility&#39;]
 
 ### Return type

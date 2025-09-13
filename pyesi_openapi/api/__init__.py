@@ -22,6 +22,7 @@ if __import__("typing").TYPE_CHECKING:
     from pyesi_openapi.api.loyalty_api import LoyaltyApi
     from pyesi_openapi.api.mail_api import MailApi
     from pyesi_openapi.api.market_api import MarketApi
+    from pyesi_openapi.api.meta_api import MetaApi
     from pyesi_openapi.api.planetary_interaction_api import PlanetaryInteractionApi
     from pyesi_openapi.api.routes_api import RoutesApi
     from pyesi_openapi.api.search_api import SearchApi
@@ -60,6 +61,7 @@ from pyesi_openapi.api.location_api import LocationApi
 from pyesi_openapi.api.loyalty_api import LoyaltyApi
 from pyesi_openapi.api.mail_api import MailApi
 from pyesi_openapi.api.market_api import MarketApi
+from pyesi_openapi.api.meta_api import MetaApi
 from pyesi_openapi.api.planetary_interaction_api import PlanetaryInteractionApi
 from pyesi_openapi.api.routes_api import RoutesApi
 from pyesi_openapi.api.search_api import SearchApi
