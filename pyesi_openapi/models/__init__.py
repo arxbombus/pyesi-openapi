@@ -4,7 +4,7 @@
 """
     PyESI (OpenAPI) - EVE Stable Infrastructure (ESI)
 
-    This python SDK was generated with openapi-generator (https://openapi-generator.tech/) using OpenAPI specification for EVE Stable Infrastructure / EVE Swagger Interface (ESI) (https://developers.eveonline.com/api-explorer)and is lightly normalized to improve client generation via our custom templates. It preserves endpoint coverage from CCP's published specification while adjusting metadata and select parameter shapes for a more ergonomic, type-safe Python SDK.
+    This python SDK was generated with openapi-generator (https://openapi-generator.tech/) using OpenAPI specification for EVE Stable Infrastructure / EVE Swagger Interface (ESI) (https://developers.eveonline.com/api-explorer) and is lightly normalized to improve client generation via our custom templates. It preserves endpoint coverage from CCP's published specification while adjusting metadata and select parameter shapes for a more ergonomic, type-safe Python SDK.
 
     The version of the OpenAPI document: 2020-01-01
     Contact: arxbombus@gmail.com
