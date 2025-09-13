@@ -26,6 +26,7 @@ ENABLE_POST_PROCESS=false
 DRY_RUN=false
 VERBOSE=false
 FORCE_DOWNLOAD=false
+PATCH_SCRIPT="scripts/patch_openapi.py"
 
 # Function to display usage
 show_usage() {
@@ -211,9 +212,15 @@ echo "📦 Package name: $PACKAGE_NAME"
 echo "🏷️  Generator: $GENERATOR"
 
 # Download latest ESI OpenAPI spec if needed
+DOWNLOADED_NEW_SPEC=false
 if [ "$INPUT_SPEC" = "openapi.json" ] && { [ ! -f "$INPUT_SPEC" ] || [ "$FORCE_DOWNLOAD" = true ]; }; then
     echo "📥 Downloading latest ESI OpenAPI spec..."
     curl -o "$INPUT_SPEC" https://esi.evetech.net/meta/openapi.json
+    DOWNLOADED_NEW_SPEC=true
+    
+    echo "🔧 Patching downloaded OpenAPI spec..."
+    uv run python "$PATCH_SCRIPT" --in "$INPUT_SPEC" --indent 2
+    echo "✅ OpenAPI spec patched successfully"
 else
     echo "📄 Using input spec: $INPUT_SPEC"
 fi
@@ -264,6 +271,12 @@ if [ "$VERBOSE" = true ]; then
 fi
 
 eval $CMD
+
+# Clean up unused generated files
+if [ -f "git_push.sh" ]; then
+    echo "🗑️  Removing unused git_push.sh script..."
+    rm -f git_push.sh
+fi
 
 if [ "$DRY_RUN" = true ]; then
     echo "🔍 Dry run complete - no files were generated"
